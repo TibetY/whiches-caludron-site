@@ -1,0 +1,36 @@
+.ribbon {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  transform: rotate(var(--tilt, 0deg));
+}
+
+.tail {
+  position: absolute;
+  z-index: -1;
+  top: var(--tail-y, 18px);
+  width: var(--tail-w, 70px);
+  height: 100%;
+}
+
+.left {
+  left: var(--tail-x, -54px);
+}
+
+.right {
+  right: var(--tail-x, -54px);
+}
+
+.tail path {
+  fill: var(--teal);
+  stroke: var(--ink);
+  stroke-width: 3;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.band {
+  margin: 0;
+  background: var(--aqua);
+  border: 3px solid var(--ink);
+}

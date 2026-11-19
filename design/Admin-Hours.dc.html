@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shop dashboard — Hours & notices</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy&amp;family=Nunito:ital,wght@0,400..900;1,400..900&amp;display=swap">
+<style>
+body{margin:0;background:#FCF6EC}
+a{color:#7C2A6C}a:hover{color:#26121F}
+input,textarea,select,button{font:inherit;color:inherit}
+input::placeholder,textarea::placeholder{color:#8A6F82}
+input:focus-visible,textarea:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible,label:focus-within{outline:3px solid #2EC4CE;outline-offset:2px}
+.tx-cream{background-color:#FCF6EC;background-image:url(/_blob/860f97b01752ad1d29fee55a04c27b38);background-size:512px 512px}
+</style>
+</helmet>
+<div class="tx-cream" style="font-family: Nunito, 'Trebuchet MS', sans-serif; color: #26121F; min-height: 100vh; display: flex; flex-wrap: wrap">
+  <aside style="flex: 1 1 250px; box-sizing: border-box; background: #5E2159; color: #FFF8EF; padding: 22px 18px 26px; display: flex; flex-direction: column; gap: 26px">
+    <a href="Main.dc.html" style="display: flex; align-items: center; gap: 12px; color: #FFF8EF; text-decoration: none">
+      <img src="/_blob/3f6d1ae5a323ef01495b7d89532b01dd" alt="" width="62" height="75" style="display: block; width: 62px; height: auto; transform: rotate(-5deg); filter: drop-shadow(0 4px 5px rgba(10,0,10,0.45))">
+      <span style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 27px; line-height: 1.05; text-shadow: 1.5px 0 0 #26121F, -1.5px 0 0 #26121F, 0 1.5px 0 #26121F, 0 -1.5px 0 #26121F, 1px 1px 0 #26121F, -1px -1px 0 #26121F, 1px -1px 0 #26121F, -1px 1px 0 #26121F, 2px 2px 0 #26121F">’wiches cauldron</span>
+        <span style="font-size: 14px; font-weight: 800; color: #F6E6F3; letter-spacing: 0.02em">Shop dashboard</span>
+      </span>
+    </a>
+    <nav aria-label="Dashboard" style="display: flex; flex-direction: column; gap: 6px">
+      <a href="Admin-Today.dc.html" style="display: flex; align-items: center; gap: 12px; min-height: 48px; box-sizing: border-box; padding: 10px 14px; border-radius: 14px; color: #FFF8EF; border: 2.5px solid transparent; text-decoration: none; font-weight: 700; font-size: 17px"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M4 10h16"></path><path d="M5 10c0 5 3 9 7 9s7-4 7-9"></path><path d="M8 19l-1 2M16 19l1 2"></path><path d="M9.5 6.5c0-1.2 1.2-1.2 1.2-2.5M13.5 6.5c0-1.2 1.2-1.2 1.2-2.5"></path></svg>Today’s brew</a>
+      <a href="Admin-Menu.dc.html" style="display: flex; align-items: center; gap: 12px; min-height: 48px; box-sizing: border-box; padding: 10px 14px; border-radius: 14px; color: #FFF8EF; border: 2.5px solid transparent; text-decoration: none; font-weight: 700; font-size: 17px"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M9 6h11M9 12h11M9 18h11"></path><circle cx="4.5" cy="6" r="1"></circle><circle cx="4.5" cy="12" r="1"></circle><circle cx="4.5" cy="18" r="1"></circle></svg>Menu &amp; prices</a>
+      <a href="Admin-Photos.dc.html" style="display: flex; align-items: center; gap: 12px; min-height: 48px; box-sizing: border-box; padding: 10px 14px; border-radius: 14px; color: #FFF8EF; border: 2.5px solid transparent; text-decoration: none; font-weight: 700; font-size: 17px"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M3 8h4l2-3h6l2 3h4v11H3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Photos</a>
+      <a href="Admin-Hours.dc.html" aria-current="page" style="display: flex; align-items: center; gap: 12px; min-height: 48px; box-sizing: border-box; padding: 10px 14px; border-radius: 14px; background: #FFF8EF; color: #26121F; border: 2.5px solid #26121F; box-shadow: 0 3px 0 #26121F; text-decoration: none; font-weight: 800; font-size: 17px"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Hours &amp; notices</a>
+    </nav>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px">
+      <a href="Main.dc.html" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; box-sizing: border-box; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 22px; padding: 8px 22px; border: 3px solid #26121F; border-radius: 14px; box-shadow: 0 4px 0 #26121F; cursor: pointer; text-decoration: none; color: #26121F; background: #83EDF8; font-size: 20px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M14 4h6v6M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg>View the website</a>
+      <p style="margin: 0; font-size: 14px; color: #F6E6F3">Signed in as <strong>[Owner name]</strong></p>
+    </div>
+  </aside>
+  <main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; padding: 30px clamp(18px, 3vw, 44px) 64px; display: flex; flex-direction: column; gap: 22px">
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 24px">
+      <div style="min-width: 0">
+        <h1 style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: clamp(36px, 3.6vw, 48px); line-height: 1.08; color: #9E4C92; text-shadow: 2px 0 0 #26121F, -2px 0 0 #26121F, 0 2px 0 #26121F, 0 -2px 0 #26121F, 1.5px 1.5px 0 #26121F, -1.5px -1.5px 0 #26121F, 1.5px -1.5px 0 #26121F, -1.5px 1.5px 0 #26121F, 3px 4px 0 #26121F">Hours &amp; notices</h1>
+        <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61; font-size: 16px; margin-top: 8px">Your hours drive the door sign and every hours list on the website.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 14px">
+        <span role="status" style="display: inline-flex; align-items: center; gap: 8px; min-height: 40px; box-sizing: border-box; padding: 6px 14px; border-radius: 999px; border: 2.5px solid #26121F; background: {{statusBg}}; font-weight: 800; font-size: 15px"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid #26121F; background: {{statusDot}}"></span>{{statusText}}</span>
+        <button type="button" onClick="{{publish}}" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; box-sizing: border-box; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 22px; padding: 8px 22px; border: 3px solid #26121F; border-radius: 14px; box-shadow: 0 4px 0 #26121F; cursor: pointer; text-decoration: none; color: #FFF8EF; background: #9E4C92">Publish changes</button>
+      </div>
+    </div>
+    <sc-if value="{{toast}}" hint-placeholder-val="{{ false }}">
+      <div role="status" style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; background: #D9F2B3; border: 3px solid #26121F; border-radius: 16px; padding: 10px 16px; font-weight: 800; font-size: 16px">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#26121F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>{{toastText}}</span>
+        <a href="{{toastHref}}" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; box-sizing: border-box; font-weight: 800; font-size: 15px; color: #26121F; background: #FFFFFF; padding: 8px 14px; border: 2.5px solid #26121F; border-radius: 12px; cursor: pointer; text-decoration: none">See it on the website</a>
+      </div>
+    </sc-if>
+    <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+      <div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+        <section aria-labelledby="week-h" style="box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 4px 0 #26121F; padding: 22px 24px 24px">
+          <h2 id="week-h" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; color: #26121F"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9E4C92" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Regular hours</h2>
+          <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61">Need a midday break? Fridays already have one, from 2:30 to 4:30.</p>
+          <div style="overflow-x: auto; margin-top: 8px">
+            <table style="width: 100%; min-width: 640px; border-collapse: collapse">
+              <tbody>
+              <tr style="border-top: 2px solid #EFE2EC">
+                <th scope="row" style="padding: 10px; text-align: left; font-weight: 800; font-size: 16px; width: 110px">Monday</th>
+                <td style="padding: 10px; width: 140px"><button type="button" role="switch" aria-checked="{{sw.open_mon.aria}}" aria-label="Open on Monday" onClick="{{sw.open_mon.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.open_mon.track}}"><span style="position: absolute; top: 2px; left: {{sw.open_mon.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>{{sw.open_mon.openWord}}</button></td>
+                <td style="padding: 10px">
+                  <sc-if value="{{sw.open_mon.on}}" hint-placeholder-val="{{ true }}"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><label for="t-mon-a" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Monday opens</label><input id="t-mon-a" type="time" value="{{f.t_mon_a}}" onChange="{{on.t_mon_a}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"><span style="font-weight: 700">to</span><label for="t-mon-b" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Monday closes</label><input id="t-mon-b" type="time" value="{{f.t_mon_b}}" onChange="{{on.t_mon_b}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"></div></sc-if>
+                  <sc-if value="{{sw.open_mon.off}}" hint-placeholder-val="{{ false }}"><span style="font-weight: 700; color: #6B4A61">Closed all day</span></sc-if>
+                </td>
+              </tr>
+              <tr style="border-top: 2px solid #EFE2EC">
+                <th scope="row" style="padding: 10px; text-align: left; font-weight: 800; font-size: 16px; width: 110px">Tuesday</th>
+                <td style="padding: 10px; width: 140px"><button type="button" role="switch" aria-checked="{{sw.open_tue.aria}}" aria-label="Open on Tuesday" onClick="{{sw.open_tue.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.open_tue.track}}"><span style="position: absolute; top: 2px; left: {{sw.open_tue.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>{{sw.open_tue.openWord}}</button></td>
+                <td style="padding: 10px">
+                  <sc-if value="{{sw.open_tue.on}}" hint-placeholder-val="{{ true }}"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><label for="t-tue-a" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Tuesday opens</label><input id="t-tue-a" type="time" value="{{f.t_tue_a}}" onChange="{{on.t_tue_a}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"><span style="font-weight: 700">to</span><label for="t-tue-b" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Tuesday closes</label><input id="t-tue-b" type="time" value="{{f.t_tue_b}}" onChange="{{on.t_tue_b}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"></div></sc-if>
+                  <sc-if value="{{sw.open_tue.off}}" hint-placeholder-val="{{ false }}"><span style="font-weight: 700; color: #6B4A61">Closed all day</span></sc-if>
+                </td>
+              </tr>
+              <tr style="border-top: 2px solid #EFE2EC">
+                <th scope="row" style="padding: 10px; text-align: left; font-weight: 800; font-size: 16px; width: 110px">Wednesday</th>
+                <td style="padding: 10px; width: 140px"><button type="button" role="switch" aria-checked="{{sw.open_wed.aria}}" aria-label="Open on Wednesday" onClick="{{sw.open_wed.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.open_wed.track}}"><span style="position: absolute; top: 2px; left: {{sw.open_wed.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>{{sw.open_wed.openWord}}</button></td>
+                <td style="padding: 10px">
+                  <sc-if value="{{sw.open_wed.on}}" hint-placeholder-val="{{ true }}"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><label for="t-wed-a" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Wednesday opens</label><input id="t-wed-a" type="time" value="{{f.t_wed_a}}" onChange="{{on.t_wed_a}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"><span style="font-weight: 700">to</span><label for="t-wed-b" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Wednesday closes</label><input id="t-wed-b" type="time" value="{{f.t_wed_b}}" onChange="{{on.t_wed_b}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"></div></sc-if>
+                  <sc-if value="{{sw.open_wed.off}}" hint-placeholder-val="{{ false }}"><span style="font-weight: 700; color: #6B4A61">Closed all day</span></sc-if>
+                </td>
+              </tr>
+              <tr style="border-top: 2px solid #EFE2EC">
+                <th scope="row" style="padding: 10px; text-align: left; font-weight: 800; font-size: 16px; width: 110px">Thursday</th>
+                <td style="padding: 10px; width: 140px"><button type="button" role="switch" aria-checked="{{sw.open_thu.aria}}" aria-label="Open on Thursday" onClick="{{sw.open_thu.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.open_thu.track}}"><span style="position: absolute; top: 2px; left: {{sw.open_thu.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>{{sw.open_thu.openWord}}</button></td>
+                <td style="padding: 10px">
+                  <sc-if value="{{sw.open_thu.on}}" hint-placeholder-val="{{ true }}"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><label for="t-thu-a" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Thursday opens</label><input id="t-thu-a" type="time" value="{{f.t_thu_a}}" onChange="{{on.t_thu_a}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"><span style="font-weight: 700">to</span><label for="t-thu-b" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Thursday closes</label><input id="t-thu-b" type="time" value="{{f.t_thu_b}}" onChange="{{on.t_thu_b}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"></div></sc-if>
+                  <sc-if value="{{sw.open_thu.off}}" hint-placeholder-val="{{ false }}"><span style="font-weight: 700; color: #6B4A61">Closed all day</span></sc-if>
+                </td>
+              </tr>
+              <tr style="border-top: 2px solid #EFE2EC">
+                <th scope="row" style="padding: 10px; text-align: left; font-weight: 800; font-size: 16px; width: 110px">Friday</th>
+                <td style="padding: 10px; width: 140px"><button type="button" role="switch" aria-checked="{{sw.open_fri.aria}}" aria-label="Open on Friday" onClick="{{sw.open_fri.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.open_fri.track}}"><span style="position: absolute; top: 2px; left: {{sw.open_fri.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>{{sw.open_fri.openWord}}</button></td>
+                <td style="padding: 10px">
+                  <sc-if value="{{sw.open_fri.on}}" hint-placeholder-val="{{ true }}"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><label for="t-fri-a" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Friday opens</label><input id="t-fri-a" type="time" value="{{f.t_fri_a}}" onChange="{{on.t_fri_a}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"><span style="font-weight: 700">to</span><label for="t-fri-b" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Friday closes</label><input id="t-fri-b" type="time" value="{{f.t_fri_b}}" onChange="{{on.t_fri_b}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"><span style="font-size: 13.5px; font-weight: 800; color: #6B4A61; padding: 0 4px">break, then</span><label for="t-fri-c" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Friday opens</label><input id="t-fri-c" type="time" value="{{f.t_fri_c}}" onChange="{{on.t_fri_c}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"><span style="font-weight: 700">to</span><label for="t-fri-d" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Friday closes</label><input id="t-fri-d" type="time" value="{{f.t_fri_d}}" onChange="{{on.t_fri_d}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"></div></sc-if>
+                  <sc-if value="{{sw.open_fri.off}}" hint-placeholder-val="{{ false }}"><span style="font-weight: 700; color: #6B4A61">Closed all day</span></sc-if>
+                </td>
+              </tr>
+              <tr style="border-top: 2px solid #EFE2EC">
+                <th scope="row" style="padding: 10px; text-align: left; font-weight: 800; font-size: 16px; width: 110px">Saturday</th>
+                <td style="padding: 10px; width: 140px"><button type="button" role="switch" aria-checked="{{sw.open_sat.aria}}" aria-label="Open on Saturday" onClick="{{sw.open_sat.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.open_sat.track}}"><span style="position: absolute; top: 2px; left: {{sw.open_sat.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>{{sw.open_sat.openWord}}</button></td>
+                <td style="padding: 10px">
+                  <sc-if value="{{sw.open_sat.on}}" hint-placeholder-val="{{ true }}"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><label for="t-sat-a" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Saturday opens</label><input id="t-sat-a" type="time" value="{{f.t_sat_a}}" onChange="{{on.t_sat_a}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"><span style="font-weight: 700">to</span><label for="t-sat-b" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Saturday closes</label><input id="t-sat-b" type="time" value="{{f.t_sat_b}}" onChange="{{on.t_sat_b}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"></div></sc-if>
+                  <sc-if value="{{sw.open_sat.off}}" hint-placeholder-val="{{ false }}"><span style="font-weight: 700; color: #6B4A61">Closed all day</span></sc-if>
+                </td>
+              </tr>
+              <tr style="border-top: 2px solid #EFE2EC">
+                <th scope="row" style="padding: 10px; text-align: left; font-weight: 800; font-size: 16px; width: 110px">Sunday</th>
+                <td style="padding: 10px; width: 140px"><button type="button" role="switch" aria-checked="{{sw.open_sun.aria}}" aria-label="Open on Sunday" onClick="{{sw.open_sun.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.open_sun.track}}"><span style="position: absolute; top: 2px; left: {{sw.open_sun.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>{{sw.open_sun.openWord}}</button></td>
+                <td style="padding: 10px">
+                  <sc-if value="{{sw.open_sun.on}}" hint-placeholder-val="{{ true }}"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><label for="t-sun-a" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Sunday opens</label><input id="t-sun-a" type="time" value="{{f.t_sun_a}}" onChange="{{on.t_sun_a}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"><span style="font-weight: 700">to</span><label for="t-sun-b" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">Sunday closes</label><input id="t-sun-b" type="time" value="{{f.t_sun_b}}" onChange="{{on.t_sun_b}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; width: 150px"></div></sc-if>
+                  <sc-if value="{{sw.open_sun.off}}" hint-placeholder-val="{{ false }}"><span style="font-weight: 700; color: #6B4A61">Closed all day</span></sc-if>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section aria-labelledby="special-h" style="box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 4px 0 #26121F; padding: 22px 24px 24px">
+          <h2 id="special-h" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; color: #26121F">Special days &amp; closures</h2>
+          <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61">Holidays, private events or anything that changes your usual hours. They override the regular hours on that day.</p>
+          <sc-if value="{{noSpecials}}" hint-placeholder-val="{{ true }}">
+            <p style="margin: 14px 0 0; padding: 14px 16px; border-radius: 14px; background: #FBF1F8; border: 2.5px dashed #C56CB0; font-weight: 700">Nothing coming up.</p>
+          </sc-if>
+          <sc-if value="{{hasSpecials}}" hint-placeholder-val="{{ false }}">
+            <ul style="list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+              <sc-for list="{{specials}}" as="x" hint-placeholder-count="2">
+                <li style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 14px; background: #EFFBFC">
+                  <strong style="min-width: 110px">{{x.dateText}}</strong>
+                  <span style="flex: 1 1 160px">{{x.label}}</span>
+                  <span style="font-size: 14px; font-weight: 800; color: #6B4A61">{{x.status}}</span>
+                  <button type="button" onClick="{{x.remove}}" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; box-sizing: border-box; font-weight: 800; font-size: 15px; color: #26121F; background: #FFFFFF; padding: 8px 14px; border: 2.5px solid #26121F; border-radius: 12px; cursor: pointer; text-decoration: none">Remove</button>
+                </li>
+              </sc-for>
+            </ul>
+          </sc-if>
+          <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px 14px; margin-top: 4px">
+            <div style="flex: 0 1 190px"><label for="sp-date" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Date</label><input id="sp-date" type="date" value="{{f.sp_date}}" onChange="{{on.sp_date}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3"></div>
+            <div style="flex: 1 1 220px; min-width: 0"><label for="sp-label" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">What’s happening</label><input id="sp-label" type="text" value="{{f.sp_label}}" onChange="{{on.sp_label}}" placeholder="e.g. Closed for a private event" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3"></div>
+            <button type="button" role="switch" aria-checked="{{sw.sp_closed.aria}}" aria-label="Closed all day" onClick="{{sw.sp_closed.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.sp_closed.track}}"><span style="position: absolute; top: 2px; left: {{sw.sp_closed.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>Closed all day</button>
+            <button type="button" onClick="{{addSpecial}}" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; box-sizing: border-box; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 22px; padding: 8px 22px; border: 3px solid #26121F; border-radius: 14px; box-shadow: 0 4px 0 #26121F; cursor: pointer; text-decoration: none; color: #26121F; background: #83EDF8">Add</button>
+          </div>
+        </section>
+      </div>
+      <div style="flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+        <section aria-labelledby="notices-h" style="box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 4px 0 #26121F; padding: 22px 24px 24px">
+          <h2 id="notices-h" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; color: #26121F"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9E4C92" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M3 10v4h3l7 4V6L6 10z"></path><path d="M17 9a4 4 0 0 1 0 6"></path></svg>Notices</h2>
+          <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61; margin-bottom: 8px">These show as stickers in “News &amp; nice words” on the home page.</p>
+        <div style="padding: 16px 0; border-top: 2px solid #EFE2EC">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 14px">
+            <h3 style="margin: 0; font-weight: 900; font-size: 18px">Holiday specials</h3>
+            <button type="button" role="switch" aria-checked="{{sw.show_holiday.aria}}" aria-label="Show Holiday specials on the website" onClick="{{sw.show_holiday.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.show_holiday.track}}"><span style="position: absolute; top: 2px; left: {{sw.show_holiday.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>{{sw.show_holiday.word}}</button>
+          </div>
+          <label for="n-holiday" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Message</label>
+          <textarea id="n-holiday" rows="3" value="{{f.holiday}}" onChange="{{on.holiday}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; resize: vertical"></textarea>
+          <label for="n-next" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Next up</label>
+          <input id="n-next" type="text" value="{{f.nextup}}" onChange="{{on.nextup}}" placeholder="e.g. Valentine’s Day, February 14" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+        </div>
+        <div style="padding: 16px 0; border-top: 2px solid #EFE2EC">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 14px">
+            <h3 style="margin: 0; font-weight: 900; font-size: 18px">Private events</h3>
+            <button type="button" role="switch" aria-checked="{{sw.show_events.aria}}" aria-label="Show Private events on the website" onClick="{{sw.show_events.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.show_events.track}}"><span style="position: absolute; top: 2px; left: {{sw.show_events.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>{{sw.show_events.word}}</button>
+          </div>
+          <label for="n-events" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Message</label>
+          <textarea id="n-events" rows="3" value="{{f.events}}" onChange="{{on.events}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; resize: vertical"></textarea>
+        </div>
+        <div style="padding: 16px 0; border-top: 2px solid #EFE2EC">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 14px">
+            <h3 style="margin: 0; font-weight: 900; font-size: 18px">Patio</h3>
+            <button type="button" role="switch" aria-checked="{{sw.patio_open.aria}}" aria-label="Show Patio on the website" onClick="{{sw.patio_open.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.patio_open.track}}"><span style="position: absolute; top: 2px; left: {{sw.patio_open.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>{{sw.patio_open.openWord}}</button>
+          </div>
+          <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61">Turn this on when the patio opens for the season.</p>
+        </div>
+        </section>
+        <section aria-labelledby="contact-h" style="box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 4px 0 #26121F; padding: 22px 24px 24px">
+          <h2 id="contact-h" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; color: #26121F"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9E4C92" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg>Contact &amp; links</h2>
+        <label for="c-phone" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Phone</label>
+        <input id="c-phone" type="tel" value="{{f.phone}}" onChange="{{on.phone}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+        <label for="c-email" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Email</label>
+        <input id="c-email" type="email" value="{{f.email}}" onChange="{{on.email}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+        <label for="c-insta" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Instagram</label>
+        <input id="c-insta" type="text" value="{{f.instagram}}" onChange="{{on.instagram}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+        <label for="c-fb" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Facebook</label>
+        <input id="c-fb" type="text" value="{{f.facebook}}" onChange="{{on.facebook}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+        <label for="c-address" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Address</label>
+        <input id="c-address" type="text" value="{{f.address}}" onChange="{{on.address}}" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1500}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      f: {
+        t_mon_a: '', t_mon_b: '',
+        t_tue_a: '11:00', t_tue_b: '16:00',
+        t_wed_a: '11:00', t_wed_b: '16:00',
+        t_thu_a: '11:00', t_thu_b: '16:00',
+        t_fri_a: '11:00', t_fri_b: '14:30', t_fri_c: '16:30', t_fri_d: '19:00',
+        t_sat_a: '11:00', t_sat_b: '16:00',
+        t_sun_a: '', t_sun_b: '',
+        sp_date: '', sp_label: '',
+        holiday: 'We cook up something special for Valentine’s Day and other holidays through the year.',
+        nextup: '',
+        events: 'Planning a party or a work lunch? Send us a message on Instagram to book a private event.',
+        phone: '343-202-9665',
+        email: 'wichescauldron@gmail.com',
+        instagram: 'instagram.com/wichescauldron',
+        facebook: 'facebook.com/wichescauldronotown',
+        address: '2006 Carp Road, Carp (Ottawa), ON K0A 1L0'
+      },
+      s: {
+        open_mon: false, open_tue: true, open_wed: true, open_thu: true, open_fri: true, open_sat: true, open_sun: false,
+        show_holiday: true, show_events: true, patio_open: false, sp_closed: true
+      },
+      specials: [],
+      dirty: false,
+      toast: false
+    };
+  }
+
+  change(patch) {
+    this.setState(Object.assign({}, patch, { dirty: true, toast: false }));
+  }
+  fieldHandlers() {
+    const on = {};
+    Object.keys(this.state.f).forEach((k) => {
+      on[k] = (e) => this.change({ f: Object.assign({}, this.state.f, { [k]: e.target.value }) });
+    });
+    return on;
+  }
+  switches() {
+    const sw = {};
+    Object.keys(this.state.s).forEach((k) => {
+      const v = !!this.state.s[k];
+      sw[k] = {
+        on: v,
+        off: !v,
+        openWord: v ? 'Open' : 'Closed',
+        aria: v ? 'true' : 'false',
+        track: v ? '#9E4C92' : '#E9DCE6',
+        knob: v ? '26px' : '2px',
+        chip: v ? '#83EDF8' : '#FFFFFF',
+        word: v ? 'Showing' : 'Hidden',
+        toggle: () => this.change({ s: Object.assign({}, this.state.s, { [k]: !this.state.s[k] }) })
+      };
+    });
+    return sw;
+  }
+  statusVals(toastText, toastHref) {
+    const dirty = this.state.dirty;
+    return {
+      statusText: dirty ? 'Changes not published yet' : 'Live on the website',
+      statusBg: dirty ? '#FFE7A8' : '#D9F2B3',
+      statusDot: dirty ? '#F7941D' : '#3F7A17',
+      toast: this.state.toast,
+      toastText: toastText,
+      toastHref: toastHref,
+      publish: () => this.setState({ dirty: false, toast: true })
+    };
+  }
+  photoPicker(key) {
+    return (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      const photos = Object.assign({}, this.state.photos, { [key]: { url: URL.createObjectURL(file), name: file.name } });
+      this.change({ photos });
+    };
+  }
+
+  renderVals() {
+    const fmtDate = (d) => {
+      if (!d) return 'Date to be set';
+      try { return new Date(d + 'T12:00:00').toLocaleDateString('en-CA', { weekday: 'short', month: 'short', day: 'numeric' }); }
+      catch (e) { return d; }
+    };
+    const addSpecial = () => {
+      const f = this.state.f;
+      if (!f.sp_date && !(f.sp_label || '').trim()) return;
+      this.change({
+        specials: this.state.specials.concat([{ date: f.sp_date, label: (f.sp_label || '').trim() || 'Special hours', closed: !!this.state.s.sp_closed }]),
+        f: Object.assign({}, f, { sp_date: '', sp_label: '' })
+      });
+    };
+    const specials = this.state.specials.map((x, i) => ({
+      dateText: fmtDate(x.date),
+      label: x.label,
+      status: x.closed ? 'Closed all day' : 'Special hours',
+      remove: () => this.change({ specials: this.state.specials.filter((_, j) => j !== i) })
+    }));
+    return Object.assign({
+      f: this.state.f, on: this.fieldHandlers(), sw: this.switches(),
+      specials: specials, hasSpecials: specials.length > 0, noSpecials: specials.length === 0,
+      addSpecial: addSpecial
+    }, this.statusVals('Published! Your hours and notices are up to date.', 'Main.dc.html'));
+  }
+}
+</script>
+</body>
+</html>

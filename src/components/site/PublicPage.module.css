@@ -1,0 +1,10 @@
+.page {
+  font-family: var(--font-body);
+  color: var(--ink);
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+.page main:focus {
+  outline: none;
+}

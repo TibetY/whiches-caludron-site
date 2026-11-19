@@ -1,0 +1,153 @@
+.greeting {
+  display: none;
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-3);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 24px;
+}
+
+.titles {
+  min-width: 0;
+}
+
+/* On phones the title lives in the top bar; keep the h1 for screen readers. */
+.title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  font-size: clamp(36px, 3.6vw, 48px);
+  line-height: 1.08;
+}
+
+.description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--text-3);
+}
+
+.hideOnPhone {
+  display: none;
+}
+
+/* Nothing visible on phones: cancel the gap the empty header would leave. */
+.collapseOnPhone {
+  margin-bottom: -16px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 14px;
+}
+
+/* Status pill and Publish: on phones they live in the top and bottom bars instead. */
+.wideOnly {
+  display: none !important;
+}
+
+/* The toast’s wording differs between the phone and desktop artboards. */
+.wideText {
+  display: none;
+}
+
+/* ---------- publish toast ---------- */
+
+.toast {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  background: var(--ok-bg);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.toastIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.toastLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  box-sizing: border-box;
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--white);
+  padding: 8px 14px;
+  border: 2.5px solid var(--ink);
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .greeting {
+    display: block;
+  }
+
+  .title {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  .description {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
+  .hideOnPhone {
+    display: block;
+  }
+
+  .collapseOnPhone {
+    margin-bottom: 0;
+  }
+
+  .wideOnly {
+    display: inline-flex !important;
+  }
+
+  .wideText {
+    display: inline;
+  }
+
+  .phoneText {
+    display: none;
+  }
+
+  .toast {
+    gap: 10px 16px;
+    border-radius: 16px;
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+
+  .toastIcon {
+    width: 24px;
+    height: 24px;
+  }
+}

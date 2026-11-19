@@ -1,0 +1,46 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2.5px solid var(--ink);
+  background: var(--ok-bg);
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.dot {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: var(--open);
+}
+
+.dirty {
+  background: var(--warn-bg);
+}
+
+.dirty .dot {
+  background: var(--warn-dot);
+}
+
+/* The phone top bar */
+.compact {
+  gap: 6px;
+  min-height: 0;
+  padding: 4px 10px;
+  border-width: 2px;
+  font-size: 12px;
+}
+
+.compact .dot {
+  width: 8px;
+  height: 8px;
+  border-width: 1.5px;
+}

@@ -1,0 +1,325 @@
+/*
+ * Today’s brew. Phones follow design/Admin-Phone.dc.html; from 600px design/Admin-Today.dc.html.
+ */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.form {
+  flex: 3 1 520px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.previewColumn {
+  flex: 2 1 340px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Text that differs between the phone and desktop artboards */
+.wide {
+  display: none;
+}
+
+.firstLabel {
+  margin-top: 8px;
+}
+
+.picks {
+  margin-top: 10px;
+}
+
+.sammieRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 16px;
+}
+
+.sammieDesc {
+  flex: 3 1 260px;
+  min-width: 0;
+}
+
+.sammiePrice {
+  flex: 1 1 140px;
+  min-width: 0;
+}
+
+.priceField {
+  width: 150px;
+}
+
+.treats {
+  margin-top: 10px;
+}
+
+.chipIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.addRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px 12px;
+}
+
+.addField {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+/* Door sign: three-way segmented radio group */
+.segmented {
+  display: flex;
+  margin-top: 10px;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.segment {
+  flex: 1 1 0;
+  min-height: 48px;
+  padding: 8px 4px;
+  border: none;
+  border-left: 2.5px solid var(--ink);
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-weight: 800;
+  font-size: 14.5px;
+  cursor: pointer;
+}
+
+.segment:first-child {
+  border-left: none;
+}
+
+.segment[aria-checked='true'] {
+  background: var(--purple);
+  color: var(--cream-warm);
+}
+
+/* The group clips its children, so draw the focus ring inside. */
+.segment:focus-visible {
+  outline-offset: -6px;
+}
+
+.doorHelp {
+  margin-top: 8px;
+}
+
+.optional {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-3);
+}
+
+/* Photo of the day */
+.photoRow {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 18px;
+}
+
+.photoThumb {
+  width: 150px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid var(--ink);
+  background: var(--pink-soft);
+}
+
+.photoMeta {
+  min-width: 0;
+}
+
+.photoName {
+  margin: 0;
+  font-weight: 800;
+  word-break: break-all;
+}
+
+.removePhoto {
+  margin-top: 10px;
+}
+
+.drop {
+  margin-top: 14px;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.dropText {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Live preview */
+.preview {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.miniRibbon {
+  background: var(--aqua);
+  border: 2.5px solid var(--ink);
+  padding: 0 20px 4px;
+  transform: rotate(-1.5deg);
+}
+
+.miniRibbonText {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--purple);
+  text-shadow: var(--outline-1);
+}
+
+.previewNote {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--flame-yellow);
+  border: 2.5px solid var(--ink);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.previewPhoto {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  box-sizing: border-box;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid var(--ink);
+}
+
+.previewDoor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 12px;
+  font-weight: 800;
+}
+
+.previewSign {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.1;
+  padding: 2px 14px 4px;
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  background: var(--white);
+}
+
+.signOpen {
+  color: var(--open);
+}
+
+.signClosed {
+  color: var(--closed);
+}
+
+.previewSignNote {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text-3);
+}
+
+@media (min-width: 600px) {
+  .page,
+  .columns {
+    gap: 24px;
+  }
+
+  .form {
+    gap: 22px;
+  }
+
+  .wide {
+    display: revert;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .firstLabel {
+    margin-top: 16px;
+  }
+
+  .picks {
+    margin-top: 8px;
+  }
+
+  .priceField {
+    width: 100%;
+  }
+
+  .treats {
+    margin-top: 12px;
+  }
+
+  .chipIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .segmented {
+    margin-top: 12px;
+  }
+
+  .segment {
+    padding: 10px 8px;
+    font-size: 16px;
+  }
+
+  .doorHelp {
+    margin-top: 10px;
+  }
+}
+
+/* Keep the preview in view while scrolling the long form */
+@media (min-width: 900px) {
+  .previewColumn {
+    position: sticky;
+    top: 24px;
+  }
+}

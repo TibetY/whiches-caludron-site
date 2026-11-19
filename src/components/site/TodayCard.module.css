@@ -1,0 +1,119 @@
+.card {
+  color: var(--ink);
+  background: var(--white);
+  border: 3px solid var(--ink);
+}
+
+/* Home page: Main.dc.html */
+.full {
+  border-radius: 24px;
+  box-shadow: var(--sticker-shadow);
+  padding: 22px 20px;
+  transform: rotate(1.5deg);
+}
+
+/* Dashboard preview: Admin-Today.dc.html */
+.preview {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 22px;
+  box-shadow:
+    0 0 0 8px var(--white),
+    0 12px 20px 6px rgba(38, 18, 31, 0.18);
+  padding: 20px 22px;
+  margin: 8px 0;
+  transform: rotate(1deg);
+}
+
+.list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.preview .list {
+  gap: 16px;
+}
+
+.label {
+  font-family: var(--font-display);
+  font-size: 23px;
+  line-height: 1.1;
+  color: var(--purple);
+}
+
+.preview .label {
+  font-size: 19px;
+  line-height: normal;
+}
+
+.value {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.preview .value {
+  gap: 4px 10px;
+  font-size: 29px;
+}
+
+.struck {
+  text-decoration: line-through;
+}
+
+/* 22px beside a 29px name in the preview; scales with the card */
+.price {
+  font-size: 0.76em;
+  line-height: normal;
+  color: var(--text-2);
+}
+
+.soldOut {
+  display: inline-block;
+  font-size: 0.585em;
+  line-height: normal;
+  color: var(--white);
+  background: var(--closed);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 1px 10px 3px;
+  transform: rotate(-4deg);
+}
+
+.full .soldOut {
+  border-width: 2.5px;
+  padding: 1px 12px 4px;
+}
+
+.description {
+  flex-basis: 100%;
+  margin-top: 4px;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.preview .description {
+  margin-top: 0;
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: normal;
+}
+
+@media (min-width: 600px) {
+  .full {
+    padding: 28px 30px;
+  }
+
+  .full .value {
+    font-size: 36px;
+  }
+}

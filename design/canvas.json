@@ -1,0 +1,111 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 6000,
+      "title": "Home page",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "Menu.dc.html": {
+      "expand": "fill",
+      "h": 2800,
+      "title": "Menu page",
+      "w": 1440,
+      "x": 1520,
+      "y": 0
+    },
+    "Admin-Today.dc.html": {
+      "page": "dashboard",
+      "expand": "fill",
+      "is_interactive": true,
+      "h": 1900,
+      "title": "Dashboard — Today’s brew",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "Admin-Menu.dc.html": {
+      "page": "dashboard",
+      "expand": "fill",
+      "is_interactive": true,
+      "h": 1700,
+      "title": "Dashboard — Menu & prices",
+      "w": 1440,
+      "x": 1520,
+      "y": 0
+    },
+    "Admin-Photos.dc.html": {
+      "page": "dashboard",
+      "expand": "fill",
+      "is_interactive": true,
+      "h": 1700,
+      "title": "Dashboard — Photos",
+      "w": 1440,
+      "x": 3040,
+      "y": 0
+    },
+    "Admin-Hours.dc.html": {
+      "page": "dashboard",
+      "expand": "fill",
+      "is_interactive": true,
+      "h": 1500,
+      "title": "Dashboard — Hours & notices",
+      "w": 1440,
+      "x": 4560,
+      "y": 0
+    },
+    "Admin-Phone.dc.html": {
+      "page": "dashboard",
+      "is_interactive": true,
+      "h": 844,
+      "title": "Dashboard on a phone — Today’s brew",
+      "w": 390,
+      "x": 6080,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-19T17:40:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "title": {
+      "kind": "title1",
+      "maxW": 2960,
+      "text": "Wiches Cauldron Sandwich Shoppe — website",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "dashTitle": {
+      "kind": "title1",
+      "maxW": 6470,
+      "page": "dashboard",
+      "text": "Shop dashboard — where the owners update the website",
+      "x": 0,
+      "y": -300
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Menu.dc.html",
+    "Admin-Today.dc.html",
+    "Admin-Menu.dc.html",
+    "Admin-Photos.dc.html",
+    "Admin-Hours.dc.html",
+    "Admin-Phone.dc.html"
+  ],
+  "pages": [
+    { "id": "website", "name": "Website" },
+    { "id": "dashboard", "name": "Shop dashboard" }
+  ],
+  "title": "Wiches Cauldron — Website Design"
+}

@@ -1,0 +1,95 @@
+/*
+ * Design tokens for ’Wiches Cauldron (see docs/DESIGN.md).
+ * Values are copied from the approved artboards in design/.
+ */
+:root {
+  /* ink and paper */
+  --ink: #26121f;
+  --cream: #fcf6ec;
+  --cream-warm: #fff8ef;
+  --paper: #fffdf8;
+  --white: #ffffff;
+  --text-2: #5a3550;
+  --text-3: #6b4a61;
+  --link: #7c2a6c;
+  --blush: #f6e6f3;
+
+  /* purples */
+  --purple: #9e4c92;
+  --purple-deep: #5e2159;
+  --purple-awning: #a13c9b;
+  --orchid: #c56cb0;
+  --orchid-light: #d38fc3;
+  --lavender: #f3e1ef;
+  --swirl-1: #6a2564;
+  --swirl-2: #742b6e;
+  --swirl-3: #7e3178;
+  --swirl-ring: #8e3a88;
+
+  /* aquas */
+  --aqua: #83edf8;
+  --teal: #2ec4ce;
+  --aqua-pale: #ddf6f8;
+  --aqua-wash: #effbfc;
+
+  /* potion, fire, bread */
+  --lime: #b8e06a;
+  --potion: #8cc63f;
+  --leaf: #4e8a1e;
+  --flame: #e32b2c;
+  --flame-orange: #f7941d;
+  --flame-yellow: #ffd23f;
+  --toast: #fed292;
+  --crust: #e0a85c;
+  --grey-pot: #aca7a1;
+  --grey-pot-dark: #8c8782;
+
+  /* status */
+  --open: #3f7a17;
+  --closed: #c42222;
+  --ok-bg: #d9f2b3;
+  --warn-bg: #ffe7a8;
+  --warn-dot: #f7941d;
+  --focus: #2ec4ce;
+
+  /* dashboard surfaces */
+  --pink-wash: #fbf1f8;
+  --pink-soft: #f1ddec;
+  --rule: #efe2ec;
+  --rule-menu: #ead3e4;
+  --switch-off: #e9dce6;
+  --placeholder: #8a6f82;
+
+  /* type */
+  --font-display: Chewy, 'Comic Sans MS', cursive;
+  --font-body: Literata, Georgia, serif;
+  --font-hand: Caveat, 'Bradley Hand', cursive;
+  --font-ui: Nunito, 'Trebuchet MS', sans-serif;
+
+  /* outlined lettering, like the logo */
+  --outline-1:
+    1.5px 0 0 var(--ink), -1.5px 0 0 var(--ink), 0 1.5px 0 var(--ink), 0 -1.5px 0 var(--ink),
+    1px 1px 0 var(--ink), -1px -1px 0 var(--ink), 1px -1px 0 var(--ink), -1px 1px 0 var(--ink),
+    2px 2px 0 var(--ink);
+  --outline-2:
+    2px 0 0 var(--ink), -2px 0 0 var(--ink), 0 2px 0 var(--ink), 0 -2px 0 var(--ink),
+    1.5px 1.5px 0 var(--ink), -1.5px -1.5px 0 var(--ink), 1.5px -1.5px 0 var(--ink),
+    -1.5px 1.5px 0 var(--ink), 3px 4px 0 var(--ink);
+  --outline-3:
+    3px 0 0 var(--ink), -3px 0 0 var(--ink), 0 3px 0 var(--ink), 0 -3px 0 var(--ink),
+    2.2px 2.2px 0 var(--ink), -2.2px -2.2px 0 var(--ink), 2.2px -2.2px 0 var(--ink),
+    -2.2px 2.2px 0 var(--ink), 5px 6px 0 var(--ink);
+
+  /* stickers */
+  --sticker-shadow: 0 0 0 10px var(--white), 0 16px 26px 8px rgba(38, 18, 31, 0.22);
+  --sticker-shadow-deep: 0 0 0 10px var(--white), 0 18px 26px 6px rgba(15, 4, 14, 0.45);
+
+  /* layout: mobile-first side gutter for the public pages */
+  --gutter: 18px;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --gutter: 32px;
+  }
+}

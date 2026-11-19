@@ -1,0 +1,13 @@
+node_modules
+dist
+dist-ssr
+coverage
+*.local
+*.log
+.DS_Store
+.vite
+.vscode/*
+!.vscode/extensions.json
+
+# The original handoff archive. Its contents are unpacked into this repo.
+*.zip

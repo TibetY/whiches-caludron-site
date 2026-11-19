@@ -1,0 +1,248 @@
+/* Hours & notices (design/Admin-Hours.dc.html), mobile first. */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.main {
+  flex: 3 1 560px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.side {
+  flex: 2 1 340px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Weekly hours: scrolls inside its own box on small screens */
+.tableScroll {
+  /* contain absolutely positioned screen-reader text so it scrolls with the table */
+  position: relative;
+  overflow-x: auto;
+  margin-top: 8px;
+}
+
+.table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  padding: 10px;
+}
+
+.row {
+  border-top: 2px solid var(--rule);
+}
+
+/* The day and switch columns shrink to fit; the times take the rest. */
+.dayCell,
+.switchCell {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.dayCell {
+  text-align: left;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.ranges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.time {
+  width: 150px;
+}
+
+.to {
+  font-weight: 700;
+}
+
+.breakWord {
+  padding: 0 4px;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--text-3);
+}
+
+.range {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+/* + / − : add or remove a midday break */
+.breakButton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 2.5px solid var(--ink);
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+/* a 44px touch target around the 36px circle */
+.breakButton::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+}
+
+.closedAllDay {
+  font-weight: 700;
+  color: var(--text-3);
+}
+
+/* Special days */
+.nothing {
+  margin: 14px 0 0;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--pink-wash);
+  border: 2.5px dashed var(--orchid);
+  font-weight: 700;
+}
+
+.specials {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.special {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  padding: 12px 14px;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  background: var(--aqua-wash);
+}
+
+.past {
+  background: var(--white);
+}
+
+.specialDate {
+  min-width: 110px;
+}
+
+.specialLabel {
+  flex: 1 1 160px;
+}
+
+.specialStatus {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text-3);
+}
+
+.addSpecial {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px 14px;
+  margin-top: 4px;
+}
+
+.dateField {
+  flex: 1 1 190px;
+}
+
+.labelField {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.specialTimes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Notices */
+.notice {
+  padding: 16px 0;
+  border-top: 2px solid var(--rule);
+}
+
+.notice:first-of-type {
+  margin-top: 8px;
+}
+
+.notice:last-child {
+  padding-bottom: 0;
+}
+
+.noticeHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 14px;
+}
+
+.noticeTitle {
+  margin: 0;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+@media (min-width: 600px) {
+  .page,
+  .main,
+  .side {
+    gap: 22px;
+  }
+
+  .columns {
+    gap: 24px;
+  }
+
+  .dateField {
+    flex: 0 1 190px;
+  }
+}
+
+/* Wide screens: the notices column keeps a steady width so the hours table fits. */
+@media (min-width: 1100px) {
+  .side {
+    flex: 0 1 360px;
+  }
+}

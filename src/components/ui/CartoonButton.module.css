@@ -1,0 +1,81 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  box-sizing: border-box;
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid var(--ink);
+  cursor: pointer;
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.08s ease;
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.primary {
+  color: var(--cream-warm);
+  background: var(--purple);
+}
+
+.secondary {
+  color: var(--ink);
+  background: var(--aqua);
+}
+
+.tertiary {
+  color: var(--ink);
+  background: var(--cream-warm);
+}
+
+/* dashboard secondary actions (upload, view the website) */
+.sm {
+  font-size: 19px;
+  padding: 8px 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 0 var(--ink);
+}
+
+/* dashboard primary actions */
+.md {
+  font-size: 22px;
+  padding: 8px 22px;
+  border-radius: 14px;
+  box-shadow: 0 4px 0 var(--ink);
+}
+
+/* website buttons */
+.lg {
+  font-size: 23px;
+  padding: 10px 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 0 var(--ink);
+}
+
+/* website hero buttons */
+.xl {
+  font-size: 24px;
+  padding: 11px 22px;
+  border-radius: 16px;
+  box-shadow: 0 5px 0 var(--ink);
+}
+
+@media (min-width: 600px) {
+  .lg {
+    font-size: 25px;
+    padding: 11px 24px;
+  }
+
+  .xl {
+    font-size: 27px;
+    padding: 12px 28px;
+  }
+}

@@ -1,0 +1,1132 @@
+/*
+ * Home page (design/Main.dc.html). Mobile first: the base rules are for phones,
+ * and from 900px every value matches the 1440px artboard.
+ */
+
+/* ---------- hero ---------- */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--purple-deep);
+  color: var(--cream-warm);
+  padding: 44px var(--gutter) 132px;
+}
+
+.heroInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px 56px;
+  align-items: center;
+}
+
+.heroCopy {
+  flex: 1 1 520px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.heroTag {
+  align-self: flex-start;
+  margin: 0 36px;
+  --tilt: -2deg;
+  --tail-w: 46px;
+  --tail-x: -35px;
+  --tail-y: 10px;
+}
+
+.heroTagBand {
+  padding: 4px 16px 6px;
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.heroTitle {
+  font-size: clamp(44px, 12vw, 58px);
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.heroTitle span {
+  color: var(--aqua);
+}
+
+.heroLede {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 32em;
+  color: var(--blush);
+}
+
+.heroCtas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 16px;
+  margin-top: 4px;
+}
+
+.heroHand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+  text-wrap: balance;
+  font-family: var(--font-hand);
+  font-size: 26px;
+  color: var(--blush);
+}
+
+.heroArt {
+  flex: 1 1 380px;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.heroBubbles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.heroLogo {
+  position: relative;
+  display: block;
+  width: min(100%, 270px);
+  height: auto;
+  transform: rotate(-4deg);
+  filter: drop-shadow(0 18px 22px rgba(10, 0, 10, 0.45));
+}
+
+/* ---------- hours ribbon ---------- */
+
+.hoursSection {
+  position: relative;
+  z-index: 2;
+  padding: 0 40px;
+  margin-top: -92px;
+}
+
+.hoursRibbon {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  --tilt: -1deg;
+  --tail-w: 44px;
+  --tail-x: -34px;
+  --tail-y: 18px;
+}
+
+.hoursBand {
+  padding: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px 30px;
+  text-align: center;
+}
+
+.hoursBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.hoursBig {
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 1.15;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.hoursSmall {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.hoursDot {
+  display: none;
+}
+
+/* ---------- today’s brew ---------- */
+
+.today {
+  padding: 64px var(--gutter) 72px;
+}
+
+.todayInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.todayRibbon {
+  margin: 0 44px;
+  --tail-w: 54px;
+  --tail-x: -42px;
+  --tail-y: 14px;
+}
+
+.todayRibbonBand {
+  padding: 4px 24px 8px;
+}
+
+.todayTitle {
+  font-size: clamp(38px, 10.5vw, 44px);
+  line-height: 1.1;
+}
+
+.note {
+  margin: 0;
+  width: 100%;
+  max-width: 720px;
+  box-sizing: border-box;
+  background: var(--flame-yellow);
+  border: 3px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 0 4px 0 var(--ink);
+  padding: 12px 18px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+  transform: rotate(-1deg);
+}
+
+.todayRow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 64px;
+  align-items: center;
+  justify-content: center;
+}
+
+.todayArt {
+  flex: 1 1 400px;
+  min-width: 0;
+  max-width: 520px;
+}
+
+.illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.todayPhoto {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  box-sizing: border-box;
+  object-fit: cover;
+  background: var(--white);
+  border: 3px solid var(--ink);
+  border-radius: 20px;
+  box-shadow: var(--sticker-shadow);
+  transform: rotate(-2deg);
+}
+
+.todayCardCol {
+  flex: 1 1 360px;
+  min-width: 0;
+  max-width: 500px;
+}
+
+.todayFoot {
+  margin: 20px 0 0;
+  padding-top: 16px;
+  border-top: 3px dotted var(--orchid);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+/* ---------- the trucker ---------- */
+
+.trucker {
+  position: relative;
+  background: var(--aqua-pale);
+  padding: 72px var(--gutter) 88px;
+}
+
+.truckerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 60px;
+  align-items: center;
+}
+
+.truckerArt {
+  flex: 1 1 560px;
+  min-width: 0;
+}
+
+.truckerCopy {
+  flex: 1 1 380px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.truckerAside {
+  margin: 0;
+  font-family: var(--font-hand);
+  font-size: 28px;
+  line-height: 1;
+  color: var(--text-2);
+  transform: rotate(-2deg);
+  transform-origin: left center;
+}
+
+.truckerTitle {
+  font-size: clamp(50px, 14vw, 64px);
+  line-height: 0.95;
+}
+
+.truckerBody {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.truckerRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px 26px;
+  margin-top: 6px;
+}
+
+.priceSticker {
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 1;
+  background: var(--white);
+  border: 3px solid var(--ink);
+  border-radius: 16px;
+  box-shadow:
+    0 0 0 8px var(--white),
+    0 12px 18px 6px rgba(38, 18, 31, 0.22);
+  padding: 12px 22px;
+  transform: rotate(-4deg);
+}
+
+.truckerTweak {
+  margin: 6px 0 0;
+  font-family: var(--font-hand);
+  font-size: 25px;
+  line-height: 1.15;
+  color: var(--text-2);
+}
+
+/* ---------- soups ---------- */
+
+.soups {
+  padding: 64px var(--gutter) 80px;
+}
+
+.soupsInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 72px;
+  align-items: center;
+}
+
+.soupsCopy {
+  flex: 1 1 480px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.soupsTitle {
+  font-size: clamp(38px, 10.5vw, 48px);
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.soupsLede {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+.favourites {
+  --tilt: -1.5deg;
+  padding: 22px 20px 20px;
+  margin: 10px 10px 0;
+}
+
+.favouritesTitle {
+  margin: 0 0 12px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 26px;
+  color: var(--purple);
+}
+
+.soupList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+.soupList li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.soupList .soupOfTheDay {
+  color: var(--purple);
+}
+
+.soupPrices {
+  margin: 16px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 26px;
+  font-size: 18px;
+}
+
+.soupsArt {
+  flex: 1 1 400px;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.soupBowl {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+/* ---------- news & nice words ---------- */
+
+.wall {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--purple-deep);
+  color: var(--cream-warm);
+  padding: 100px var(--gutter) 116px;
+}
+
+.wallInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wallHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 20px;
+  margin-bottom: 44px;
+}
+
+.wallTitle {
+  font-size: clamp(38px, 10.5vw, 48px);
+  line-height: 1.05;
+}
+
+.wallSub {
+  margin: 0;
+  font-family: var(--font-hand);
+  font-size: 27px;
+  color: var(--aqua);
+}
+
+/*
+ * Flex rather than the artboard's grid so that a lone sticker on the last row sits in the
+ * middle. Column widths match the grid's repeat(auto-fit, minmax(260px, 1fr)) with a 48px gap.
+ */
+.wallGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px 48px;
+  padding: 0 10px;
+}
+
+.wallGrid > * {
+  flex: 0 1 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.patioSticker,
+.holidaySticker,
+.eventsSticker {
+  position: relative;
+}
+
+.patioSticker {
+  --tilt: -3deg;
+  padding: 26px 24px 24px;
+}
+
+.patioSun {
+  position: absolute;
+  top: -30px;
+  right: 12px;
+}
+
+.holidaySticker {
+  --tilt: 2deg;
+  padding: 26px 24px 22px;
+}
+
+.holidayHeart {
+  position: absolute;
+  top: -24px;
+  left: 18px;
+}
+
+.eventsSticker {
+  --tilt: 1.5deg;
+  padding: 26px 24px 22px;
+}
+
+.eventsEnvelope {
+  position: absolute;
+  top: -26px;
+  right: 16px;
+}
+
+.stickerTitle {
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 1.1;
+}
+
+.stickerText {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.nextUp {
+  margin: 10px 0 0;
+  font-family: var(--font-hand);
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.patioPhoto {
+  --tilt: 3deg;
+  --radius: 20px;
+  margin: 0;
+  padding: 12px 12px 14px;
+}
+
+.wallPhotoImg,
+.wallPhotoPlaceholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: var(--pink-soft);
+  object-fit: cover;
+}
+
+.wallPhotoPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 14px;
+  text-align: center;
+  font-family: var(--font-hand);
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.photoCaption {
+  margin-top: 8px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.quoteSticker {
+  position: relative;
+  --tilt: -1.5deg;
+  --radius: 28px;
+  margin: 0;
+  padding: 30px 26px 22px;
+}
+
+.quoteBadge {
+  position: absolute;
+  top: -22px;
+  left: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--purple);
+  border: 3px solid var(--ink);
+  color: var(--cream-warm);
+  font-family: var(--font-display);
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.quote {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 29px;
+  line-height: 1.15;
+}
+
+.quoteSource {
+  margin-top: 12px;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-2);
+}
+
+.ratingSticker {
+  --tilt: 2.5deg;
+  margin: 0;
+  padding: 26px 24px 22px;
+}
+
+.ratingQuote {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 33px;
+  line-height: 1.1;
+}
+
+.ratingSource {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.potSticker {
+  --tilt: -1deg;
+  padding: 26px 24px 22px;
+}
+
+.socialButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.socialButton {
+  font-size: 23px;
+  padding: 8px 18px;
+}
+
+/* ---------- our story ---------- */
+
+.story {
+  padding: 72px var(--gutter) 64px;
+}
+
+.storyInner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px 64px;
+  align-items: center;
+}
+
+/* A sheet of ruled notepaper with a pink margin line; text sits on the 35px rules. */
+.letter {
+  flex: 1 1 540px;
+  min-width: 0;
+  position: relative;
+  background-color: var(--white);
+  background-image:
+    linear-gradient(90deg, transparent 38px, #d38fc3 38px 41px, transparent 41px),
+    repeating-linear-gradient(180deg, transparent 0 33px, #bdeff3 33px 35px);
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  padding: 46px 18px 30px 54px;
+  transform: rotate(-1deg);
+  box-shadow: 0 16px 26px -12px rgba(38, 18, 31, 0.45);
+}
+
+.letterStamp {
+  position: absolute;
+  top: -40px;
+  right: -6px;
+  width: 84px;
+  height: auto;
+  transform: rotate(10deg);
+  filter: drop-shadow(0 6px 6px rgba(38, 18, 31, 0.35));
+}
+
+.letterHello {
+  margin: 0;
+  font-family: var(--font-hand);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 35px;
+  padding-bottom: 6px;
+}
+
+.letterText {
+  margin: 0;
+  font-size: 17px;
+  line-height: 35px;
+}
+
+.letterSign {
+  margin: 0;
+  font-family: var(--font-hand);
+  font-size: 30px;
+  line-height: 35px;
+  padding-top: 10px;
+  color: var(--link);
+}
+
+.crewCol {
+  flex: 1 1 300px;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.crew {
+  margin: 0;
+  width: min(100% - 30px, 330px);
+  background: var(--white);
+  border: 3px solid var(--ink);
+  border-radius: 20px;
+  box-shadow:
+    0 0 0 10px var(--white),
+    0 18px 26px 6px rgba(38, 18, 31, 0.25);
+  padding: 12px 12px 14px;
+  transform: rotate(4deg);
+}
+
+.crewImg,
+.crewPlaceholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: var(--aqua-pale);
+  object-fit: cover;
+}
+
+.crewPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 16px;
+  text-align: center;
+  font-family: var(--font-hand);
+  font-size: 25px;
+  line-height: 1.1;
+}
+
+.crewCaption {
+  margin-top: 8px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 25px;
+  line-height: 1;
+}
+
+/* ---------- visit ---------- */
+
+.visit {
+  padding: 32px var(--gutter) 96px;
+}
+
+.visitInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 72px;
+  align-items: flex-start;
+}
+
+.visitInfo {
+  flex: 1 1 480px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.visitTitle {
+  font-size: clamp(40px, 11vw, 50px);
+  line-height: 1;
+}
+
+.signRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 40px;
+  align-items: flex-start;
+}
+
+.visitDetails {
+  flex: 1 1 260px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.visitAddress {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.hoursList {
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+}
+
+.hoursList li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 0;
+}
+
+.leader {
+  flex: 1;
+  border-bottom: 3px dotted var(--orchid);
+}
+
+.resting {
+  margin: 0;
+  font-family: var(--font-hand);
+  font-size: 27px;
+  color: var(--text-2);
+  transform: rotate(-1.5deg);
+}
+
+.visitActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 18px;
+}
+
+.email {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.mapCol {
+  flex: 1 1 420px;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.map {
+  margin: 0;
+  width: 100%;
+  max-width: 520px;
+  background: var(--white);
+  border: 3px solid var(--ink);
+  border-radius: 22px;
+  box-shadow:
+    0 0 0 10px var(--white),
+    0 18px 26px 6px rgba(38, 18, 31, 0.25);
+  padding: 14px 14px 16px;
+  transform: rotate(-2deg);
+}
+
+.mapPlaceholder {
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  background: var(--aqua-pale);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  text-align: center;
+  font-family: var(--font-hand);
+  font-size: 27px;
+  line-height: 1.1;
+}
+
+.mapCaption {
+  margin-top: 10px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+/* ---------- tablets ---------- */
+
+@media (min-width: 600px) {
+  .heroLogo {
+    width: min(100%, 360px);
+  }
+
+  .heroCall {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .hoursSection {
+    padding: 0 72px;
+  }
+
+  .hoursRibbon {
+    --tail-w: 72px;
+    --tail-x: -56px;
+    --tail-y: 22px;
+  }
+
+  .hoursBand {
+    padding: 16px 24px;
+  }
+
+  .hoursBig {
+    font-size: 27px;
+  }
+
+  .hoursDot {
+    display: block;
+  }
+
+  .note {
+    padding: 14px 24px;
+    font-size: 19px;
+  }
+
+  .favourites {
+    padding: 26px 30px 24px;
+  }
+
+  .soupList {
+    font-size: 31px;
+  }
+
+  .letter {
+    background-image:
+      linear-gradient(90deg, transparent 58px, #d38fc3 58px 61px, transparent 61px),
+      repeating-linear-gradient(180deg, transparent 0 33px, #bdeff3 33px 35px);
+    padding: 46px 40px 36px 86px;
+  }
+
+  .letterStamp {
+    top: -48px;
+    right: -26px;
+    width: 112px;
+  }
+
+  .letterHello {
+    font-size: 42px;
+  }
+
+  .letterText {
+    font-size: 19px;
+  }
+
+  .letterSign {
+    font-size: 35px;
+  }
+}
+
+/* two stickers a row: matches minmax(260px, 1fr) once the wall is 588px wide */
+@media (min-width: 652px) {
+  .wallGrid > * {
+    flex-basis: calc((100% - 48px) / 2);
+  }
+}
+
+/* ---------- desktop: the 1440px artboard ---------- */
+
+@media (min-width: 900px) {
+  .hero {
+    padding: 72px 32px 150px;
+  }
+
+  .heroInner {
+    gap: 48px 56px;
+  }
+
+  .heroCopy {
+    gap: 26px;
+  }
+
+  .heroTag {
+    margin: 0 48px;
+    --tail-w: 58px;
+    --tail-x: -44px;
+    --tail-y: 12px;
+  }
+
+  .heroTagBand {
+    padding: 4px 22px 6px;
+    font-size: 28px;
+  }
+
+  .heroTitle {
+    font-size: clamp(54px, 6.4vw, 92px);
+  }
+
+  .heroLede {
+    font-size: 21px;
+  }
+
+  .heroCtas {
+    gap: 16px 18px;
+  }
+
+  .heroHand {
+    font-size: 29px;
+  }
+
+  .today {
+    padding: 80px 32px 88px;
+  }
+
+  .todayInner {
+    gap: 44px;
+  }
+
+  .todayRibbon {
+    margin: 0 56px;
+    --tail-w: 70px;
+    --tail-x: -54px;
+    --tail-y: 18px;
+  }
+
+  .todayRibbonBand {
+    padding: 4px 34px 10px;
+  }
+
+  .todayTitle {
+    font-size: clamp(42px, 4.6vw, 58px);
+  }
+
+  .trucker {
+    padding: 76px 32px 92px;
+  }
+
+  .truckerInner {
+    gap: 40px 60px;
+  }
+
+  .truckerAside {
+    font-size: 32px;
+  }
+
+  .truckerTitle {
+    font-size: clamp(60px, 6.6vw, 92px);
+  }
+
+  .truckerBody {
+    font-size: 20px;
+  }
+
+  .truckerTweak {
+    font-size: 28px;
+  }
+
+  .soups {
+    padding: 80px 32px 96px;
+  }
+
+  .soupsInner {
+    gap: 48px 72px;
+  }
+
+  .soupsTitle {
+    font-size: clamp(46px, 5vw, 68px);
+  }
+
+  .soupsLede {
+    font-size: 20px;
+  }
+
+  .wall {
+    padding: 120px 32px 136px;
+  }
+
+  .wallTitle {
+    font-size: clamp(46px, 5vw, 66px);
+  }
+
+  .wallSub {
+    font-size: 31px;
+  }
+
+  .story {
+    padding: 88px 32px 80px;
+  }
+
+  .visit {
+    padding: 40px 32px 112px;
+  }
+
+  .visitTitle {
+    font-size: clamp(48px, 5.2vw, 70px);
+  }
+}
+
+/* three stickers a row */
+@media (min-width: 960px) {
+  .wallGrid > * {
+    flex-basis: calc((100% - 96px) / 3);
+  }
+}

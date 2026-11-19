@@ -1,0 +1,38 @@
+.sticker {
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: var(--radius, 24px);
+  transform: rotate(var(--tilt, 0deg));
+}
+
+.soft {
+  box-shadow: var(--sticker-shadow);
+}
+
+.deep {
+  box-shadow: var(--sticker-shadow-deep);
+}
+
+.white {
+  background: var(--white);
+}
+
+.aqua {
+  background: var(--aqua);
+}
+
+.orchid {
+  background: var(--orchid);
+}
+
+.lime {
+  background: var(--lime);
+}
+
+.cream {
+  background: var(--cream-warm);
+}
+
+.yellow {
+  background: var(--flame-yellow);
+}

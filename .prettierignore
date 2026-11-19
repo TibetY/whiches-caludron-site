@@ -1,0 +1,13 @@
+# build output
+dist
+coverage
+
+# the design handoff is kept exactly as delivered
+assets
+content
+design
+docs
+CLAUDE.md
+
+package-lock.json
+*.zip

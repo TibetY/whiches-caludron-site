@@ -1,0 +1,21 @@
+.wave {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+}
+
+.top {
+  top: -1px;
+}
+
+.bottom {
+  bottom: -1px;
+}
+
+/* Recolour the filled half; CSS wins over the asset's fill attribute. */
+.wave path:first-child {
+  fill: var(--wave-fill);
+}

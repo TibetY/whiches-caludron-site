@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wiches Cauldron — Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy&amp;family=Caveat:wght@400..700&amp;family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&amp;display=swap">
+<style>
+body{margin:0;background:#5E2159}
+a{color:#7C2A6C}a:hover{color:#26121F}
+.tx-cream{background-color:#FCF6EC;background-image:url(/_blob/860f97b01752ad1d29fee55a04c27b38);background-size:512px 512px}
+</style>
+</helmet>
+<div class="tx-cream" style="font-family: Literata, Georgia, serif; color: #26121F; min-height: 100vh; overflow-x: clip">
+
+  <!-- AWNING -->
+  <div aria-hidden="true">
+    <div style="height: 50px; background: repeating-linear-gradient(90deg, {{awning}} 0 48px, #FCF6EC 48px 96px); border-bottom: 3px solid #26121F"></div>
+    <svg width="100%" height="26" style="display: block; margin-top: -3px">
+      <defs>
+        <pattern id="awnScallop" width="96" height="26" patternUnits="userSpaceOnUse">
+          <path d="M1.5 0 V3 A22.5 20 0 0 0 46.5 3 V0" fill="{{awning}}" stroke="#26121F" stroke-width="3"></path>
+          <path d="M49.5 0 V3 A22.5 20 0 0 0 94.5 3 V0" fill="#FCF6EC" stroke="#26121F" stroke-width="3"></path>
+        </pattern>
+      </defs>
+      <rect width="100%" height="26" fill="url(#awnScallop)"></rect>
+    </svg>
+  </div>
+
+  <!-- HEADER -->
+  <header style="padding: 10px 32px 14px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 28px">
+      <a href="Main.dc.html" style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 46px; line-height: 1.1; color: #9E4C92; text-decoration: none; padding: 4px 6px; text-shadow: 2px 0 0 #26121F, -2px 0 0 #26121F, 0 2px 0 #26121F, 0 -2px 0 #26121F, 1.5px 1.5px 0 #26121F, -1.5px -1.5px 0 #26121F, 1.5px -1.5px 0 #26121F, -1.5px 1.5px 0 #26121F, 3px 4px 0 #26121F">’wiches cauldron</a>
+      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 26px; font-size: 18px; font-weight: 600">
+        <a href="Menu.dc.html" style="color: #26121F; text-decoration: none; padding: 10px 2px">The menu</a>
+        <a href="#today" style="color: #26121F; text-decoration: none; padding: 10px 2px">Today’s brew</a>
+        <a href="#story" style="color: #26121F; text-decoration: none; padding: 10px 2px">Our story</a>
+        <a href="#visit" style="color: #26121F; text-decoration: none; padding: 10px 2px">Visit us</a>
+        <a href="tel:+13432029665" style="display: flex; align-items: center; gap: 8px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 22px; color: #26121F; background: #83EDF8; text-decoration: none; padding: 8px 16px; border: 3px solid #26121F; border-radius: 14px; box-shadow: 0 4px 0 #26121F">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#26121F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg>
+          343-202-9665
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO: purple swirl, like the sticker's background -->
+  <section id="top" style="position: relative; isolation: isolate; overflow: hidden; background: #5E2159; color: #FFF8EF; padding: 72px 32px 150px">
+    <svg aria-hidden="true" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1"><path d="M468.7 200 C466.9 233.9 447.3 274.4 416.8 299.5 C386.2 324.6 330.4 341.4 285.3 350.7 C240.1 360 191.9 358.9 145.9 355.3 C99.8 351.7 43.7 347.1 9.1 328.9 C-25.5 310.8 -45 276.6 -61.9 246.4 C-78.8 216.2 -105.8 175.6 -92.1 147.8 C-78.4 120 -18.8 98.7 20.5 79.6 C59.7 60.5 98.2 39.4 143.3 33 C188.3 26.6 243.6 30.7 290.9 41.2 C338.2 51.8 397.7 69.6 427.3 96.1 C456.9 122.5 470.4 166.1 468.7 200Z" fill="#6A2564"></path><path d="M1444.9 640 C1445.1 680 1482.1 727.3 1460.4 760.1 C1438.8 793 1368.4 826.9 1315.1 837.3 C1261.8 847.7 1195.9 830.2 1140.7 822.4 C1085.4 814.7 1024.5 812.1 983.8 790.9 C943.2 769.8 914.4 730.4 896.8 695.4 C879.2 660.4 866.8 617.7 878.2 580.9 C889.6 544.2 921.3 493.7 965.4 474.9 C1009.5 456 1089.5 466 1142.9 467.8 C1196.3 469.5 1233 476.8 1285.8 485.5 C1338.6 494.3 1433 494.5 1459.5 520.3 C1486 546 1444.7 600 1444.9 640Z" fill="#6A2564"></path><path d="M1012.1 120 C1015.7 143.5 1000.5 178.6 971.6 194.2 C942.7 209.8 878.2 208.9 838.4 213.7 C798.6 218.5 772.5 221.9 732.8 223 C693.2 224.1 633.8 231.5 600.5 220.4 C567.2 209.3 543.5 179 533 156.4 C522.5 133.7 522.1 104.6 537.4 84.4 C552.7 64.1 593.1 49.4 624.8 34.9 C656.5 20.4 689.3 1.8 727.6 -2.8 C765.9 -7.4 817.5 -2.3 854.5 7.1 C891.6 16.5 923.6 34.6 949.9 53.4 C976.2 72.3 1008.5 96.5 1012.1 120Z" fill="#6A2564"></path><path d="M639.9 760 C635 789.4 645.5 820.4 624.8 842.2 C604 864 555.6 878.9 515.6 890.8 C475.5 902.6 427.9 915.6 384.7 913.4 C341.5 911.3 283.7 897.4 256.5 877.9 C229.3 858.4 226.9 822 221.7 796.4 C216.6 770.8 221.6 751.3 225.6 724.3 C229.6 697.3 218.7 651.3 245.9 634.4 C273 617.5 344.2 622.8 388.5 623 C432.7 623.1 467 628 511.2 635.2 C555.5 642.3 632.5 645.2 653.9 666 C675.4 686.8 644.7 730.6 639.9 760Z" fill="#6A2564"></path><path d="M0 353.4 C6.7 355.8 26.7 363.4 40 367.7 C53.3 372 66.7 375.9 80 379.1 C93.3 382.3 106.7 384.9 120 386.7 C133.3 388.5 146.7 389.6 160 389.9 C173.3 390.2 186.7 389.7 200 388.5 C213.3 387.2 226.7 385.2 240 382.5 C253.3 379.9 266.7 376.4 280 372.5 C293.3 368.6 306.7 364 320 359.2 C333.3 354.3 346.7 349 360 343.6 C373.3 338.2 386.7 332.5 400 326.9 C413.3 321.4 426.7 315.8 440 310.5 C453.3 305.3 466.7 300.2 480 295.7 C493.3 291.1 506.7 286.9 520 283.4 C533.3 279.9 546.7 277 560 274.8 C573.3 272.6 586.7 271.1 600 270.5 C613.3 269.8 626.7 269.9 640 270.7 C653.3 271.6 666.7 273.3 680 275.6 C693.3 277.9 706.7 281.1 720 284.7 C733.3 288.3 746.7 292.6 760 297.2 C773.3 301.9 786.7 307.1 800 312.4 C813.3 317.6 826.7 323.4 840 328.9 C853.3 334.4 866.7 340.1 880 345.4 C893.3 350.8 906.7 356.1 920 360.8 C933.3 365.6 946.7 370.1 960 373.8 C973.3 377.6 986.7 380.9 1000 383.4 C1013.3 385.9 1026.7 387.8 1040 388.9 C1053.3 389.9 1066.7 390.3 1080 389.8 C1093.3 389.3 1106.7 388 1120 386 C1133.3 384.1 1146.7 381.3 1160 378 C1173.3 374.7 1186.7 370.6 1200 366.2 C1213.3 361.8 1226.7 356.7 1240 351.6 C1253.3 346.4 1266.7 340.8 1280 335.3 C1293.3 329.8 1306.7 324 1320 318.6 C1333.3 313.2 1346.7 307.8 1360 302.8 C1373.3 297.9 1386.7 293.2 1400 289.1 C1413.3 285.1 1433.3 280.4 1440 278.6" fill="none" stroke="#742B6E" stroke-width="64" stroke-linecap="round"></path><path d="M0 623.7 C6.7 622.3 26.7 618.6 40 615.4 C53.3 612.2 66.7 608.4 80 604.3 C93.3 600.2 106.7 595.6 120 590.8 C133.3 586.1 146.7 580.9 160 575.8 C173.3 570.7 186.7 565.2 200 559.9 C213.3 554.7 226.7 549.2 240 544.1 C253.3 538.9 266.7 533.8 280 529.1 C293.3 524.3 306.7 519.7 320 515.6 C333.3 511.6 346.7 507.8 360 504.5 C373.3 501.3 386.7 498.5 400 496.3 C413.3 494.1 426.7 492.4 440 491.4 C453.3 490.3 466.7 489.9 480 490 C493.3 490.2 506.7 491 520 492.3 C533.3 493.7 546.7 495.6 560 498.1 C573.3 500.6 586.7 503.7 600 507.1 C613.3 510.6 626.7 514.6 640 518.9 C653.3 523.2 666.7 527.9 680 532.8 C693.3 537.7 706.7 542.9 720 548.1 C733.3 553.3 746.7 558.8 760 564.1 C773.3 569.3 786.7 574.7 800 579.8 C813.3 584.8 826.7 589.9 840 594.5 C853.3 599.1 866.7 603.5 880 607.4 C893.3 611.3 906.7 614.8 920 617.8 C933.3 620.8 946.7 623.3 960 625.3 C973.3 627.2 986.7 628.5 1000 629.3 C1013.3 630 1026.7 630.2 1040 629.7 C1053.3 629.3 1066.7 628.2 1080 626.6 C1093.3 624.9 1106.7 622.6 1120 619.9 C1133.3 617.2 1146.7 613.8 1160 610.2 C1173.3 606.5 1186.7 602.2 1200 597.8 C1213.3 593.3 1226.7 588.4 1240 583.5 C1253.3 578.5 1266.7 573.2 1280 567.9 C1293.3 562.7 1306.7 557.2 1320 552 C1333.3 546.7 1346.7 541.4 1360 536.4 C1373.3 531.4 1386.7 526.6 1400 522.1 C1413.3 517.7 1433.3 511.8 1440 509.8" fill="none" stroke="#742B6E" stroke-width="80" stroke-linecap="round"></path><path d="M1269.9 216.8 C1269.9 217.5 1270 219.6 1269.7 221.1 C1269.3 222.5 1268.7 224.1 1267.9 225.5 C1267 227 1265.8 228.4 1264.3 229.6 C1262.9 230.8 1261.1 232 1259.2 232.8 C1257.3 233.6 1255.1 234.2 1252.8 234.5 C1250.5 234.7 1248 234.7 1245.6 234.2 C1243.1 233.8 1240.5 233 1238.1 231.8 C1235.7 230.6 1233.2 229 1231 227 C1228.9 225.1 1226.8 222.7 1225.1 220 C1223.4 217.4 1222 214.3 1221 211.1 C1220.1 207.9 1219.4 204.3 1219.3 200.8 C1219.2 197.2 1219.6 193.4 1220.5 189.7 C1221.4 186 1222.8 182.2 1224.8 178.7 C1226.7 175.2 1229.2 171.8 1232.1 168.7 C1235.1 165.7 1238.6 162.8 1242.4 160.5 C1246.2 158.3 1250.5 156.3 1255 155 C1259.5 153.7 1264.4 152.9 1269.2 152.8 C1274.1 152.7 1279.3 153.2 1284.2 154.5 C1289.2 155.7 1294.3 157.6 1299 160.1 C1303.6 162.6 1308.2 165.9 1312.3 169.7 C1316.3 173.5 1320.1 178 1323.1 182.9 C1326.2 187.8 1328.8 193.3 1330.6 199 C1332.3 204.8 1333.5 211 1333.7 217.2 C1334 223.4 1333.5 230 1332.2 236.2 C1330.8 242.5 1328.6 249 1325.6 254.9 C1322.6 260.8 1318.7 266.7 1314.2 271.8 C1309.6 277 1304.2 281.8 1298.3 285.8 C1292.4 289.7 1285.7 293.1 1278.8 295.5 C1271.9 298 1264.4 299.6 1256.9 300.2 C1249.4 300.9 1241.4 300.6 1233.8 299.2 C1226.1 297.9 1218.3 295.5 1211 292.2 C1203.8 288.9 1196.6 284.5 1190.2 279.4 C1183.8 274.2 1177.8 268 1172.8 261.2 C1167.8 254.4 1163.4 246.7 1160.2 238.7 C1157 230.6 1154.7 221.8 1153.5 213 C1152.4 204.2 1152.4 194.9 1153.5 185.8 C1154.7 176.8 1157 167.5 1160.5 158.9 C1163.9 150.2 1168.6 141.6 1174.3 133.9 C1179.9 126.3 1186.8 118.9 1194.4 112.8 C1201.9 106.6 1215.5 99.6 1219.7 97" fill="none" stroke="#7E3178" stroke-width="34" stroke-linecap="round"></path><path d="M254.1 648.1 C253.5 648.1 251.9 648.2 250.7 647.9 C249.5 647.7 248.2 647.2 247.1 646.6 C245.9 645.9 244.7 645 243.7 643.9 C242.7 642.8 241.7 641.5 241 640 C240.3 638.5 239.7 636.8 239.3 635 C239 633.2 238.9 631.3 239.1 629.3 C239.3 627.4 239.7 625.3 240.4 623.3 C241.2 621.3 242.2 619.2 243.6 617.3 C244.9 615.5 246.6 613.6 248.4 612 C250.3 610.5 252.6 609 254.9 607.9 C257.3 606.8 260 605.9 262.8 605.4 C265.5 604.8 268.5 604.6 271.5 604.8 C274.4 605 277.6 605.6 280.5 606.6 C283.5 607.5 286.6 608.9 289.4 610.7 C292.2 612.5 294.9 614.6 297.3 617.2 C299.7 619.7 302 622.6 303.8 625.8 C305.6 629 307.1 632.6 308.1 636.3 C309.1 639.9 309.8 643.9 309.9 647.9 C310 651.9 309.6 656.2 308.7 660.2 C307.8 664.3 306.4 668.5 304.5 672.4 C302.5 676.3 300.1 680.1 297.1 683.6 C294.2 687 290.8 690.3 287 693 C283.2 695.8 278.9 698.2 274.4 700.1 C269.9 701.9 264.9 703.3 259.9 704 C255 704.7 249.7 704.9 244.5 704.4 C239.3 703.9 233.9 702.8 228.8 701 C223.8 699.2 218.7 696.8 214 693.8 C209.3 690.7 204.8 687 200.9 682.9 C197 678.7 193.4 673.9 190.5 668.7 C187.5 663.6 185.1 657.9 183.4 652.1 C181.8 646.2 180.7 639.9 180.5 633.7 C180.3 627.4 180.8 620.9 182 614.6 C183.3 608.3 185.4 601.9 188.2 595.9 C191 589.9 194.6 584.1 198.9 578.8 C203.1 573.5 208.2 568.5 213.7 564.3 C219.2 560.1 225.4 556.3 232 553.4 C238.5 550.6 245.6 548.3 252.8 547 C259.9 545.7 267.6 545.2 275 545.7 C282.5 546.1 290.2 547.5 297.5 549.7 C304.8 552 315.3 557.6 318.9 559.2" fill="none" stroke="#7E3178" stroke-width="30" stroke-linecap="round"></path><circle cx="527" cy="646" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="307" cy="418" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1010" cy="680" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="174" cy="660" r="6" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1000" cy="305" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="519" cy="236" r="16" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1147" cy="602" r="16" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="853" cy="694" r="9" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="514" cy="690" r="9" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1111" cy="439" r="6" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="171" cy="203" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="127" cy="348" r="6" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="591" cy="524" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="833" cy="771" r="16" fill="none" stroke="#8E3A88" stroke-width="3"></circle></svg>
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 56px; align-items: center">
+      <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+        <div style="position: relative; isolation: isolate; align-self: flex-start; display: inline-flex; margin: 0 48px; transform: rotate(-2deg)">
+          <svg aria-hidden="true" viewBox="0 0 70 60" preserveAspectRatio="none" style="position: absolute; z-index: -1; left: -44px; top: 12px; width: 58px; height: 100%"><path d="M70 1.5 L3 1.5 L20 30 L3 58.5 L70 58.5 Z" fill="#2EC4CE" stroke="#26121F" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path></svg>
+          <svg aria-hidden="true" viewBox="0 0 70 60" preserveAspectRatio="none" style="position: absolute; z-index: -1; right: -44px; top: 12px; width: 58px; height: 100%"><path d="M0 1.5 L67 1.5 L50 30 L67 58.5 L0 58.5 Z" fill="#2EC4CE" stroke="#26121F" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path></svg>
+          <p style="margin: 0; background: #83EDF8; border: 3px solid #26121F; padding: 4px 22px 6px; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 28px; line-height: 1.1; color: #26121F">come on in — the soup’s on!</p>
+        </div>
+        <h1 style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: clamp(54px, 6.4vw, 92px); line-height: 1.02; color: #FFF8EF; text-wrap: balance; text-shadow: 3px 0 0 #26121F, -3px 0 0 #26121F, 0 3px 0 #26121F, 0 -3px 0 #26121F, 2.2px 2.2px 0 #26121F, -2.2px -2.2px 0 #26121F, 2.2px -2.2px 0 #26121F, -2.2px 2.2px 0 #26121F, 5px 6px 0 #26121F">Big sandwiches, good soup &amp; a handful of <span style="color: #83EDF8">napkins!</span></h1>
+        <p style="margin: 0; font-size: 21px; line-height: 1.6; max-width: 32em; color: #F6E6F3">On Carp Road we pile deli sandwiches high enough to need two hands, ladle out soups that change with the seasons, and keep the butter tarts right by the till.</p>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 18px; margin-top: 4px">
+          <a href="Menu.dc.html" style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 27px; color: #26121F; background: #83EDF8; text-decoration: none; padding: 12px 28px; border: 3px solid #26121F; border-radius: 16px; box-shadow: 0 5px 0 #26121F">See the menu</a>
+          <a href="tel:+13432029665" style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 27px; color: #26121F; background: #FFF8EF; text-decoration: none; padding: 12px 26px; border: 3px solid #26121F; border-radius: 16px; box-shadow: 0 5px 0 #26121F">Call for pick-up</a>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; margin-left: 10px; font-family: Caveat, 'Bradley Hand', cursive; font-size: 29px; color: #F6E6F3">
+          <svg aria-hidden="true" width="54" height="34" viewBox="0 0 54 34"><path d="M50 30 C34 34 12 28 8 10" fill="none" stroke="#F6E6F3" stroke-width="2.5" stroke-linecap="round"></path><path d="M2 16 L8 7 L15 15" fill="none" stroke="#F6E6F3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          open Tuesday to Saturday from 11
+        </div>
+      </div>
+      <div style="flex: 1 1 380px; min-width: 0; position: relative; display: flex; justify-content: center; padding: 20px 0">
+        <svg aria-hidden="true" viewBox="0 0 420 480" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible">
+          <g stroke="#26121F" stroke-width="3">
+            <circle cx="40" cy="80" r="22" fill="#83EDF8"></circle><circle cx="33" cy="73" r="6" fill="#FFFFFF" stroke="none"></circle>
+            <circle cx="380" cy="60" r="15" fill="#B8E06A"></circle><circle cx="375" cy="55" r="4" fill="#FFFFFF" stroke="none"></circle>
+            <circle cx="400" cy="300" r="26" fill="#C56CB0"></circle><circle cx="392" cy="292" r="7" fill="#FFFFFF" stroke="none"></circle>
+            <circle cx="22" cy="380" r="13" fill="#B8E06A"></circle><circle cx="18" cy="376" r="3.5" fill="#FFFFFF" stroke="none"></circle>
+            <circle cx="350" cy="440" r="10" fill="#83EDF8"></circle>
+            <circle cx="70" cy="22" r="8" fill="#C56CB0"></circle>
+          </g>
+        </svg>
+        <img src="/_blob/3f6d1ae5a323ef01495b7d89532b01dd" alt="’Wiches Cauldron logo: a slice of bread in a chef’s hat stirring a bubbling cauldron" width="360" height="434" style="position: relative; display: block; width: min(100%, 360px); height: auto; transform: rotate(-4deg); filter: drop-shadow(0 18px 22px rgba(10,0,10,0.45))">
+      </div>
+    </div>
+    <svg aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: -1px; width: 100%; height: 60px"><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30 L1440 60 L0 60Z" fill="#FCF6EC"></path><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30" fill="none" stroke="#26121F" stroke-width="3" vector-effect="non-scaling-stroke"></path></svg>
+  </section>
+
+  <!-- HOURS RIBBON -->
+  <section aria-label="Hours, address and phone" style="position: relative; z-index: 2; padding: 0 72px; margin-top: -92px">
+    <div style="position: relative; isolation: isolate; max-width: 1000px; margin: 0 auto; transform: rotate(-1deg)">
+      <svg aria-hidden="true" viewBox="0 0 70 60" preserveAspectRatio="none" style="position: absolute; z-index: -1; left: -56px; top: 22px; width: 72px; height: 100%"><path d="M70 1.5 L3 1.5 L20 30 L3 58.5 L70 58.5 Z" fill="#2EC4CE" stroke="#26121F" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path></svg>
+      <svg aria-hidden="true" viewBox="0 0 70 60" preserveAspectRatio="none" style="position: absolute; z-index: -1; right: -56px; top: 22px; width: 72px; height: 100%"><path d="M0 1.5 L67 1.5 L50 30 L67 58.5 L0 58.5 Z" fill="#2EC4CE" stroke="#26121F" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path></svg>
+      <div style="background: #83EDF8; border: 3px solid #26121F; padding: 16px 24px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px 30px; text-align: center">
+        <div style="display: flex; flex-direction: column">
+          <span style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 27px; line-height: 1.15">Tue – Sat, 11 to 4</span>
+          <span style="font-size: 15px; line-height: 1.4">Fri 11–2:30 &amp; 4:30–7 · closed Sun &amp; Mon</span>
+        </div>
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="7" fill="#C56CB0" stroke="#26121F" stroke-width="2.5"></circle></svg>
+        <div style="display: flex; flex-direction: column">
+          <span style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 27px; line-height: 1.15">2006 Carp Road</span>
+          <span style="font-size: 15px; line-height: 1.4">Carp (Ottawa), ON K0A 1L0</span>
+        </div>
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="7" fill="#B8E06A" stroke="#26121F" stroke-width="2.5"></circle></svg>
+        <div style="display: flex; flex-direction: column">
+          <a href="tel:+13432029665" style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 27px; line-height: 1.15; color: #26121F; text-decoration: none">343-202-9665</a>
+          <span style="font-size: 15px; line-height: 1.4">call ahead for pick-up</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODAY'S BREW -->
+  <section id="today" aria-labelledby="today-title" style="padding: 80px 32px 88px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 44px">
+      <div style="position: relative; isolation: isolate; display: inline-flex; margin: 0 56px">
+        <svg aria-hidden="true" viewBox="0 0 70 60" preserveAspectRatio="none" style="position: absolute; z-index: -1; left: -54px; top: 18px; width: 70px; height: 100%"><path d="M70 1.5 L3 1.5 L20 30 L3 58.5 L70 58.5 Z" fill="#2EC4CE" stroke="#26121F" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path></svg>
+        <svg aria-hidden="true" viewBox="0 0 70 60" preserveAspectRatio="none" style="position: absolute; z-index: -1; right: -54px; top: 18px; width: 70px; height: 100%"><path d="M0 1.5 L67 1.5 L50 30 L67 58.5 L0 58.5 Z" fill="#2EC4CE" stroke="#26121F" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path></svg>
+        <div style="background: #83EDF8; border: 3px solid #26121F; padding: 4px 34px 10px">
+          <h2 id="today-title" style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: clamp(42px, 4.6vw, 58px); line-height: 1.1; color: #9E4C92; text-shadow: 2px 0 0 #26121F, -2px 0 0 #26121F, 0 2px 0 #26121F, 0 -2px 0 #26121F, 1.5px 1.5px 0 #26121F, -1.5px -1.5px 0 #26121F, 1.5px -1.5px 0 #26121F, -1.5px 1.5px 0 #26121F, 3px 4px 0 #26121F">Today’s Brew</h2>
+        </div>
+      </div>
+      <div style="width: 100%; display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: center; justify-content: center">
+        <div style="flex: 1 1 400px; min-width: 0; max-width: 520px">
+          <svg viewBox="0 0 460 420" role="img" aria-label="Cartoon of a cauldron of green soup bubbling over a fire" style="display: block; width: 100%; height: auto; overflow: visible">
+            <path d="M418.6 196 C420.4 224.8 425.8 259.8 411.8 285.3 C397.8 310.8 364.7 335.3 334.7 349 C304.7 362.6 264.8 369.4 232 367.3 C199.2 365.2 168.2 349.9 137.7 336.5 C107.1 323.1 68.3 310.4 48.7 287 C29 263.6 18.1 225.5 19.7 196 C21.3 166.5 39.7 134.6 58.4 109.8 C77.1 84.9 103 59.7 131.9 46.9 C160.8 34.1 200.3 30.6 232 33.1 C263.7 35.6 293.9 48.7 322.1 61.8 C350.2 75 384.6 89.9 400.7 112.2 C416.8 134.6 416.8 167.2 418.6 196Z" fill="#C56CB0"></path>
+            <path d="M221.7 183.9 C221.6 183.2 221.3 181.2 221.5 179.8 C221.6 178.3 222.1 176.8 222.8 175.3 C223.5 173.8 224.6 172.3 225.8 170.9 C227.1 169.6 228.7 168.2 230.6 167.1 C232.4 166 234.5 164.9 236.8 164.2 C239.1 163.5 241.6 162.9 244.2 162.7 C246.9 162.5 249.7 162.5 252.5 162.9 C255.3 163.2 258.2 163.9 261 165 C263.8 166 266.6 167.3 269.2 169 C271.8 170.7 274.3 172.8 276.4 175.1 C278.6 177.4 280.5 180 282.1 182.9 C283.6 185.7 284.8 188.9 285.5 192.1 C286.3 195.4 286.6 198.9 286.4 202.4 C286.2 205.8 285.5 209.5 284.3 213 C283.1 216.5 281.3 220.1 279.1 223.4 C276.8 226.7 274 230 270.8 232.9 C267.6 235.8 263.8 238.5 259.7 240.8 C255.6 243 251 245 246.2 246.4 C241.4 247.9 236.2 248.9 230.9 249.4 C225.7 249.8 220.1 249.8 214.6 249.1 C209.2 248.5 203.6 247.3 198.2 245.5 C192.9 243.8 187.6 241.4 182.7 238.5 C177.8 235.6 173.1 232.2 169 228.2 C164.9 224.3 161.1 219.9 158.1 215.1 C155 210.3 152.5 205.1 150.7 199.6 C149 194.2 147.9 188.4 147.6 182.6 C147.4 176.8 147.9 170.7 149.2 164.9 C150.5 159 152.7 153 155.7 147.4 C158.6 141.8 162.4 136.2 166.9 131.2 C171.4 126.2 176.8 121.4 182.7 117.3 C188.5 113.1 195.2 109.4 202.2 106.5 C209.2 103.6 216.9 101.2 224.7 99.7 C232.5 98.2 240.8 97.4 249.1 97.5 C257.3 97.5 265.8 98.4 274 100.1 C282.1 101.8 290.4 104.4 298.1 107.8 C305.8 111.2 313.4 115.4 320.1 120.3 C326.9 125.2 333.2 131 338.6 137.2 C344 143.4 348.8 150.5 352.5 157.8 C356.2 165.1 359.1 173 360.8 181 C362.5 189 362.4 201.7 362.7 205.8" fill="none" stroke="#A13C9B" stroke-width="30" stroke-linecap="round"></path>
+            <path d="M200.6 110 C199.5 117.9 193 126.2 184.5 131.8 C176.1 137.3 161.6 143.1 150 143.2 C138.4 143.2 123 137.6 115 132.1 C106.9 126.5 102 117.6 101.6 110 C101.2 102.4 104.7 92.8 112.7 86.5 C120.8 80.3 137 73 150 72.6 C163 72.2 182.5 78 190.9 84.2 C199.4 90.5 201.6 102.1 200.6 110Z" fill="#D38FC3"></path>
+            <g stroke="#26121F" stroke-width="3">
+              <circle cx="300" cy="118" r="16" fill="#B8E06A"></circle><circle cx="295" cy="113" r="4.5" fill="#FFFFFF" stroke="none"></circle>
+              <circle cx="262" cy="84" r="11" fill="#8CC63F"></circle>
+              <circle cx="334" cy="70" r="9" fill="#B8E06A"></circle>
+              <circle cx="196" cy="126" r="12" fill="#8CC63F"></circle><circle cx="192" cy="122" r="3.5" fill="#FFFFFF" stroke="none"></circle>
+              <circle cx="228" cy="50" r="8" fill="#B8E06A"></circle>
+            </g>
+            <g stroke="#26121F" stroke-width="4" stroke-linejoin="round">
+              <path d="M110 372 L346 350 Q356 349 357 359 L358 368 Q358 377 348 378 L112 400 Q102 401 101 391 L100 382 Q100 373 110 372 Z" fill="#8B5A2B"></path>
+              <path d="M350 372 L114 350 Q104 349 103 359 L102 368 Q102 377 112 378 L348 400 Q358 401 359 391 L360 382 Q360 373 350 372 Z" fill="#A86C35"></path>
+              <ellipse cx="104" cy="386" rx="6" ry="13" fill="#E0A85C" stroke-width="3"></ellipse>
+              <ellipse cx="356" cy="386" rx="6" ry="13" fill="#E0A85C" stroke-width="3"></ellipse>
+            </g>
+            <g stroke="#26121F" stroke-width="3.5" stroke-linejoin="round"><path d="M103 376 C95 325.6 125.4 313.6 133.8 256 C153.4 301.6 182 323.2 173 376Z" fill="#E32B2C"></path><path d="M119 372 C111 338.7 132.4 330.8 137.5 292.8 C149.2 322.9 170 337.2 161 372Z" fill="#F7941D" stroke-width="2.5"></path><path d="M130.5 370 C122.5 351.9 137.2 347.5 139.7 326.8 C145.6 343.2 160.5 351 151.5 370Z" fill="#FFD23F" stroke="none"></path><path d="M152 380 C144 341.4 172.5 332.2 180.2 288 C198.1 323 225 339.5 216 380Z" fill="#E32B2C"></path><path d="M166.8 376 C158.8 350.5 179.1 344.4 183.7 315.3 C194.4 338.4 214.2 349.3 205.2 376Z" fill="#F7941D" stroke-width="2.5"></path><path d="M177.4 374 C169.4 360.1 183.5 356.8 185.8 340.9 C191.2 353.5 205.6 359.4 196.6 374Z" fill="#FFD23F" stroke="none"></path><path d="M191 382 C183 338.3 213.4 327.9 221.8 278 C241.4 317.5 270 336.2 261 382Z" fill="#E32B2C"></path><path d="M207 378 C199 349.2 220.4 342.3 225.5 309.4 C237.2 335.4 258 347.8 249 378Z" fill="#F7941D" stroke-width="2.5"></path><path d="M218.5 376 C210.5 360.3 225.2 356.5 227.7 338.6 C233.6 352.8 248.5 359.5 239.5 376Z" fill="#FFD23F" stroke="none"></path><path d="M236 380 C228 341.4 256.5 332.2 264.2 288 C282.1 323 309 339.5 300 380Z" fill="#E32B2C"></path><path d="M250.8 376 C242.8 350.5 263.1 344.4 267.7 315.3 C278.4 338.4 298.2 349.3 289.2 376Z" fill="#F7941D" stroke-width="2.5"></path><path d="M261.4 374 C253.4 360.1 267.5 356.8 269.8 340.9 C275.2 353.5 289.6 359.4 280.6 374Z" fill="#FFD23F" stroke="none"></path><path d="M279 376 C271 326.4 301.4 314.6 309.8 258 C329.4 302.8 358 324.1 349 376Z" fill="#E32B2C"></path><path d="M295 372 C287 339.3 308.4 331.5 313.5 294.1 C325.2 323.7 346 337.7 337 372Z" fill="#F7941D" stroke-width="2.5"></path><path d="M306.5 370 C298.5 352.2 313.2 347.9 315.7 327.5 C321.6 343.7 336.5 351.3 327.5 370Z" fill="#FFD23F" stroke="none"></path></g>
+            <g stroke="#26121F" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+              <path d="M150 300 L142 338 Q141 344 148 344 L164 344 Q170 344 170 338 L172 304 Z" fill="#8C8782"></path>
+              <path d="M310 300 L318 338 Q319 344 312 344 L296 344 Q290 344 290 338 L288 304 Z" fill="#8C8782"></path>
+              <path d="M100 196 C94 276 146 318 230 318 C314 318 366 276 360 196 Z" fill="#ACA7A1"></path>
+              <path d="M326 210 C342 258 318 296 262 312 C318 310 352 274 350 210 Z" fill="#8C8782" stroke="none"></path>
+              <path d="M130 226 C126 258 140 284 162 296" fill="none" stroke="#D6D2CC" stroke-width="9"></path>
+              <path d="M100 222 C76 220 72 252 98 254" fill="none" stroke-width="6"></path>
+              <path d="M360 222 C384 220 388 252 362 254" fill="none" stroke-width="6"></path>
+              <ellipse cx="230" cy="196" rx="140" ry="30" fill="#8C8782"></ellipse>
+              <ellipse cx="230" cy="194" rx="120" ry="19" fill="#8CC63F" stroke-width="3.5"></ellipse>
+              <path d="M150 206 Q146 240 158 242 Q170 242 168 210 Z" fill="#8CC63F" stroke-width="3"></path>
+              <path d="M296 206 Q292 232 302 234 Q312 234 312 208 Z" fill="#8CC63F" stroke-width="3"></path>
+              <g stroke-width="3">
+                <circle cx="190" cy="191" r="9" fill="#B8E06A"></circle>
+                <circle cx="250" cy="187" r="12" fill="#B8E06A"></circle>
+                <circle cx="292" cy="196" r="7" fill="#B8E06A"></circle>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div style="flex: 1 1 360px; min-width: 0; max-width: 500px">
+          <div style="background: #FFFFFF; border: 3px solid #26121F; border-radius: 24px; box-shadow: 0 0 0 10px #FFFFFF, 0 16px 26px 8px rgba(38,18,31,0.22); padding: 28px 30px; transform: rotate(1.5deg)">
+            <dl style="margin: 0; display: flex; flex-direction: column; gap: 18px">
+              <div>
+                <dt style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 23px; line-height: 1.1; color: #9E4C92">soup of the day</dt>
+                <dd style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 36px; line-height: 1.1">[today’s soup]</dd>
+              </div>
+              <div>
+                <dt style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 23px; line-height: 1.1; color: #9E4C92">sammie of the day</dt>
+                <dd style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 36px; line-height: 1.1">[today’s sammie]</dd>
+              </div>
+              <div>
+                <dt style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 23px; line-height: 1.1; color: #9E4C92">by the till</dt>
+                <dd style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 36px; line-height: 1.1">butter tarts &amp; cookies</dd>
+              </div>
+            </dl>
+            <p style="margin: 20px 0 0; padding-top: 16px; border-top: 3px dotted #C56CB0; font-size: 17px; line-height: 1.55">Soup comes by the cup or bowl, always with warm bread. Follow us on <a href="https://www.instagram.com/wichescauldron/">Instagram</a> or <a href="https://www.facebook.com/wichescauldronotown/">Facebook</a> for the daily specials.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE TRUCKER (pale aqua band) -->
+  <section aria-labelledby="trucker-title" style="position: relative; background: #DDF6F8; padding: 76px 32px 92px">
+    <svg aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="position: absolute; left: 0; top: -1px; width: 100%; height: 60px"><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30 L1440 0 L0 0Z" fill="#FCF6EC"></path><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30" fill="none" stroke="#26121F" stroke-width="3" vector-effect="non-scaling-stroke"></path></svg>
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px 60px; align-items: center">
+      <div style="flex: 1 1 560px; min-width: 0">
+        <svg viewBox="0 0 680 500" role="img" aria-label="Cartoon of the Trucker pulled apart into its layers: fresh bread, rosemary mayo, spring greens, pickled eggplant, mozzarella and assorted deli meats, with kettle chips alongside" style="display: block; width: 100%; height: auto; overflow: visible">
+          <ellipse cx="232" cy="412" rx="180" ry="12" fill="#26121F" opacity="0.15"></ellipse>
+          <g stroke="#26121F" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M62 352 L398 352 Q406 352 404 362 L398 388 Q396 398 386 398 L78 398 Q68 398 66 388 L60 362 Q58 352 62 352 Z" fill="#E0A85C"></path>
+            <path d="M63 353 L401 353 L402 361 L62 361 Z" fill="#FED292" stroke="none"></path>
+            <g transform="translate(0 6)">
+              <path d="M70 296 C83.5 286.2 110.5 301.4 124 297.5 C137.5 284.4 164.5 299.3 178 293 C191.5 284.5 218.5 298.1 232 298.3 C245.5 289.3 272.5 302.9 286 297.7 C299.5 284.7 326.5 301.3 340 298.3 C353.5 288.8 380.5 302 394 295 L396 326 C380.5 337.4 353.5 320.1 340 325.8 C326.5 335.2 299.5 323.9 286 323.2 C272.5 335.6 245.5 321.6 232 328.2 C218.5 335.6 191.5 323.3 178 325.2 C164.5 336.6 137.5 321.4 124 323.1 C110.5 337 83.5 319.9 70 323.5Z" fill="#E8998B"></path>
+              <path d="M62 282 C74.1 273.1 98.2 285.9 110.3 280.4 C122.4 268.5 146.5 285.4 158.6 279.3 C170.6 268.1 194.8 288.5 206.9 284.9 C218.9 271.9 243.1 290.9 255.1 282.9 C267.2 269.1 291.4 289.8 303.4 282 C315.5 274.1 339.6 285.9 351.7 284.2 C363.8 268.3 387.9 291.1 400 281 L402 312 C387.9 323.9 363.8 304.8 351.7 312.9 C339.6 325.1 315.5 306.4 303.4 312.9 C291.4 324.1 267.2 308 255.1 314.5 C243.1 326.1 218.9 309.2 206.9 314.8 C194.8 326.1 170.6 305.6 158.6 309.3 C146.5 325.7 122.4 308.8 110.3 314.8 C98.2 324 74.1 309.2 62 310Z" fill="#C95F50"></path>
+              <path d="M118 288 q10 8 4 18 M208 290 q12 10 2 20 M300 288 q10 8 4 18" fill="none" stroke="#8E3B30" stroke-width="2.5"></path>
+            </g>
+            <path d="M70 241 Q234 233 398 241 L398 252 C394.5 267.6 378.1 267.6 374.6 252 C371.1 269.4 354.7 269.4 351.1 252 C347.6 272.8 331.2 272.8 327.7 252 Q316 257.8 304.3 252 Q292.6 257.8 280.9 252 C277.3 267 260.9 267 257.4 252 Q245.7 257.1 234 252 C230.5 276.4 214.1 276.4 210.6 252 Q198.9 257.3 187.1 252 C183.6 265.6 167.2 265.6 163.7 252 C160.2 264.8 143.8 264.8 140.3 252 C136.8 276.7 120.4 276.7 116.9 252 C113.3 262.9 96.9 262.9 93.4 252 C89.9 265.2 73.5 265.2 70 252Z" fill="#FFFBF2"></path>
+            <g>
+              <ellipse cx="102" cy="207" rx="36" ry="15" fill="#6B2F5E"></ellipse>
+              <ellipse cx="102" cy="206" rx="28" ry="10" fill="#EBD3A6" stroke-width="2.5"></ellipse>
+              <ellipse cx="162" cy="209" rx="36" ry="15" fill="#6B2F5E"></ellipse>
+              <ellipse cx="162" cy="208" rx="28" ry="10" fill="#EBD3A6" stroke-width="2.5"></ellipse>
+              <ellipse cx="222" cy="206" rx="36" ry="15" fill="#6B2F5E"></ellipse>
+              <ellipse cx="222" cy="205" rx="28" ry="10" fill="#EBD3A6" stroke-width="2.5"></ellipse>
+              <ellipse cx="282" cy="209" rx="36" ry="15" fill="#6B2F5E"></ellipse>
+              <ellipse cx="282" cy="208" rx="28" ry="10" fill="#EBD3A6" stroke-width="2.5"></ellipse>
+              <ellipse cx="342" cy="207" rx="36" ry="15" fill="#6B2F5E"></ellipse>
+              <ellipse cx="342" cy="206" rx="28" ry="10" fill="#EBD3A6" stroke-width="2.5"></ellipse>
+              <ellipse cx="392" cy="209" rx="26" ry="13" fill="#6B2F5E"></ellipse>
+              <ellipse cx="392" cy="208" rx="19" ry="8" fill="#EBD3A6" stroke-width="2.5"></ellipse>
+              <path d="M94 204 h0.1 M108 208 h0.1 M156 206 h0.1 M170 210 h0.1 M214 203 h0.1 M230 207 h0.1 M276 206 h0.1 M290 210 h0.1 M336 204 h0.1 M350 208 h0.1 M388 206 h0.1" stroke="#9C7652" stroke-width="4"></path>
+            </g>
+            <path d="M64 162 Q78.2 138.2 92.3 160 Q106.5 136.5 120.7 154.6 Q134.8 139.6 149 158.7 Q163.2 140.7 177.3 155.2 Q191.5 141.1 205.7 154.6 Q219.8 135.9 234 160.1 Q248.2 140.3 262.3 156.1 Q276.5 136.2 290.7 158 Q304.8 136.5 319 159.9 Q333.2 140.7 347.3 156.9 Q361.5 139.7 375.7 157 Q389.8 144.6 404 156.1 L408 166 Q389.8 186.4 375.7 172.3 Q361.5 180.8 347.3 175.8 Q333.2 182.5 319 175.2 Q304.8 183.9 290.7 174.1 Q276.5 187.7 262.3 173.2 Q248.2 183.5 234 173.2 Q219.8 185.1 205.7 173.7 Q191.5 183.1 177.3 176.5 Q163.2 182.8 149 175.4 Q134.8 187 120.7 172.6 Q106.5 180.9 92.3 173.4 Q78.2 186 64 175.7Z" fill="#8CC63F"></path>
+            <path d="M88 166 q20 -6 40 2 M168 164 q20 -8 40 0 M250 166 q20 -6 40 2 M330 164 q20 -8 40 0" fill="none" stroke="#4E8A1E" stroke-width="2.5"></path>
+            <path d="M76 119 Q234 111 392 119 L392 124 Q382.1 127.5 372.2 124 C369.3 130.8 355.5 130.8 352.5 124 Q342.6 127.7 332.8 124 C329.8 130.5 316 130.5 313 124 C310 131.3 296.2 131.3 293.2 124 Q283.4 126.6 273.5 124 C270.5 133.9 256.7 133.9 253.8 124 C250.8 138 237 138 234 124 C231 134.2 217.2 134.2 214.2 124 Q204.4 127.6 194.5 124 Q184.6 127.9 174.8 124 C171.8 133.3 158 133.3 155 124 C152 133.4 138.2 133.4 135.2 124 C132.3 137.1 118.5 137.1 115.5 124 Q105.6 128 95.8 124 C92.8 132 79 132 76 124Z" fill="#FFF6DE"></path>
+            <path d="M110 119 l7 -3 M150 118 l6 2 M196 120 l7 -2 M240 118 l6 3 M286 120 l7 -2 M330 118 l6 2 M366 120 l6 -3" stroke="#4E8A1E" stroke-width="3"></path>
+            <path d="M70 100 C62 100 58 92 60 84 C66 52 110 40 230 40 C350 40 394 52 400 84 C402 92 398 100 390 100 Z" fill="#E0A85C"></path>
+            <path d="M64 90 L396 90 Q398 96 392 99 L68 99 Q62 96 64 90 Z" fill="#FED292" stroke="none"></path>
+            <path d="M140 60 q22 -8 44 0 M206 54 q22 -8 44 0 M272 60 q22 -8 44 0" fill="none" stroke="#B7793C" stroke-width="3"></path>
+            <g transform="translate(472 430)">
+              <path d="M-52 30 C-58 18 -40 10 -26 16 C-12 12 0 22 -4 32 C-4 44 -22 48 -34 42 C-48 46 -56 40 -52 30 Z" fill="#FFD772"></path>
+              <path d="M-40 6 C-44 -10 -20 -20 -2 -14 C14 -22 34 -12 30 4 C34 18 10 26 -6 22 C-22 28 -38 20 -40 6 Z" fill="#F6C453"></path>
+              <path d="M-8 24 C-12 8 12 0 28 6 C44 2 56 16 48 28 C50 42 26 46 12 40 C-2 44 -12 36 -8 24 Z" fill="#F2B33D"></path>
+              <path d="M-22 0 h0.1 M-8 8 h0.1 M12 -4 h0.1 M20 24 h0.1 M34 30 h0.1 M-36 32 h0.1" stroke="#C98A2E" stroke-width="4"></path>
+            </g>
+          </g>
+          <g fill="none" stroke="#26121F" stroke-width="2.5" stroke-linecap="round">
+            <path d="M406 72 C420 66 430 76 444 70"></path>
+            <path d="M398 122 C414 116 428 128 444 122"></path>
+            <path d="M412 164 C422 158 432 168 444 162"></path>
+            <path d="M422 210 C430 204 436 212 444 208"></path>
+            <path d="M402 250 C416 244 430 256 444 250"></path>
+            <path d="M406 306 C420 300 430 312 444 306"></path>
+          </g>
+          <g font-family="Chewy, 'Comic Sans MS', cursive" font-size="27" fill="#26121F">
+            <text x="452" y="80">fresh bread</text>
+            <text x="452" y="131">rosemary mayo</text>
+            <text x="452" y="171">spring greens</text>
+            <text x="452" y="217">pickled eggplant</text>
+            <text x="452" y="259">mozzarella</text>
+            <text x="452" y="315">assorted deli meats</text>
+            <text x="536" y="459">kettle chips</text>
+          </g>
+        </svg>
+      </div>
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+        <p style="margin: 0; font-family: Caveat, 'Bradley Hand', cursive; font-size: 32px; line-height: 1; color: #5A3550; transform: rotate(-2deg); transform-origin: left center">you’ll want napkins for this one —</p>
+        <h2 id="trucker-title" style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: clamp(60px, 6.6vw, 92px); line-height: 0.95; color: #9E4C92; text-shadow: 3px 0 0 #26121F, -3px 0 0 #26121F, 0 3px 0 #26121F, 0 -3px 0 #26121F, 2.2px 2.2px 0 #26121F, -2.2px -2.2px 0 #26121F, 2.2px -2.2px 0 #26121F, -2.2px 2.2px 0 #26121F, 5px 6px 0 #26121F">The Trucker</h2>
+        <p style="margin: 0; font-size: 20px; line-height: 1.6">Assorted deli meats, mozzarella, rosemary mayo, pickled eggplant, spring greens and kettle chips. Big, a little messy, and worth every napkin.</p>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px 26px; margin-top: 6px">
+          <div style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 34px; line-height: 1; background: #FFFFFF; border: 3px solid #26121F; border-radius: 16px; box-shadow: 0 0 0 8px #FFFFFF, 0 12px 18px 6px rgba(38,18,31,0.22); padding: 12px 22px; transform: rotate(-4deg)">[PRICE]</div>
+          <a href="Menu.dc.html" style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 25px; color: #FFF8EF; background: #9E4C92; text-decoration: none; padding: 11px 24px; border: 3px solid #26121F; border-radius: 16px; box-shadow: 0 5px 0 #26121F">See all the sandwiches</a>
+        </div>
+        <p style="margin: 6px 0 0; font-family: Caveat, 'Bradley Hand', cursive; font-size: 28px; line-height: 1.15; color: #5A3550">Like it your way? Most ’wiches can be tweaked — just ask at the counter.</p>
+      </div>
+    </div>
+    <svg aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: -1px; width: 100%; height: 60px"><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30 L1440 60 L0 60Z" fill="#FCF6EC"></path><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30" fill="none" stroke="#26121F" stroke-width="3" vector-effect="non-scaling-stroke"></path></svg>
+  </section>
+
+  <!-- SOUPS -->
+  <section aria-labelledby="soups-title" style="padding: 80px 32px 96px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center">
+      <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <h2 id="soups-title" style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: clamp(46px, 5vw, 68px); line-height: 1.05; color: #9E4C92; text-wrap: balance; text-shadow: 2px 0 0 #26121F, -2px 0 0 #26121F, 0 2px 0 #26121F, 0 -2px 0 #26121F, 1.5px 1.5px 0 #26121F, -1.5px -1.5px 0 #26121F, 1.5px -1.5px 0 #26121F, -1.5px 1.5px 0 #26121F, 3px 4px 0 #26121F">There’s always something good in the pot.</h2>
+        <p style="margin: 0; font-size: 20px; line-height: 1.6; color: #5A3550">Our soups change with the seasons, so there’s usually something new to try. Every cup and bowl comes with fresh, warm bread.</p>
+        <div style="background: #FFFFFF; border: 3px solid #26121F; border-radius: 24px; box-shadow: 0 0 0 10px #FFFFFF, 0 16px 26px 8px rgba(38,18,31,0.22); padding: 26px 30px 24px; margin: 10px 10px 0; transform: rotate(-1.5deg)">
+          <h3 style="margin: 0 0 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 26px; color: #9E4C92">Favourites from the pot</h3>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 31px; line-height: 1.15">
+            <li style="display: flex; align-items: center; gap: 14px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" style="flex: none"><circle cx="11" cy="11" r="8.5" fill="#83EDF8" stroke="#26121F" stroke-width="2.5"></circle></svg>Potato Parmesan Maple</li>
+            <li style="display: flex; align-items: center; gap: 14px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" style="flex: none"><circle cx="11" cy="11" r="8.5" fill="#B8E06A" stroke="#26121F" stroke-width="2.5"></circle></svg>Cream of Cauliflower Three-Cheese</li>
+            <li style="display: flex; align-items: center; gap: 14px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" style="flex: none"><circle cx="11" cy="11" r="8.5" fill="#C56CB0" stroke="#26121F" stroke-width="2.5"></circle></svg>Tomato</li>
+            <li style="display: flex; align-items: center; gap: 14px; color: #9E4C92"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" style="flex: none"><circle cx="11" cy="11" r="8.5" fill="#FFD23F" stroke="#26121F" stroke-width="2.5"></circle></svg>+ the soup of the day — just ask!</li>
+          </ul>
+          <p style="margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 4px 26px; font-size: 18px"><span>Cup <strong>[PRICE]</strong></span><span>Bowl <strong>[PRICE]</strong></span></p>
+        </div>
+      </div>
+      <div style="flex: 1 1 400px; min-width: 0; display: flex; justify-content: center">
+        <svg viewBox="0 0 400 340" role="img" aria-label="Cartoon of a steaming bowl of soup with a wooden spoon and a slice of bread" style="display: block; width: 100%; max-width: 480px; height: auto">
+          <ellipse cx="200" cy="322" rx="150" ry="10" fill="#26121F" opacity="0.15"></ellipse>
+          <g stroke="#26121F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M150 112 C132 92 166 80 150 58 C138 42 160 30 152 14" fill="none"></path>
+            <path d="M200 106 C182 86 216 74 200 52 C188 36 210 24 202 8" fill="none"></path>
+            <path d="M250 112 C232 92 266 80 250 58 C238 42 260 30 252 14" fill="none"></path>
+            <path d="M286 150 L356 70" stroke-width="18"></path>
+            <path d="M286 150 L356 70" stroke="#E0A85C" stroke-width="10"></path>
+            <path d="M150 296 L144 316 L256 316 L250 296 Z" fill="#2EC4CE"></path>
+            <ellipse cx="200" cy="160" rx="166" ry="34" fill="#2EC4CE"></ellipse>
+            <ellipse cx="200" cy="160" rx="150" ry="25" fill="#F2B33D"></ellipse>
+            <path d="M112 160 c24 -12 48 12 72 0 s48 -12 72 0" fill="none" stroke="#FFF6DE" stroke-width="5"></path>
+            <path d="M140 150 l5 -3 M232 168 l6 2 M266 152 l5 3 M178 172 l6 -2" stroke="#4E8A1E" stroke-width="3.5"></path>
+            <path d="M34 160 C38 254 118 300 200 300 C282 300 362 254 366 160 A166 34 0 0 1 34 160 Z" fill="#83EDF8"></path>
+            <path d="M54 214 C110 248 290 248 346 214" fill="none" stroke="#9E4C92" stroke-width="8"></path>
+            <path d="M68 238 C120 266 280 266 332 238" fill="none" stroke="#9E4C92" stroke-width="3"></path>
+            <g transform="translate(6 214) rotate(-12)">
+              <path d="M0 78 L0 26 C0 6 18 -2 40 2 C60 -4 82 4 82 26 L82 78 Z" fill="#FED292"></path>
+              <path d="M8 74 L8 28 C8 13 22 7 40 10 C56 6 74 12 74 28 L74 74" fill="none" stroke="#E0A85C" stroke-width="6"></path>
+              <path d="M24 40 h0.1 M44 52 h0.1 M58 34 h0.1 M32 62 h0.1" stroke="#E0A85C" stroke-width="5"></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKER WALL (purple swirl) -->
+  <section aria-labelledby="board-title" style="position: relative; isolation: isolate; overflow: hidden; background: #5E2159; color: #FFF8EF; padding: 120px 32px 136px">
+    <svg aria-hidden="true" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; transform: scaleX(-1)"><path d="M468.7 200 C466.9 233.9 447.3 274.4 416.8 299.5 C386.2 324.6 330.4 341.4 285.3 350.7 C240.1 360 191.9 358.9 145.9 355.3 C99.8 351.7 43.7 347.1 9.1 328.9 C-25.5 310.8 -45 276.6 -61.9 246.4 C-78.8 216.2 -105.8 175.6 -92.1 147.8 C-78.4 120 -18.8 98.7 20.5 79.6 C59.7 60.5 98.2 39.4 143.3 33 C188.3 26.6 243.6 30.7 290.9 41.2 C338.2 51.8 397.7 69.6 427.3 96.1 C456.9 122.5 470.4 166.1 468.7 200Z" fill="#6A2564"></path><path d="M1444.9 640 C1445.1 680 1482.1 727.3 1460.4 760.1 C1438.8 793 1368.4 826.9 1315.1 837.3 C1261.8 847.7 1195.9 830.2 1140.7 822.4 C1085.4 814.7 1024.5 812.1 983.8 790.9 C943.2 769.8 914.4 730.4 896.8 695.4 C879.2 660.4 866.8 617.7 878.2 580.9 C889.6 544.2 921.3 493.7 965.4 474.9 C1009.5 456 1089.5 466 1142.9 467.8 C1196.3 469.5 1233 476.8 1285.8 485.5 C1338.6 494.3 1433 494.5 1459.5 520.3 C1486 546 1444.7 600 1444.9 640Z" fill="#6A2564"></path><path d="M1012.1 120 C1015.7 143.5 1000.5 178.6 971.6 194.2 C942.7 209.8 878.2 208.9 838.4 213.7 C798.6 218.5 772.5 221.9 732.8 223 C693.2 224.1 633.8 231.5 600.5 220.4 C567.2 209.3 543.5 179 533 156.4 C522.5 133.7 522.1 104.6 537.4 84.4 C552.7 64.1 593.1 49.4 624.8 34.9 C656.5 20.4 689.3 1.8 727.6 -2.8 C765.9 -7.4 817.5 -2.3 854.5 7.1 C891.6 16.5 923.6 34.6 949.9 53.4 C976.2 72.3 1008.5 96.5 1012.1 120Z" fill="#6A2564"></path><path d="M639.9 760 C635 789.4 645.5 820.4 624.8 842.2 C604 864 555.6 878.9 515.6 890.8 C475.5 902.6 427.9 915.6 384.7 913.4 C341.5 911.3 283.7 897.4 256.5 877.9 C229.3 858.4 226.9 822 221.7 796.4 C216.6 770.8 221.6 751.3 225.6 724.3 C229.6 697.3 218.7 651.3 245.9 634.4 C273 617.5 344.2 622.8 388.5 623 C432.7 623.1 467 628 511.2 635.2 C555.5 642.3 632.5 645.2 653.9 666 C675.4 686.8 644.7 730.6 639.9 760Z" fill="#6A2564"></path><path d="M0 353.4 C6.7 355.8 26.7 363.4 40 367.7 C53.3 372 66.7 375.9 80 379.1 C93.3 382.3 106.7 384.9 120 386.7 C133.3 388.5 146.7 389.6 160 389.9 C173.3 390.2 186.7 389.7 200 388.5 C213.3 387.2 226.7 385.2 240 382.5 C253.3 379.9 266.7 376.4 280 372.5 C293.3 368.6 306.7 364 320 359.2 C333.3 354.3 346.7 349 360 343.6 C373.3 338.2 386.7 332.5 400 326.9 C413.3 321.4 426.7 315.8 440 310.5 C453.3 305.3 466.7 300.2 480 295.7 C493.3 291.1 506.7 286.9 520 283.4 C533.3 279.9 546.7 277 560 274.8 C573.3 272.6 586.7 271.1 600 270.5 C613.3 269.8 626.7 269.9 640 270.7 C653.3 271.6 666.7 273.3 680 275.6 C693.3 277.9 706.7 281.1 720 284.7 C733.3 288.3 746.7 292.6 760 297.2 C773.3 301.9 786.7 307.1 800 312.4 C813.3 317.6 826.7 323.4 840 328.9 C853.3 334.4 866.7 340.1 880 345.4 C893.3 350.8 906.7 356.1 920 360.8 C933.3 365.6 946.7 370.1 960 373.8 C973.3 377.6 986.7 380.9 1000 383.4 C1013.3 385.9 1026.7 387.8 1040 388.9 C1053.3 389.9 1066.7 390.3 1080 389.8 C1093.3 389.3 1106.7 388 1120 386 C1133.3 384.1 1146.7 381.3 1160 378 C1173.3 374.7 1186.7 370.6 1200 366.2 C1213.3 361.8 1226.7 356.7 1240 351.6 C1253.3 346.4 1266.7 340.8 1280 335.3 C1293.3 329.8 1306.7 324 1320 318.6 C1333.3 313.2 1346.7 307.8 1360 302.8 C1373.3 297.9 1386.7 293.2 1400 289.1 C1413.3 285.1 1433.3 280.4 1440 278.6" fill="none" stroke="#742B6E" stroke-width="64" stroke-linecap="round"></path><path d="M0 623.7 C6.7 622.3 26.7 618.6 40 615.4 C53.3 612.2 66.7 608.4 80 604.3 C93.3 600.2 106.7 595.6 120 590.8 C133.3 586.1 146.7 580.9 160 575.8 C173.3 570.7 186.7 565.2 200 559.9 C213.3 554.7 226.7 549.2 240 544.1 C253.3 538.9 266.7 533.8 280 529.1 C293.3 524.3 306.7 519.7 320 515.6 C333.3 511.6 346.7 507.8 360 504.5 C373.3 501.3 386.7 498.5 400 496.3 C413.3 494.1 426.7 492.4 440 491.4 C453.3 490.3 466.7 489.9 480 490 C493.3 490.2 506.7 491 520 492.3 C533.3 493.7 546.7 495.6 560 498.1 C573.3 500.6 586.7 503.7 600 507.1 C613.3 510.6 626.7 514.6 640 518.9 C653.3 523.2 666.7 527.9 680 532.8 C693.3 537.7 706.7 542.9 720 548.1 C733.3 553.3 746.7 558.8 760 564.1 C773.3 569.3 786.7 574.7 800 579.8 C813.3 584.8 826.7 589.9 840 594.5 C853.3 599.1 866.7 603.5 880 607.4 C893.3 611.3 906.7 614.8 920 617.8 C933.3 620.8 946.7 623.3 960 625.3 C973.3 627.2 986.7 628.5 1000 629.3 C1013.3 630 1026.7 630.2 1040 629.7 C1053.3 629.3 1066.7 628.2 1080 626.6 C1093.3 624.9 1106.7 622.6 1120 619.9 C1133.3 617.2 1146.7 613.8 1160 610.2 C1173.3 606.5 1186.7 602.2 1200 597.8 C1213.3 593.3 1226.7 588.4 1240 583.5 C1253.3 578.5 1266.7 573.2 1280 567.9 C1293.3 562.7 1306.7 557.2 1320 552 C1333.3 546.7 1346.7 541.4 1360 536.4 C1373.3 531.4 1386.7 526.6 1400 522.1 C1413.3 517.7 1433.3 511.8 1440 509.8" fill="none" stroke="#742B6E" stroke-width="80" stroke-linecap="round"></path><path d="M1269.9 216.8 C1269.9 217.5 1270 219.6 1269.7 221.1 C1269.3 222.5 1268.7 224.1 1267.9 225.5 C1267 227 1265.8 228.4 1264.3 229.6 C1262.9 230.8 1261.1 232 1259.2 232.8 C1257.3 233.6 1255.1 234.2 1252.8 234.5 C1250.5 234.7 1248 234.7 1245.6 234.2 C1243.1 233.8 1240.5 233 1238.1 231.8 C1235.7 230.6 1233.2 229 1231 227 C1228.9 225.1 1226.8 222.7 1225.1 220 C1223.4 217.4 1222 214.3 1221 211.1 C1220.1 207.9 1219.4 204.3 1219.3 200.8 C1219.2 197.2 1219.6 193.4 1220.5 189.7 C1221.4 186 1222.8 182.2 1224.8 178.7 C1226.7 175.2 1229.2 171.8 1232.1 168.7 C1235.1 165.7 1238.6 162.8 1242.4 160.5 C1246.2 158.3 1250.5 156.3 1255 155 C1259.5 153.7 1264.4 152.9 1269.2 152.8 C1274.1 152.7 1279.3 153.2 1284.2 154.5 C1289.2 155.7 1294.3 157.6 1299 160.1 C1303.6 162.6 1308.2 165.9 1312.3 169.7 C1316.3 173.5 1320.1 178 1323.1 182.9 C1326.2 187.8 1328.8 193.3 1330.6 199 C1332.3 204.8 1333.5 211 1333.7 217.2 C1334 223.4 1333.5 230 1332.2 236.2 C1330.8 242.5 1328.6 249 1325.6 254.9 C1322.6 260.8 1318.7 266.7 1314.2 271.8 C1309.6 277 1304.2 281.8 1298.3 285.8 C1292.4 289.7 1285.7 293.1 1278.8 295.5 C1271.9 298 1264.4 299.6 1256.9 300.2 C1249.4 300.9 1241.4 300.6 1233.8 299.2 C1226.1 297.9 1218.3 295.5 1211 292.2 C1203.8 288.9 1196.6 284.5 1190.2 279.4 C1183.8 274.2 1177.8 268 1172.8 261.2 C1167.8 254.4 1163.4 246.7 1160.2 238.7 C1157 230.6 1154.7 221.8 1153.5 213 C1152.4 204.2 1152.4 194.9 1153.5 185.8 C1154.7 176.8 1157 167.5 1160.5 158.9 C1163.9 150.2 1168.6 141.6 1174.3 133.9 C1179.9 126.3 1186.8 118.9 1194.4 112.8 C1201.9 106.6 1215.5 99.6 1219.7 97" fill="none" stroke="#7E3178" stroke-width="34" stroke-linecap="round"></path><path d="M254.1 648.1 C253.5 648.1 251.9 648.2 250.7 647.9 C249.5 647.7 248.2 647.2 247.1 646.6 C245.9 645.9 244.7 645 243.7 643.9 C242.7 642.8 241.7 641.5 241 640 C240.3 638.5 239.7 636.8 239.3 635 C239 633.2 238.9 631.3 239.1 629.3 C239.3 627.4 239.7 625.3 240.4 623.3 C241.2 621.3 242.2 619.2 243.6 617.3 C244.9 615.5 246.6 613.6 248.4 612 C250.3 610.5 252.6 609 254.9 607.9 C257.3 606.8 260 605.9 262.8 605.4 C265.5 604.8 268.5 604.6 271.5 604.8 C274.4 605 277.6 605.6 280.5 606.6 C283.5 607.5 286.6 608.9 289.4 610.7 C292.2 612.5 294.9 614.6 297.3 617.2 C299.7 619.7 302 622.6 303.8 625.8 C305.6 629 307.1 632.6 308.1 636.3 C309.1 639.9 309.8 643.9 309.9 647.9 C310 651.9 309.6 656.2 308.7 660.2 C307.8 664.3 306.4 668.5 304.5 672.4 C302.5 676.3 300.1 680.1 297.1 683.6 C294.2 687 290.8 690.3 287 693 C283.2 695.8 278.9 698.2 274.4 700.1 C269.9 701.9 264.9 703.3 259.9 704 C255 704.7 249.7 704.9 244.5 704.4 C239.3 703.9 233.9 702.8 228.8 701 C223.8 699.2 218.7 696.8 214 693.8 C209.3 690.7 204.8 687 200.9 682.9 C197 678.7 193.4 673.9 190.5 668.7 C187.5 663.6 185.1 657.9 183.4 652.1 C181.8 646.2 180.7 639.9 180.5 633.7 C180.3 627.4 180.8 620.9 182 614.6 C183.3 608.3 185.4 601.9 188.2 595.9 C191 589.9 194.6 584.1 198.9 578.8 C203.1 573.5 208.2 568.5 213.7 564.3 C219.2 560.1 225.4 556.3 232 553.4 C238.5 550.6 245.6 548.3 252.8 547 C259.9 545.7 267.6 545.2 275 545.7 C282.5 546.1 290.2 547.5 297.5 549.7 C304.8 552 315.3 557.6 318.9 559.2" fill="none" stroke="#7E3178" stroke-width="30" stroke-linecap="round"></path><circle cx="527" cy="646" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="307" cy="418" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1010" cy="680" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="174" cy="660" r="6" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1000" cy="305" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="519" cy="236" r="16" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1147" cy="602" r="16" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="853" cy="694" r="9" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="514" cy="690" r="9" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1111" cy="439" r="6" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="171" cy="203" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="127" cy="348" r="6" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="591" cy="524" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="833" cy="771" r="16" fill="none" stroke="#8E3A88" stroke-width="3"></circle></svg>
+    <svg aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="position: absolute; left: 0; top: -1px; width: 100%; height: 60px"><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30 L1440 0 L0 0Z" fill="#FCF6EC"></path><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30" fill="none" stroke="#26121F" stroke-width="3" vector-effect="non-scaling-stroke"></path></svg>
+    <div style="max-width: 1200px; margin: 0 auto">
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px; margin-bottom: 44px">
+        <h2 id="board-title" style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: clamp(46px, 5vw, 66px); line-height: 1.05; color: #FFF8EF; text-shadow: 3px 0 0 #26121F, -3px 0 0 #26121F, 0 3px 0 #26121F, 0 -3px 0 #26121F, 2.2px 2.2px 0 #26121F, -2.2px -2.2px 0 #26121F, 2.2px -2.2px 0 #26121F, -2.2px 2.2px 0 #26121F, 5px 6px 0 #26121F">News &amp; nice words</h2>
+        <p style="margin: 0; font-family: Caveat, 'Bradley Hand', cursive; font-size: 31px; color: #83EDF8">patio days, holiday treats &amp; what people say</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 60px 48px; align-items: start; padding: 0 10px">
+
+        <article style="position: relative; background: #83EDF8; color: #26121F; border: 3px solid #26121F; border-radius: 24px; box-shadow: 0 0 0 10px #FFFFFF, 0 18px 26px 6px rgba(15,4,14,0.45); padding: 26px 24px 24px; transform: rotate(-3deg)">
+          <svg aria-hidden="true" width="64" height="64" viewBox="0 0 64 64" style="position: absolute; top: -30px; right: 12px"><g stroke="#26121F" stroke-width="3" stroke-linecap="round"><path d="M32 4 V12 M32 52 V60 M4 32 H12 M52 32 H60 M12 12 L18 18 M46 46 L52 52 M52 12 L46 18 M12 52 L18 46"></path><circle cx="32" cy="32" r="14" fill="#FFD23F"></circle></g></svg>
+          <h3 style="margin: 0 0 6px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 31px; line-height: 1.1">Patio season</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.55">When it warms up, the patio opens: cold drinks, sunshine and a sandwich in the fresh air.</p>
+        </article>
+
+        <article style="position: relative; background: #C56CB0; color: #26121F; border: 3px solid #26121F; border-radius: 24px; box-shadow: 0 0 0 10px #FFFFFF, 0 18px 26px 6px rgba(15,4,14,0.45); padding: 26px 24px 22px; transform: rotate(2deg)">
+          <svg aria-hidden="true" width="50" height="46" viewBox="0 0 50 46" style="position: absolute; top: -24px; left: 18px"><path d="M25 42 C12 32 3 24 3 14 C3 7 8 3 14 3 C19 3 23 6 25 10 C27 6 31 3 36 3 C42 3 47 7 47 14 C47 24 38 32 25 42 Z" fill="#E32B2C" stroke="#26121F" stroke-width="3" stroke-linejoin="round"></path><path d="M11 12 C11 9 13 8 15 8" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"></path></svg>
+          <h3 style="margin: 0 0 6px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 31px; line-height: 1.1">Holiday specials</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.55">We cook up something special for Valentine’s Day and other holidays through the year.</p>
+          <p style="margin: 10px 0 0; font-family: Caveat, 'Bradley Hand', cursive; font-size: 28px; line-height: 1.1">Next up: [special &amp; date]</p>
+        </article>
+
+        <figure style="margin: 0; background: #FFFFFF; color: #26121F; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 0 0 10px #FFFFFF, 0 18px 26px 6px rgba(15,4,14,0.45); padding: 12px 12px 14px; transform: rotate(3deg)">
+          <div style="aspect-ratio: 4 / 3; border-radius: 12px; background: #F1DDEC; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 14px; text-align: center; font-family: Caveat, 'Bradley Hand', cursive; font-size: 24px; line-height: 1.1">
+            <svg aria-hidden="true" width="40" height="30" viewBox="0 0 40 30" fill="none" stroke="#26121F" stroke-width="2.2" stroke-linejoin="round"><path d="M3 8 H12 L15 3 H25 L28 8 H37 V27 H3 Z"></path><circle cx="20" cy="16.5" r="6"></circle></svg>
+            [photo: the patio in summer]
+          </div>
+          <figcaption style="margin-top: 8px; text-align: center; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 24px; line-height: 1">patio days</figcaption>
+        </figure>
+
+        <figure style="position: relative; margin: 0; background: #FFFFFF; color: #26121F; border: 3px solid #26121F; border-radius: 28px; box-shadow: 0 0 0 10px #FFFFFF, 0 18px 26px 6px rgba(15,4,14,0.45); padding: 30px 26px 22px; transform: rotate(-1.5deg)">
+          <span aria-hidden="true" style="position: absolute; top: -22px; left: 20px; width: 44px; height: 44px; border-radius: 50%; background: #9E4C92; border: 3px solid #26121F; color: #FFF8EF; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 40px; line-height: 50px; text-align: center">“</span>
+          <blockquote style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 29px; line-height: 1.15">“Popular spot for sure, and I understand why.”</blockquote>
+          <figcaption style="margin-top: 12px; font-size: 15px; font-style: italic; color: #5A3550">— from a Google review</figcaption>
+        </figure>
+
+        <figure style="margin: 0; background: #B8E06A; color: #26121F; border: 3px solid #26121F; border-radius: 24px; box-shadow: 0 0 0 10px #FFFFFF, 0 18px 26px 6px rgba(15,4,14,0.45); padding: 26px 24px 22px; transform: rotate(2.5deg)">
+          <blockquote style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 33px; line-height: 1.1">“Worth the price and then some!”</blockquote>
+          <figcaption style="margin-top: 12px; font-size: 15px; line-height: 1.5">— Tripadvisor review<br><strong>Rated 4.8 out of 5 on Tripadvisor</strong></figcaption>
+        </figure>
+
+        <article style="background: #FFF8EF; color: #26121F; border: 3px solid #26121F; border-radius: 24px; box-shadow: 0 0 0 10px #FFFFFF, 0 18px 26px 6px rgba(15,4,14,0.45); padding: 26px 24px 22px; transform: rotate(-1deg)">
+          <h3 style="margin: 0 0 6px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 31px; line-height: 1.1">What’s in the pot today?</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.55">We post our soups and specials on Instagram and Facebook — follow along so you know before you drive over.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px 12px; margin-top: 14px">
+            <a href="https://www.instagram.com/wichescauldron/" style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 23px; color: #FFF8EF; background: #9E4C92; text-decoration: none; padding: 8px 18px; border: 3px solid #26121F; border-radius: 14px; box-shadow: 0 4px 0 #26121F">Instagram</a>
+            <a href="https://www.facebook.com/wichescauldronotown/" style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 23px; color: #26121F; background: #83EDF8; text-decoration: none; padding: 8px 18px; border: 3px solid #26121F; border-radius: 14px; box-shadow: 0 4px 0 #26121F">Facebook</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <svg aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: -1px; width: 100%; height: 60px"><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30 L1440 60 L0 60Z" fill="#FCF6EC"></path><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30" fill="none" stroke="#26121F" stroke-width="3" vector-effect="non-scaling-stroke"></path></svg>
+  </section>
+
+  <!-- OUR STORY -->
+  <section id="story" aria-labelledby="story-title" style="padding: 88px 32px 80px">
+    <div style="max-width: 1120px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px 64px; align-items: center">
+      <article style="flex: 1 1 540px; min-width: 0; position: relative; background-color: #FFFFFF; background-image: linear-gradient(90deg, transparent 58px, #D38FC3 58px 61px, transparent 61px), repeating-linear-gradient(180deg, transparent 0 33px, #BDEFF3 33px 35px); border: 3px solid #26121F; border-radius: 10px; padding: 46px 40px 36px 86px; transform: rotate(-1deg); box-shadow: 0 16px 26px -12px rgba(38,18,31,0.45)">
+        <img src="/_blob/3f6d1ae5a323ef01495b7d89532b01dd" alt="" width="112" height="135" style="position: absolute; top: -48px; right: -26px; width: 112px; height: auto; transform: rotate(10deg); filter: drop-shadow(0 6px 6px rgba(38,18,31,0.35))">
+        <h2 id="story-title" style="margin: 0; font-family: Caveat, 'Bradley Hand', cursive; font-weight: 700; font-size: 42px; line-height: 35px; padding-bottom: 6px">Hi neighbour,</h2>
+        <p style="margin: 0; font-size: 19px; line-height: 35px">’Wiches Cauldron started out as a food truck. These days we’ve got a proper home at 2006 Carp Road — a little shoppe where the soup pot is always on, the sandwiches get piled high, and you’ll leave with more napkins than you came in with.</p>
+        <p style="margin: 0; font-size: 19px; line-height: 35px">Come say hi, tell us how you like your sandwich, and we’ll make it your way.</p>
+        <p style="margin: 0; font-family: Caveat, 'Bradley Hand', cursive; font-size: 35px; line-height: 35px; padding-top: 10px; color: #7C2A6C">— [Owner names] &amp; the Cauldron crew</p>
+      </article>
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; justify-content: center">
+        <figure style="margin: 0; width: min(100%, 330px); background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 0 0 10px #FFFFFF, 0 18px 26px 6px rgba(38,18,31,0.25); padding: 12px 12px 14px; transform: rotate(4deg)">
+          <div style="aspect-ratio: 1 / 1; border-radius: 12px; background: #DDF6F8; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 16px; text-align: center; font-family: Caveat, 'Bradley Hand', cursive; font-size: 25px; line-height: 1.1">
+            <svg aria-hidden="true" width="40" height="30" viewBox="0 0 40 30" fill="none" stroke="#26121F" stroke-width="2.2" stroke-linejoin="round"><path d="M3 8 H12 L15 3 H25 L28 8 H37 V27 H3 Z"></path><circle cx="20" cy="16.5" r="6"></circle></svg>
+            [photo: the crew behind the counter]
+          </div>
+          <figcaption style="margin-top: 8px; text-align: center; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 25px; line-height: 1">that’s us!</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" aria-labelledby="visit-title" style="padding: 40px 32px 112px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: flex-start">
+      <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+        <h2 id="visit-title" style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: clamp(48px, 5.2vw, 70px); line-height: 1; color: #9E4C92; text-shadow: 2px 0 0 #26121F, -2px 0 0 #26121F, 0 2px 0 #26121F, 0 -2px 0 #26121F, 1.5px 1.5px 0 #26121F, -1.5px -1.5px 0 #26121F, 1.5px -1.5px 0 #26121F, -1.5px 1.5px 0 #26121F, 3px 4px 0 #26121F">Come find the cauldron</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 28px 40px; align-items: flex-start">
+          <div style="width: 290px; max-width: 100%; display: flex; flex-direction: column; align-items: center">
+            <svg aria-hidden="true" viewBox="0 0 290 64" style="display: block; width: 100%; height: auto"><path d="M145 10 L36 62 M145 10 L254 62" fill="none" stroke="#26121F" stroke-width="3"></path><circle cx="145" cy="9" r="7" fill="#ACA7A1" stroke="#26121F" stroke-width="3"></circle></svg>
+            <div style="width: 100%; box-sizing: border-box; margin-top: -4px; background: #FFFFFF; border: 4px solid #26121F; border-radius: 18px; box-shadow: 0 6px 0 #26121F; padding: 12px 14px 14px; text-align: center; transform: rotate(-2deg)">
+              <div style="font-family: Caveat, 'Bradley Hand', cursive; font-size: 29px; line-height: 1">{{signLead}}</div>
+              <div style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 62px; line-height: 1.05; color: {{signColor}}">{{signWord}}</div>
+              <div style="font-family: Caveat, 'Bradley Hand', cursive; font-size: 26px; line-height: 1.1; color: #5A3550">{{signNote}}</div>
+            </div>
+          </div>
+          <div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+            <p style="margin: 0; font-size: 20px; line-height: 1.5"><strong>2006 Carp Road</strong><br>Carp (Ottawa), Ontario K0A 1L0</p>
+            <ul style="margin: 6px 0 0; padding: 0; list-style: none; font-size: 18px">
+              <li style="display: flex; align-items: baseline; gap: 10px; padding: 6px 0"><span>Tue – Thu</span><span aria-hidden="true" style="flex: 1; border-bottom: 3px dotted #C56CB0"></span><span>11 am – 4 pm</span></li>
+              <li style="display: flex; align-items: baseline; gap: 10px; padding: 6px 0"><span>Friday</span><span aria-hidden="true" style="flex: 1; border-bottom: 3px dotted #C56CB0"></span><span>11–2:30 &amp; 4:30–7</span></li>
+              <li style="display: flex; align-items: baseline; gap: 10px; padding: 6px 0"><span>Saturday</span><span aria-hidden="true" style="flex: 1; border-bottom: 3px dotted #C56CB0"></span><span>11 am – 4 pm</span></li>
+              <li style="display: flex; align-items: baseline; gap: 10px; padding: 6px 0"><span>Sun &amp; Mon</span><span aria-hidden="true" style="flex: 1; border-bottom: 3px dotted #C56CB0"></span><span>closed</span></li>
+            </ul>
+            <p style="margin: 0; font-family: Caveat, 'Bradley Hand', cursive; font-size: 27px; color: #5A3550; transform: rotate(-1.5deg)">(resting the cauldron)</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 18px">
+          <a href="https://maps.google.com/?q=2006+Carp+Road,+Carp,+ON" style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 25px; color: #FFF8EF; background: #9E4C92; text-decoration: none; padding: 11px 24px; border: 3px solid #26121F; border-radius: 16px; box-shadow: 0 5px 0 #26121F">Get directions</a>
+          <a href="tel:+13432029665" style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 25px; color: #26121F; background: #83EDF8; text-decoration: none; padding: 11px 22px; border: 3px solid #26121F; border-radius: 16px; box-shadow: 0 5px 0 #26121F">Call 343-202-9665</a>
+          <a href="mailto:wichescauldron@gmail.com" style="font-size: 18px; padding: 10px 0">wichescauldron@gmail.com</a>
+        </div>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; justify-content: center; padding-top: 16px">
+        <figure style="margin: 0; width: 100%; max-width: 520px; background: #FFFFFF; border: 3px solid #26121F; border-radius: 22px; box-shadow: 0 0 0 10px #FFFFFF, 0 18px 26px 6px rgba(38,18,31,0.25); padding: 14px 14px 16px; transform: rotate(-2deg)">
+          <div style="aspect-ratio: 4 / 3; border-radius: 14px; background: #DDF6F8; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 20px; text-align: center; font-family: Caveat, 'Bradley Hand', cursive; font-size: 27px; line-height: 1.1">
+            <svg aria-hidden="true" width="38" height="44" viewBox="0 0 36 40" fill="none" stroke="#26121F" stroke-width="2.5" stroke-linejoin="round"><path d="M18 37 C9 27 6 21 6 15 a12 12 0 0 1 24 0 C30 21 27 27 18 37 Z" fill="#C56CB0"></path><circle cx="18" cy="15" r="4.5" fill="#FFFFFF"></circle></svg>
+            [map: 2006 Carp Road, Carp]
+          </div>
+          <figcaption style="margin-top: 10px; text-align: center; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 24px; line-height: 1.1">look for [the sign / our building] on Carp Road</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="position: relative; isolation: isolate; overflow: hidden; background: #5E2159; color: #FFF8EF; padding: 96px 32px 44px">
+    <svg aria-hidden="true" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1"><path d="M468.7 200 C466.9 233.9 447.3 274.4 416.8 299.5 C386.2 324.6 330.4 341.4 285.3 350.7 C240.1 360 191.9 358.9 145.9 355.3 C99.8 351.7 43.7 347.1 9.1 328.9 C-25.5 310.8 -45 276.6 -61.9 246.4 C-78.8 216.2 -105.8 175.6 -92.1 147.8 C-78.4 120 -18.8 98.7 20.5 79.6 C59.7 60.5 98.2 39.4 143.3 33 C188.3 26.6 243.6 30.7 290.9 41.2 C338.2 51.8 397.7 69.6 427.3 96.1 C456.9 122.5 470.4 166.1 468.7 200Z" fill="#6A2564"></path><path d="M1444.9 640 C1445.1 680 1482.1 727.3 1460.4 760.1 C1438.8 793 1368.4 826.9 1315.1 837.3 C1261.8 847.7 1195.9 830.2 1140.7 822.4 C1085.4 814.7 1024.5 812.1 983.8 790.9 C943.2 769.8 914.4 730.4 896.8 695.4 C879.2 660.4 866.8 617.7 878.2 580.9 C889.6 544.2 921.3 493.7 965.4 474.9 C1009.5 456 1089.5 466 1142.9 467.8 C1196.3 469.5 1233 476.8 1285.8 485.5 C1338.6 494.3 1433 494.5 1459.5 520.3 C1486 546 1444.7 600 1444.9 640Z" fill="#6A2564"></path><path d="M1012.1 120 C1015.7 143.5 1000.5 178.6 971.6 194.2 C942.7 209.8 878.2 208.9 838.4 213.7 C798.6 218.5 772.5 221.9 732.8 223 C693.2 224.1 633.8 231.5 600.5 220.4 C567.2 209.3 543.5 179 533 156.4 C522.5 133.7 522.1 104.6 537.4 84.4 C552.7 64.1 593.1 49.4 624.8 34.9 C656.5 20.4 689.3 1.8 727.6 -2.8 C765.9 -7.4 817.5 -2.3 854.5 7.1 C891.6 16.5 923.6 34.6 949.9 53.4 C976.2 72.3 1008.5 96.5 1012.1 120Z" fill="#6A2564"></path><path d="M639.9 760 C635 789.4 645.5 820.4 624.8 842.2 C604 864 555.6 878.9 515.6 890.8 C475.5 902.6 427.9 915.6 384.7 913.4 C341.5 911.3 283.7 897.4 256.5 877.9 C229.3 858.4 226.9 822 221.7 796.4 C216.6 770.8 221.6 751.3 225.6 724.3 C229.6 697.3 218.7 651.3 245.9 634.4 C273 617.5 344.2 622.8 388.5 623 C432.7 623.1 467 628 511.2 635.2 C555.5 642.3 632.5 645.2 653.9 666 C675.4 686.8 644.7 730.6 639.9 760Z" fill="#6A2564"></path><path d="M0 353.4 C6.7 355.8 26.7 363.4 40 367.7 C53.3 372 66.7 375.9 80 379.1 C93.3 382.3 106.7 384.9 120 386.7 C133.3 388.5 146.7 389.6 160 389.9 C173.3 390.2 186.7 389.7 200 388.5 C213.3 387.2 226.7 385.2 240 382.5 C253.3 379.9 266.7 376.4 280 372.5 C293.3 368.6 306.7 364 320 359.2 C333.3 354.3 346.7 349 360 343.6 C373.3 338.2 386.7 332.5 400 326.9 C413.3 321.4 426.7 315.8 440 310.5 C453.3 305.3 466.7 300.2 480 295.7 C493.3 291.1 506.7 286.9 520 283.4 C533.3 279.9 546.7 277 560 274.8 C573.3 272.6 586.7 271.1 600 270.5 C613.3 269.8 626.7 269.9 640 270.7 C653.3 271.6 666.7 273.3 680 275.6 C693.3 277.9 706.7 281.1 720 284.7 C733.3 288.3 746.7 292.6 760 297.2 C773.3 301.9 786.7 307.1 800 312.4 C813.3 317.6 826.7 323.4 840 328.9 C853.3 334.4 866.7 340.1 880 345.4 C893.3 350.8 906.7 356.1 920 360.8 C933.3 365.6 946.7 370.1 960 373.8 C973.3 377.6 986.7 380.9 1000 383.4 C1013.3 385.9 1026.7 387.8 1040 388.9 C1053.3 389.9 1066.7 390.3 1080 389.8 C1093.3 389.3 1106.7 388 1120 386 C1133.3 384.1 1146.7 381.3 1160 378 C1173.3 374.7 1186.7 370.6 1200 366.2 C1213.3 361.8 1226.7 356.7 1240 351.6 C1253.3 346.4 1266.7 340.8 1280 335.3 C1293.3 329.8 1306.7 324 1320 318.6 C1333.3 313.2 1346.7 307.8 1360 302.8 C1373.3 297.9 1386.7 293.2 1400 289.1 C1413.3 285.1 1433.3 280.4 1440 278.6" fill="none" stroke="#742B6E" stroke-width="64" stroke-linecap="round"></path><path d="M0 623.7 C6.7 622.3 26.7 618.6 40 615.4 C53.3 612.2 66.7 608.4 80 604.3 C93.3 600.2 106.7 595.6 120 590.8 C133.3 586.1 146.7 580.9 160 575.8 C173.3 570.7 186.7 565.2 200 559.9 C213.3 554.7 226.7 549.2 240 544.1 C253.3 538.9 266.7 533.8 280 529.1 C293.3 524.3 306.7 519.7 320 515.6 C333.3 511.6 346.7 507.8 360 504.5 C373.3 501.3 386.7 498.5 400 496.3 C413.3 494.1 426.7 492.4 440 491.4 C453.3 490.3 466.7 489.9 480 490 C493.3 490.2 506.7 491 520 492.3 C533.3 493.7 546.7 495.6 560 498.1 C573.3 500.6 586.7 503.7 600 507.1 C613.3 510.6 626.7 514.6 640 518.9 C653.3 523.2 666.7 527.9 680 532.8 C693.3 537.7 706.7 542.9 720 548.1 C733.3 553.3 746.7 558.8 760 564.1 C773.3 569.3 786.7 574.7 800 579.8 C813.3 584.8 826.7 589.9 840 594.5 C853.3 599.1 866.7 603.5 880 607.4 C893.3 611.3 906.7 614.8 920 617.8 C933.3 620.8 946.7 623.3 960 625.3 C973.3 627.2 986.7 628.5 1000 629.3 C1013.3 630 1026.7 630.2 1040 629.7 C1053.3 629.3 1066.7 628.2 1080 626.6 C1093.3 624.9 1106.7 622.6 1120 619.9 C1133.3 617.2 1146.7 613.8 1160 610.2 C1173.3 606.5 1186.7 602.2 1200 597.8 C1213.3 593.3 1226.7 588.4 1240 583.5 C1253.3 578.5 1266.7 573.2 1280 567.9 C1293.3 562.7 1306.7 557.2 1320 552 C1333.3 546.7 1346.7 541.4 1360 536.4 C1373.3 531.4 1386.7 526.6 1400 522.1 C1413.3 517.7 1433.3 511.8 1440 509.8" fill="none" stroke="#742B6E" stroke-width="80" stroke-linecap="round"></path><path d="M1269.9 216.8 C1269.9 217.5 1270 219.6 1269.7 221.1 C1269.3 222.5 1268.7 224.1 1267.9 225.5 C1267 227 1265.8 228.4 1264.3 229.6 C1262.9 230.8 1261.1 232 1259.2 232.8 C1257.3 233.6 1255.1 234.2 1252.8 234.5 C1250.5 234.7 1248 234.7 1245.6 234.2 C1243.1 233.8 1240.5 233 1238.1 231.8 C1235.7 230.6 1233.2 229 1231 227 C1228.9 225.1 1226.8 222.7 1225.1 220 C1223.4 217.4 1222 214.3 1221 211.1 C1220.1 207.9 1219.4 204.3 1219.3 200.8 C1219.2 197.2 1219.6 193.4 1220.5 189.7 C1221.4 186 1222.8 182.2 1224.8 178.7 C1226.7 175.2 1229.2 171.8 1232.1 168.7 C1235.1 165.7 1238.6 162.8 1242.4 160.5 C1246.2 158.3 1250.5 156.3 1255 155 C1259.5 153.7 1264.4 152.9 1269.2 152.8 C1274.1 152.7 1279.3 153.2 1284.2 154.5 C1289.2 155.7 1294.3 157.6 1299 160.1 C1303.6 162.6 1308.2 165.9 1312.3 169.7 C1316.3 173.5 1320.1 178 1323.1 182.9 C1326.2 187.8 1328.8 193.3 1330.6 199 C1332.3 204.8 1333.5 211 1333.7 217.2 C1334 223.4 1333.5 230 1332.2 236.2 C1330.8 242.5 1328.6 249 1325.6 254.9 C1322.6 260.8 1318.7 266.7 1314.2 271.8 C1309.6 277 1304.2 281.8 1298.3 285.8 C1292.4 289.7 1285.7 293.1 1278.8 295.5 C1271.9 298 1264.4 299.6 1256.9 300.2 C1249.4 300.9 1241.4 300.6 1233.8 299.2 C1226.1 297.9 1218.3 295.5 1211 292.2 C1203.8 288.9 1196.6 284.5 1190.2 279.4 C1183.8 274.2 1177.8 268 1172.8 261.2 C1167.8 254.4 1163.4 246.7 1160.2 238.7 C1157 230.6 1154.7 221.8 1153.5 213 C1152.4 204.2 1152.4 194.9 1153.5 185.8 C1154.7 176.8 1157 167.5 1160.5 158.9 C1163.9 150.2 1168.6 141.6 1174.3 133.9 C1179.9 126.3 1186.8 118.9 1194.4 112.8 C1201.9 106.6 1215.5 99.6 1219.7 97" fill="none" stroke="#7E3178" stroke-width="34" stroke-linecap="round"></path><path d="M254.1 648.1 C253.5 648.1 251.9 648.2 250.7 647.9 C249.5 647.7 248.2 647.2 247.1 646.6 C245.9 645.9 244.7 645 243.7 643.9 C242.7 642.8 241.7 641.5 241 640 C240.3 638.5 239.7 636.8 239.3 635 C239 633.2 238.9 631.3 239.1 629.3 C239.3 627.4 239.7 625.3 240.4 623.3 C241.2 621.3 242.2 619.2 243.6 617.3 C244.9 615.5 246.6 613.6 248.4 612 C250.3 610.5 252.6 609 254.9 607.9 C257.3 606.8 260 605.9 262.8 605.4 C265.5 604.8 268.5 604.6 271.5 604.8 C274.4 605 277.6 605.6 280.5 606.6 C283.5 607.5 286.6 608.9 289.4 610.7 C292.2 612.5 294.9 614.6 297.3 617.2 C299.7 619.7 302 622.6 303.8 625.8 C305.6 629 307.1 632.6 308.1 636.3 C309.1 639.9 309.8 643.9 309.9 647.9 C310 651.9 309.6 656.2 308.7 660.2 C307.8 664.3 306.4 668.5 304.5 672.4 C302.5 676.3 300.1 680.1 297.1 683.6 C294.2 687 290.8 690.3 287 693 C283.2 695.8 278.9 698.2 274.4 700.1 C269.9 701.9 264.9 703.3 259.9 704 C255 704.7 249.7 704.9 244.5 704.4 C239.3 703.9 233.9 702.8 228.8 701 C223.8 699.2 218.7 696.8 214 693.8 C209.3 690.7 204.8 687 200.9 682.9 C197 678.7 193.4 673.9 190.5 668.7 C187.5 663.6 185.1 657.9 183.4 652.1 C181.8 646.2 180.7 639.9 180.5 633.7 C180.3 627.4 180.8 620.9 182 614.6 C183.3 608.3 185.4 601.9 188.2 595.9 C191 589.9 194.6 584.1 198.9 578.8 C203.1 573.5 208.2 568.5 213.7 564.3 C219.2 560.1 225.4 556.3 232 553.4 C238.5 550.6 245.6 548.3 252.8 547 C259.9 545.7 267.6 545.2 275 545.7 C282.5 546.1 290.2 547.5 297.5 549.7 C304.8 552 315.3 557.6 318.9 559.2" fill="none" stroke="#7E3178" stroke-width="30" stroke-linecap="round"></path><circle cx="527" cy="646" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="307" cy="418" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1010" cy="680" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="174" cy="660" r="6" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1000" cy="305" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="519" cy="236" r="16" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1147" cy="602" r="16" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="853" cy="694" r="9" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="514" cy="690" r="9" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="1111" cy="439" r="6" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="171" cy="203" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="127" cy="348" r="6" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="591" cy="524" r="22" fill="none" stroke="#8E3A88" stroke-width="3"></circle><circle cx="833" cy="771" r="16" fill="none" stroke="#8E3A88" stroke-width="3"></circle></svg>
+    <svg aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="position: absolute; left: 0; top: -1px; width: 100%; height: 60px"><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30 L1440 0 L0 0Z" fill="#FCF6EC"></path><path d="M0 30 C6.7 31.9 26.7 39.4 40 41.3 C53.3 43.1 66.7 43.1 80 41.3 C93.3 39.4 106.7 33.8 120 30 C133.3 26.2 146.7 20.6 160 18.7 C173.3 16.9 186.7 16.9 200 18.7 C213.3 20.6 226.7 26.2 240 30 C253.3 33.8 266.7 39.4 280 41.3 C293.3 43.1 306.7 43.1 320 41.3 C333.3 39.4 346.7 33.8 360 30 C373.3 26.2 386.7 20.6 400 18.7 C413.3 16.9 426.7 16.9 440 18.7 C453.3 20.6 466.7 26.2 480 30 C493.3 33.8 506.7 39.4 520 41.3 C533.3 43.1 546.7 43.1 560 41.3 C573.3 39.4 586.7 33.8 600 30 C613.3 26.2 626.7 20.6 640 18.7 C653.3 16.9 666.7 16.9 680 18.7 C693.3 20.6 706.7 26.2 720 30 C733.3 33.8 746.7 39.4 760 41.3 C773.3 43.1 786.7 43.1 800 41.3 C813.3 39.4 826.7 33.8 840 30 C853.3 26.2 866.7 20.6 880 18.7 C893.3 16.9 906.7 16.9 920 18.7 C933.3 20.6 946.7 26.2 960 30 C973.3 33.8 986.7 39.4 1000 41.3 C1013.3 43.1 1026.7 43.1 1040 41.3 C1053.3 39.4 1066.7 33.8 1080 30 C1093.3 26.2 1106.7 20.6 1120 18.7 C1133.3 16.9 1146.7 16.9 1160 18.7 C1173.3 20.6 1186.7 26.2 1200 30 C1213.3 33.8 1226.7 39.4 1240 41.3 C1253.3 43.1 1266.7 43.1 1280 41.3 C1293.3 39.4 1306.7 33.8 1320 30 C1333.3 26.2 1346.7 20.6 1360 18.7 C1373.3 16.9 1386.7 16.9 1400 18.7 C1413.3 20.6 1433.3 28.1 1440 30" fill="none" stroke="#26121F" stroke-width="3" vector-effect="non-scaling-stroke"></path></svg>
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: center; justify-content: space-between">
+      <div style="display: flex; align-items: center; gap: 18px">
+        <img src="/_blob/3f6d1ae5a323ef01495b7d89532b01dd" alt="" width="104" height="125" style="display: block; flex: none; width: 104px; height: auto; transform: rotate(-5deg); filter: drop-shadow(0 6px 8px rgba(10,0,10,0.45))">
+        <div>
+          <div style="font-family: Chewy, 'Comic Sans MS', cursive; font-size: 38px; line-height: 1.05; text-shadow: 2px 0 0 #26121F, -2px 0 0 #26121F, 0 2px 0 #26121F, 0 -2px 0 #26121F, 1.5px 1.5px 0 #26121F, -1.5px -1.5px 0 #26121F, 1.5px -1.5px 0 #26121F, -1.5px 1.5px 0 #26121F, 3px 4px 0 #26121F">’wiches cauldron</div>
+          <div style="font-size: 16px; margin-top: 4px; color: #F6E6F3">sandwich shoppe · Carp, Ontario</div>
+        </div>
+      </div>
+      <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #F6E6F3">2006 Carp Road, Carp (Ottawa), ON K0A 1L0<br>Tue – Sat 11 am – 4 pm · Fri 11–2:30 &amp; 4:30–7</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 17px">
+        <a href="tel:+13432029665" style="color: #FFF8EF; padding: 10px 0">343-202-9665</a>
+        <a href="mailto:wichescauldron@gmail.com" style="color: #FFF8EF; padding: 10px 0">Email us</a>
+        <a href="https://www.instagram.com/wichescauldron/" style="color: #FFF8EF; padding: 10px 0">Instagram</a>
+        <a href="https://www.facebook.com/wichescauldronotown/" style="color: #FFF8EF; padding: 10px 0">Facebook</a>
+      </div>
+    </div>
+    <p style="margin: 40px 0 0; text-align: center; font-family: Chewy, 'Comic Sans MS', cursive; font-size: 42px; line-height: 1.1; color: #83EDF8; text-shadow: 2px 0 0 #26121F, -2px 0 0 #26121F, 0 2px 0 #26121F, 0 -2px 0 #26121F, 1.5px 1.5px 0 #26121F, -1.5px -1.5px 0 #26121F, 1.5px -1.5px 0 #26121F, -1.5px 1.5px 0 #26121F, 3px 4px 0 #26121F">See you at lunch!</p>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"awning":{"editor":"color","default":"#A13C9B","options":["#A13C9B","#2EC4CE","#E32B2C","#5E2159"],"section":"Look"},"doorSign":{"editor":"enum","default":"auto","options":["auto","open","closed"],"section":"Door sign"},"$preview":{"width":1440,"height":6000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const awning = this.props.awning ?? '#A13C9B';
+    const mode = this.props.doorSign ?? 'auto';
+    const hours = { Tue: [[11, 16]], Wed: [[11, 16]], Thu: [[11, 16]], Fri: [[11, 14.5], [16.5, 19]], Sat: [[11, 16]] };
+    const order = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const names = { Sun: 'Sunday', Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday', Fri: 'Friday', Sat: 'Saturday' };
+    const fmt = (h) => {
+      const hh = Math.floor(h);
+      const mm = Math.round((h - hh) * 60);
+      const h12 = hh > 12 ? hh - 12 : hh;
+      return h12 + (mm ? ':' + (mm < 10 ? '0' + mm : mm) : '') + (hh >= 12 ? ' pm' : ' am');
+    };
+    let day = 'Tue';
+    let hour = 12;
+    try {
+      const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Toronto', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' }).formatToParts(new Date());
+      const get = (t) => { const p = parts.find((x) => x.type === t); return p ? p.value : ''; };
+      day = get('weekday') || day;
+      hour = (parseInt(get('hour'), 10) % 24) + (parseInt(get('minute'), 10) || 0) / 60;
+    } catch (e) {}
+    const today = hours[day] || [];
+    const current = today.find((w) => hour >= w[0] && hour < w[1]);
+    const later = today.find((w) => hour < w[0]);
+    let open = !!current;
+    if (mode === 'open') open = true;
+    if (mode === 'closed') open = false;
+    let note = '';
+    if (open) {
+      note = 'until ' + fmt(current ? current[1] : 16) + ' today';
+    } else if (later) {
+      note = (later === today[0] ? 'opening' : 'back') + ' today at ' + fmt(later[0]);
+    } else {
+      const idx = order.indexOf(day);
+      for (let i = 1; i <= 7; i++) {
+        const d = order[(idx + i) % 7];
+        if (hours[d]) {
+          note = 'back ' + (i === 1 ? 'tomorrow' : names[d]) + ' at ' + fmt(hours[d][0][0]);
+          break;
+        }
+      }
+    }
+    return {
+      awning,
+      signLead: open ? 'Come on in, we’re' : 'Sorry, we’re',
+      signWord: open ? 'OPEN' : 'CLOSED',
+      signNote: note,
+      signColor: open ? '#3F7A17' : '#C42222'
+    };
+  }
+}
+</script>
+</body>
+</html>

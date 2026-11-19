@@ -1,0 +1,29 @@
+.heading {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+.o1 {
+  text-shadow: var(--outline-1);
+}
+
+.o2 {
+  text-shadow: var(--outline-2);
+}
+
+.o3 {
+  text-shadow: var(--outline-3);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.cream {
+  color: var(--cream-warm);
+}
+
+.aqua {
+  color: var(--aqua);
+}

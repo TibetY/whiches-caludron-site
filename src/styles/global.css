@@ -1,0 +1,96 @@
+/*
+ * Base rules shared by the website and the dashboard.
+ * The artboards rely on the browser's default box model, so there is no global box-sizing reset:
+ * components set box-sizing exactly where the designs do.
+ */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The public pages end on the purple footer, so overscroll shows purple too. */
+html[data-surface='site'] body {
+  background: var(--purple-deep);
+}
+
+a {
+  color: var(--link);
+}
+
+a:where(:hover) {
+  color: var(--ink);
+}
+
+:where(input, textarea, select, button) {
+  font: inherit;
+  color: inherit;
+}
+
+::placeholder {
+  color: var(--placeholder);
+  opacity: 1;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Hand-made paper texture behind every page */
+.tx-cream {
+  background-color: var(--cream);
+  background-image: url('../../assets/cream-paper.jpg');
+  background-size: 512px 512px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -200px;
+  z-index: 100;
+  padding: 10px 16px;
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

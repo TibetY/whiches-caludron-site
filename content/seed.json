@@ -1,0 +1,93 @@
+{
+  "today": {
+    "soup": { "name": "Potato Parmesan Maple", "description": "", "soldOut": false },
+    "sammie": {
+      "name": "The Trucker",
+      "description": "Deli meats, mozzarella, rosemary mayo, pickled eggplant, kettle chips & greens",
+      "price": "",
+      "soldOut": false
+    },
+    "treats": [
+      { "id": "butter-tarts", "name": "Butter tarts", "onCounter": true },
+      { "id": "cookies", "name": "Cookies", "onCounter": true },
+      { "id": "biscuits", "name": "Biscuits", "onCounter": false }
+    ],
+    "doorOverride": "auto",
+    "note": "",
+    "photoId": null
+  },
+  "menu": {
+    "soupPrices": { "cup": "", "bowl": "" },
+    "items": [
+      {
+        "id": "trucker",
+        "category": "sammys",
+        "name": "The Trucker",
+        "description": "Assorted deli meats, mozzarella, rosemary mayo, pickled eggplant, kettle chips, spring greens",
+        "price": "",
+        "visible": true,
+        "labels": ["napkins"],
+        "photoId": null
+      },
+      {
+        "id": "roast-chicken",
+        "category": "sammys",
+        "name": "Roast Chicken",
+        "description": "[What goes on it: cheese, sauce, toppings, bread]",
+        "price": "",
+        "visible": true,
+        "labels": [],
+        "photoId": null
+      },
+      { "id": "potato-parmesan-maple", "category": "soups", "name": "Potato Parmesan Maple", "description": "", "price": "", "visible": true, "labels": [], "photoId": null },
+      { "id": "cauliflower-three-cheese", "category": "soups", "name": "Cream of Cauliflower Three-Cheese", "description": "", "price": "", "visible": true, "labels": [], "photoId": null },
+      { "id": "tomato", "category": "soups", "name": "Tomato", "description": "", "price": "", "visible": true, "labels": [], "photoId": null },
+      { "id": "butter-tarts", "category": "sweets", "name": "Butter tarts", "description": "", "price": "", "visible": true, "labels": [], "photoId": null },
+      { "id": "cookies", "category": "sweets", "name": "Cookies", "description": "", "price": "", "visible": true, "labels": [], "photoId": null },
+      { "id": "biscuits", "category": "sweets", "name": "Biscuits", "description": "", "price": "", "visible": true, "labels": [], "photoId": null }
+    ]
+  },
+  "hours": {
+    "timeZone": "America/Toronto",
+    "week": {
+      "mon": { "open": false, "ranges": [] },
+      "tue": { "open": true, "ranges": [{ "from": "11:00", "to": "16:00" }] },
+      "wed": { "open": true, "ranges": [{ "from": "11:00", "to": "16:00" }] },
+      "thu": { "open": true, "ranges": [{ "from": "11:00", "to": "16:00" }] },
+      "fri": { "open": true, "ranges": [{ "from": "11:00", "to": "14:30" }, { "from": "16:30", "to": "19:00" }] },
+      "sat": { "open": true, "ranges": [{ "from": "11:00", "to": "16:00" }] },
+      "sun": { "open": false, "ranges": [] }
+    },
+    "specials": []
+  },
+  "notices": {
+    "holiday": {
+      "show": true,
+      "message": "We cook up something special for Valentine’s Day and other holidays through the year.",
+      "nextUp": ""
+    },
+    "events": {
+      "show": true,
+      "message": "Planning a party or a work lunch? Send us a message on Instagram to book a private event."
+    },
+    "patioOpen": false
+  },
+  "photos": {
+    "patio": { "photoId": null, "alt": "" },
+    "crew": { "photoId": null, "alt": "" },
+    "share": { "photoId": null, "alt": "" },
+    "library": []
+  },
+  "contact": {
+    "phone": "343-202-9665",
+    "email": "wichescauldron@gmail.com",
+    "instagram": "https://www.instagram.com/wichescauldron/",
+    "facebook": "https://www.facebook.com/wichescauldronotown/",
+    "address": "2006 Carp Road, Carp (Ottawa), ON K0A 1L0",
+    "mapsUrl": "https://maps.google.com/?q=2006+Carp+Road,+Carp,+ON"
+  },
+  "reviews": [
+    { "quote": "Popular spot for sure, and I understand why.", "source": "Google review" },
+    { "quote": "Worth the price and then some!", "source": "Tripadvisor review", "rating": "4.8 out of 5 on Tripadvisor (re-check before launch)" }
+  ]
+}

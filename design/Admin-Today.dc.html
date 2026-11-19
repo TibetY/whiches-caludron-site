@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shop dashboard — Today’s brew</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy&amp;family=Nunito:ital,wght@0,400..900;1,400..900&amp;display=swap">
+<style>
+body{margin:0;background:#FCF6EC}
+a{color:#7C2A6C}a:hover{color:#26121F}
+input,textarea,select,button{font:inherit;color:inherit}
+input::placeholder,textarea::placeholder{color:#8A6F82}
+input:focus-visible,textarea:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible,label:focus-within{outline:3px solid #2EC4CE;outline-offset:2px}
+.tx-cream{background-color:#FCF6EC;background-image:url(/_blob/860f97b01752ad1d29fee55a04c27b38);background-size:512px 512px}
+</style>
+</helmet>
+<div class="tx-cream" style="font-family: Nunito, 'Trebuchet MS', sans-serif; color: #26121F; min-height: 100vh; display: flex; flex-wrap: wrap">
+  <aside style="flex: 1 1 250px; box-sizing: border-box; background: #5E2159; color: #FFF8EF; padding: 22px 18px 26px; display: flex; flex-direction: column; gap: 26px">
+    <a href="Main.dc.html" style="display: flex; align-items: center; gap: 12px; color: #FFF8EF; text-decoration: none">
+      <img src="/_blob/3f6d1ae5a323ef01495b7d89532b01dd" alt="" width="62" height="75" style="display: block; width: 62px; height: auto; transform: rotate(-5deg); filter: drop-shadow(0 4px 5px rgba(10,0,10,0.45))">
+      <span style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 27px; line-height: 1.05; text-shadow: 1.5px 0 0 #26121F, -1.5px 0 0 #26121F, 0 1.5px 0 #26121F, 0 -1.5px 0 #26121F, 1px 1px 0 #26121F, -1px -1px 0 #26121F, 1px -1px 0 #26121F, -1px 1px 0 #26121F, 2px 2px 0 #26121F">’wiches cauldron</span>
+        <span style="font-size: 14px; font-weight: 800; color: #F6E6F3; letter-spacing: 0.02em">Shop dashboard</span>
+      </span>
+    </a>
+    <nav aria-label="Dashboard" style="display: flex; flex-direction: column; gap: 6px">
+      <a href="Admin-Today.dc.html" aria-current="page" style="display: flex; align-items: center; gap: 12px; min-height: 48px; box-sizing: border-box; padding: 10px 14px; border-radius: 14px; background: #FFF8EF; color: #26121F; border: 2.5px solid #26121F; box-shadow: 0 3px 0 #26121F; text-decoration: none; font-weight: 800; font-size: 17px"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M4 10h16"></path><path d="M5 10c0 5 3 9 7 9s7-4 7-9"></path><path d="M8 19l-1 2M16 19l1 2"></path><path d="M9.5 6.5c0-1.2 1.2-1.2 1.2-2.5M13.5 6.5c0-1.2 1.2-1.2 1.2-2.5"></path></svg>Today’s brew</a>
+      <a href="Admin-Menu.dc.html" style="display: flex; align-items: center; gap: 12px; min-height: 48px; box-sizing: border-box; padding: 10px 14px; border-radius: 14px; color: #FFF8EF; border: 2.5px solid transparent; text-decoration: none; font-weight: 700; font-size: 17px"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M9 6h11M9 12h11M9 18h11"></path><circle cx="4.5" cy="6" r="1"></circle><circle cx="4.5" cy="12" r="1"></circle><circle cx="4.5" cy="18" r="1"></circle></svg>Menu &amp; prices</a>
+      <a href="Admin-Photos.dc.html" style="display: flex; align-items: center; gap: 12px; min-height: 48px; box-sizing: border-box; padding: 10px 14px; border-radius: 14px; color: #FFF8EF; border: 2.5px solid transparent; text-decoration: none; font-weight: 700; font-size: 17px"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M3 8h4l2-3h6l2 3h4v11H3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Photos</a>
+      <a href="Admin-Hours.dc.html" style="display: flex; align-items: center; gap: 12px; min-height: 48px; box-sizing: border-box; padding: 10px 14px; border-radius: 14px; color: #FFF8EF; border: 2.5px solid transparent; text-decoration: none; font-weight: 700; font-size: 17px"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Hours &amp; notices</a>
+    </nav>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px">
+      <a href="Main.dc.html" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; box-sizing: border-box; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 22px; padding: 8px 22px; border: 3px solid #26121F; border-radius: 14px; box-shadow: 0 4px 0 #26121F; cursor: pointer; text-decoration: none; color: #26121F; background: #83EDF8; font-size: 20px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M14 4h6v6M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg>View the website</a>
+      <p style="margin: 0; font-size: 14px; color: #F6E6F3">Signed in as <strong>[Owner name]</strong></p>
+    </div>
+  </aside>
+  <main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; padding: 30px clamp(18px, 3vw, 44px) 64px; display: flex; flex-direction: column; gap: 24px">
+    <p style="margin: 0 0 -14px; font-size: 16px; font-weight: 800; color: #6B4A61">{{greeting}}! It’s {{dateLabel}}.</p>
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 24px">
+      <div style="min-width: 0">
+        <h1 style="margin: 0; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: clamp(36px, 3.6vw, 48px); line-height: 1.08; color: #9E4C92; text-shadow: 2px 0 0 #26121F, -2px 0 0 #26121F, 0 2px 0 #26121F, 0 -2px 0 #26121F, 1.5px 1.5px 0 #26121F, -1.5px -1.5px 0 #26121F, 1.5px -1.5px 0 #26121F, -1.5px 1.5px 0 #26121F, 3px 4px 0 #26121F">Today’s brew</h1>
+        <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61; font-size: 16px; margin-top: 8px">What you set here shows on the home page, in the Today’s Brew card.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 14px">
+        <span role="status" style="display: inline-flex; align-items: center; gap: 8px; min-height: 40px; box-sizing: border-box; padding: 6px 14px; border-radius: 999px; border: 2.5px solid #26121F; background: {{statusBg}}; font-weight: 800; font-size: 15px"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid #26121F; background: {{statusDot}}"></span>{{statusText}}</span>
+        <button type="button" onClick="{{publish}}" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; box-sizing: border-box; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 22px; padding: 8px 22px; border: 3px solid #26121F; border-radius: 14px; box-shadow: 0 4px 0 #26121F; cursor: pointer; text-decoration: none; color: #FFF8EF; background: #9E4C92">Publish changes</button>
+      </div>
+    </div>
+    <sc-if value="{{toast}}" hint-placeholder-val="{{ false }}">
+      <div role="status" style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; background: #D9F2B3; border: 3px solid #26121F; border-radius: 16px; padding: 10px 16px; font-weight: 800; font-size: 16px">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#26121F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>{{toastText}}</span>
+        <a href="{{toastHref}}" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; box-sizing: border-box; font-weight: 800; font-size: 15px; color: #26121F; background: #FFFFFF; padding: 8px 14px; border: 2.5px solid #26121F; border-radius: 12px; cursor: pointer; text-decoration: none">See it on the website</a>
+      </div>
+    </sc-if>
+    <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+      <div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+        <section aria-labelledby="soup-h" style="box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 4px 0 #26121F; padding: 22px 24px 24px">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 16px">
+            <h2 id="soup-h" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; color: #26121F"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9E4C92" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M3 11h18"></path><path d="M4 11c0 5 4 8 8 8s8-3 8-8"></path><path d="M9 7.5c0-1.5 1.5-1.5 1.5-3M13.5 7.5c0-1.5 1.5-1.5 1.5-3"></path></svg>Soup of the day</h2>
+            <button type="button" role="switch" aria-checked="{{sw.soupSoldOut.aria}}" aria-label="Soup sold out" onClick="{{sw.soupSoldOut.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.soupSoldOut.track}}"><span style="position: absolute; top: 2px; left: {{sw.soupSoldOut.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>Sold out</button>
+          </div>
+          <label for="soup-name" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Soup name</label>
+          <input id="soup-name" type="text" value="{{soup}}" onChange="{{onSoup}}" placeholder="e.g. Potato Parmesan Maple" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+          <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61">Quick pick from your regulars:</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px">
+            <sc-for list="{{soupPicks}}" as="p" hint-placeholder-count="3">
+              <button type="button" aria-pressed="{{p.pressed}}" onClick="{{p.pick}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; box-sizing: border-box; padding: 8px 16px; border-radius: 999px; border: 2.5px solid #26121F; font-weight: 800; font-size: 15.5px; color: #26121F; cursor: pointer; background: {{p.bg}}">{{p.name}}</button>
+            </sc-for>
+          </div>
+          <label for="soup-desc" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">A line about it <span style="font-weight: 600; color: #6B4A61">(optional)</span></label>
+          <textarea id="soup-desc" rows="2" value="{{soupDesc}}" onChange="{{onSoupDesc}}" placeholder="e.g. Perfect for a chilly day" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3; resize: vertical"></textarea>
+        </section>
+        <section aria-labelledby="sammie-h" style="box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 4px 0 #26121F; padding: 22px 24px 24px">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 16px">
+            <h2 id="sammie-h" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; color: #26121F"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9E4C92" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M3 10L12 4l9 6z"></path><path d="M3 13c3 1.5 6 1.5 9 0s6-1.5 9 0"></path><path d="M3 16h18v3H3z"></path></svg>Sammie of the day</h2>
+            <button type="button" role="switch" aria-checked="{{sw.sammieSoldOut.aria}}" aria-label="Sammie sold out" onClick="{{sw.sammieSoldOut.toggle}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 2px; background: none; border: none; cursor: pointer; font-weight: 800; font-size: 15px; color: #26121F"><span aria-hidden="true" style="position: relative; display: inline-block; flex: none; width: 54px; height: 30px; box-sizing: border-box; border-radius: 999px; border: 2.5px solid #26121F; background: {{sw.sammieSoldOut.track}}"><span style="position: absolute; top: 2px; left: {{sw.sammieSoldOut.knob}}; width: 21px; height: 21px; box-sizing: border-box; border-radius: 50%; background: #FFFFFF; border: 2px solid #26121F"></span></span>Sold out</button>
+          </div>
+          <label for="sammie-name" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Sammie name</label>
+          <input id="sammie-name" type="text" value="{{sammie}}" onChange="{{onSammie}}" placeholder="e.g. The Trucker" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+          <div style="display: flex; flex-wrap: wrap; gap: 0 16px">
+            <div style="flex: 3 1 260px; min-width: 0">
+              <label for="sammie-desc" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">What’s on it</label>
+              <input id="sammie-desc" type="text" value="{{sammieDesc}}" onChange="{{onSammieDesc}}" placeholder="Fillings, cheese, sauce, bread" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+            </div>
+            <div style="flex: 1 1 140px; min-width: 0">
+              <label for="sammie-price" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Price</label>
+              <div style="display: flex; align-items: center; width: 100%; box-sizing: border-box; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF"><span aria-hidden="true" style="padding-left: 13px; font-weight: 800; font-size: 17px">$</span><input id="sammie-price" inputmode="decimal" value="{{sammiePrice}}" onChange="{{onSammiePrice}}" placeholder="0.00" style="box-sizing: border-box; width: 100%; min-width: 0; padding: 11px 12px 11px 5px; border: none; border-radius: 12px; background: transparent; font-size: 17px"></div>
+            </div>
+          </div>
+        </section>
+        <section aria-labelledby="till-h" style="box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 4px 0 #26121F; padding: 22px 24px 24px">
+          <h2 id="till-h" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; color: #26121F"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9E4C92" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="8.5"></circle><circle cx="12" cy="12" r="4.5"></circle></svg>By the till</h2>
+          <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61">Tap what’s on the counter today.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px">
+            <sc-for list="{{treats}}" as="t" hint-placeholder-count="3">
+              <button type="button" aria-pressed="{{t.pressed}}" onClick="{{t.toggle}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; box-sizing: border-box; padding: 8px 16px; border-radius: 999px; border: 2.5px solid #26121F; font-weight: 800; font-size: 15.5px; color: #26121F; cursor: pointer; background: {{t.bg}}">
+                <sc-if value="{{t.on}}" hint-placeholder-val="{{ true }}"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#26121F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></sc-if>
+                <sc-if value="{{t.off}}" hint-placeholder-val="{{ false }}"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#26121F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M12 5v14M5 12h14"></path></svg></sc-if>
+                {{t.name}}
+              </button>
+            </sc-for>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px 12px">
+            <div style="flex: 1 1 220px; min-width: 0">
+              <label for="new-treat" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Add something new</label>
+              <input id="new-treat" type="text" value="{{newTreat}}" onChange="{{onNewTreat}}" placeholder="e.g. Lemon squares" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+            </div>
+            <button type="button" onClick="{{addTreat}}" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; box-sizing: border-box; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 22px; padding: 8px 22px; border: 3px solid #26121F; border-radius: 14px; box-shadow: 0 4px 0 #26121F; cursor: pointer; text-decoration: none; color: #26121F; background: #83EDF8">Add</button>
+          </div>
+        </section>
+        <section aria-labelledby="door-h" style="box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 4px 0 #26121F; padding: 22px 24px 24px">
+          <h2 id="door-h" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; color: #26121F"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9E4C92" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17"></path><path d="M4 21h16"></path><circle cx="14.5" cy="12" r="1"></circle></svg>Door sign &amp; notes</h2>
+          <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61">“Automatic” follows your regular hours. Switch it if you open late or close early.</p>
+          <div role="radiogroup" aria-labelledby="door-h" style="display: flex; margin-top: 12px; border: 2.5px solid #26121F; border-radius: 14px; overflow: hidden">
+            <sc-for list="{{doorOpts}}" as="o" hint-placeholder-count="3">
+              <button type="button" role="radio" aria-checked="{{o.checked}}" onClick="{{o.pick}}" style="flex: 1 1 0; min-height: 48px; padding: 10px 8px; border: none; border-left: {{o.sep}}; background: {{o.bg}}; color: {{o.fg}}; font-weight: 800; font-size: 16px; cursor: pointer">{{o.label}}</button>
+            </sc-for>
+          </div>
+          <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61; margin-top: 10px">{{doorHelp}}</p>
+          <label for="day-note" style="display: block; margin: 16px 0 6px; font-weight: 800; font-size: 15px; color: #5A3550">Note for today’s visitors <span style="font-weight: 600; color: #6B4A61">(optional)</span></label>
+          <input id="day-note" type="text" value="{{note}}" onChange="{{onNote}}" placeholder="e.g. Closing at 2 today for a private event" style="box-sizing: border-box; width: 100%; padding: 12px 14px; border: 2.5px solid #26121F; border-radius: 12px; background: #FFFFFF; font-size: 17px; line-height: 1.3">
+          <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61">Shows in a yellow banner above Today’s Brew.</p>
+        </section>
+        <section aria-labelledby="photo-h" style="box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 4px 0 #26121F; padding: 22px 24px 24px">
+          <h2 id="photo-h" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; color: #26121F"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9E4C92" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M3 8h4l2-3h6l2 3h4v11H3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Photo of the day <span style="font-family: Nunito, sans-serif; font-size: 15px; font-weight: 700; color: #6B4A61">(optional)</span></h2>
+          <sc-if value="{{noPhoto}}" hint-placeholder-val="{{ true }}">
+            <div style="position: relative; margin-top: 14px; border: 3px dashed #C56CB0; border-radius: 16px; background: #FBF1F8; padding: 24px 18px; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center">
+              <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#9E4C92" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M12 15V4M7.5 8.5L12 4l4.5 4.5"></path><path d="M4 15v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"></path></svg>
+              <p style="margin: 0; font-weight: 700; font-size: 16px">Snap today’s pot or sammie and it shows next to Today’s Brew.</p>
+              <label for="photo-day" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; box-sizing: border-box; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 22px; padding: 8px 22px; border: 3px solid #26121F; border-radius: 14px; box-shadow: 0 4px 0 #26121F; cursor: pointer; text-decoration: none; color: #26121F; background: #83EDF8">Choose a photo</label>
+              <input id="photo-day" type="file" accept="image/*" onChange="{{onPhoto}}" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0">
+            </div>
+          </sc-if>
+          <sc-if value="{{hasPhoto}}" hint-placeholder-val="{{ false }}">
+            <div style="margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px">
+              <img src="{{photoUrl}}" alt="Today’s photo" style="width: 150px; height: 112px; object-fit: cover; border-radius: 12px; border: 3px solid #26121F">
+              <div style="min-width: 0">
+                <p style="margin: 0; font-weight: 800; word-break: break-all">{{photoName}}</p>
+                <button type="button" onClick="{{removePhoto}}" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; box-sizing: border-box; font-weight: 800; font-size: 15px; color: #26121F; background: #FFFFFF; padding: 8px 14px; border: 2.5px solid #26121F; border-radius: 12px; cursor: pointer; text-decoration: none; margin-top: 10px">Remove photo</button>
+              </div>
+            </div>
+          </sc-if>
+        </section>
+      </div>
+      <div style="flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <section aria-labelledby="preview-h" style="box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 20px; box-shadow: 0 4px 0 #26121F; padding: 22px 24px 24px; background: #FCF6EC">
+          <h2 id="preview-h" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; color: #26121F">How it looks on the website</h2>
+          <p style="margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: #6B4A61">Updates as you type. Visitors see it once you press <strong>Publish changes</strong>.</p>
+          <div style="margin-top: 18px; display: flex; flex-direction: column; align-items: center; gap: 16px">
+            <div style="background: #83EDF8; border: 2.5px solid #26121F; padding: 0 20px 4px; transform: rotate(-1.5deg)">
+              <span style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 32px; line-height: 1.2; color: #9E4C92; text-shadow: 1.5px 0 0 #26121F, -1.5px 0 0 #26121F, 0 1.5px 0 #26121F, 0 -1.5px 0 #26121F, 1px 1px 0 #26121F, -1px -1px 0 #26121F, 1px -1px 0 #26121F, -1px 1px 0 #26121F, 2px 2px 0 #26121F">Today’s Brew</span>
+            </div>
+            <sc-if value="{{hasNote}}" hint-placeholder-val="{{ false }}">
+              <p style="margin: 0; width: 100%; box-sizing: border-box; background: #FFD23F; border: 2.5px solid #26121F; border-radius: 12px; padding: 10px 14px; font-weight: 800; text-align: center">{{note}}</p>
+            </sc-if>
+            <sc-if value="{{hasPhoto}}" hint-placeholder-val="{{ false }}">
+              <img src="{{photoUrl}}" alt="" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 16px; border: 3px solid #26121F">
+            </sc-if>
+            <div style="width: 100%; box-sizing: border-box; background: #FFFFFF; border: 3px solid #26121F; border-radius: 22px; box-shadow: 0 0 0 8px #FFFFFF, 0 12px 20px 6px rgba(38,18,31,0.18); padding: 20px 22px; margin: 8px 0; transform: rotate(1deg); display: flex; flex-direction: column; gap: 16px">
+              <div>
+                <div style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 19px; color: #9E4C92">soup of the day</div>
+                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px">
+                  <span style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; text-decoration: {{soupDeco}}">{{soupShown}}</span>
+                  <sc-if value="{{soupSoldOut}}" hint-placeholder-val="{{ false }}"><span style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 17px; color: #FFFFFF; background: #C42222; border: 2px solid #26121F; border-radius: 999px; padding: 1px 10px 3px; transform: rotate(-4deg)">sold out!</span></sc-if>
+                </div>
+                <sc-if value="{{hasSoupDesc}}" hint-placeholder-val="{{ false }}"><p style="margin: 4px 0 0; font-size: 15px; color: #5A3550">{{soupDesc}}</p></sc-if>
+              </div>
+              <div>
+                <div style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 19px; color: #9E4C92">sammie of the day</div>
+                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px">
+                  <span style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1; text-decoration: {{sammieDeco}}">{{sammieShown}}</span>
+                  <span style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 22px; color: #5A3550">{{priceShown}}</span>
+                  <sc-if value="{{sammieSoldOut}}" hint-placeholder-val="{{ false }}"><span style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 17px; color: #FFFFFF; background: #C42222; border: 2px solid #26121F; border-radius: 999px; padding: 1px 10px 3px; transform: rotate(-4deg)">sold out!</span></sc-if>
+                </div>
+                <sc-if value="{{hasSammieDesc}}" hint-placeholder-val="{{ true }}"><p style="margin: 4px 0 0; font-size: 15px; color: #5A3550">{{sammieDesc}}</p></sc-if>
+              </div>
+              <div>
+                <div style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 19px; color: #9E4C92">by the till</div>
+                <div style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 29px; line-height: 1.1">{{tillShown}}</div>
+              </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 12px; font-weight: 800">
+              <span>Door sign:</span>
+              <span style="font-family: Chewy, 'Comic Sans MS', cursive; font-weight: 400; font-size: 25px; line-height: 1.1; padding: 2px 14px 4px; border: 3px solid #26121F; border-radius: 10px; background: #FFFFFF; color: {{signColor}}">{{signWord}}</span>
+              <span style="font-size: 14.5px; font-weight: 700; color: #6B4A61">{{signNote}}</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1900}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      soup: 'Potato Parmesan Maple',
+      soupDesc: '',
+      sammie: 'The Trucker',
+      sammieDesc: 'Deli meats, mozzarella, rosemary mayo, pickled eggplant, kettle chips & greens',
+      sammiePrice: '',
+      s: { soupSoldOut: false, sammieSoldOut: false },
+      treats: [
+        { name: 'Butter tarts', on: true },
+        { name: 'Cookies', on: true },
+        { name: 'Biscuits', on: false }
+      ],
+      newTreat: '',
+      door: 'auto',
+      note: '',
+      photos: {},
+      dirty: false,
+      toast: false
+    };
+  }
+
+  change(patch) {
+    this.setState(Object.assign({}, patch, { dirty: true, toast: false }));
+  }
+  fieldHandlers() {
+    const on = {};
+    Object.keys(this.state.f).forEach((k) => {
+      on[k] = (e) => this.change({ f: Object.assign({}, this.state.f, { [k]: e.target.value }) });
+    });
+    return on;
+  }
+  switches() {
+    const sw = {};
+    Object.keys(this.state.s).forEach((k) => {
+      const v = !!this.state.s[k];
+      sw[k] = {
+        on: v,
+        off: !v,
+        openWord: v ? 'Open' : 'Closed',
+        aria: v ? 'true' : 'false',
+        track: v ? '#9E4C92' : '#E9DCE6',
+        knob: v ? '26px' : '2px',
+        chip: v ? '#83EDF8' : '#FFFFFF',
+        word: v ? 'Showing' : 'Hidden',
+        toggle: () => this.change({ s: Object.assign({}, this.state.s, { [k]: !this.state.s[k] }) })
+      };
+    });
+    return sw;
+  }
+  statusVals(toastText, toastHref) {
+    const dirty = this.state.dirty;
+    return {
+      statusText: dirty ? 'Changes not published yet' : 'Live on the website',
+      statusBg: dirty ? '#FFE7A8' : '#D9F2B3',
+      statusDot: dirty ? '#F7941D' : '#3F7A17',
+      toast: this.state.toast,
+      toastText: toastText,
+      toastHref: toastHref,
+      publish: () => this.setState({ dirty: false, toast: true })
+    };
+  }
+  photoPicker(key) {
+    return (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      const photos = Object.assign({}, this.state.photos, { [key]: { url: URL.createObjectURL(file), name: file.name } });
+      this.change({ photos });
+    };
+  }
+
+  renderVals() {
+    const st = this.state;
+    const field = (k) => (e) => this.change({ [k]: e.target.value });
+    const sw = this.switches();
+    const favourites = ['Potato Parmesan Maple', 'Cream of Cauliflower Three-Cheese', 'Tomato'];
+    const soupPicks = favourites.map((name) => {
+      const sel = st.soup.trim().toLowerCase() === name.toLowerCase();
+      return { name: name, pressed: sel ? 'true' : 'false', bg: sel ? '#83EDF8' : '#FFFFFF', pick: () => this.change({ soup: name }) };
+    });
+    const treats = st.treats.map((t, i) => ({
+      name: t.name, on: t.on, off: !t.on,
+      pressed: t.on ? 'true' : 'false',
+      bg: t.on ? '#B8E06A' : '#FFFFFF',
+      toggle: () => this.change({ treats: this.state.treats.map((x, j) => (j === i ? Object.assign({}, x, { on: !x.on }) : x)) })
+    }));
+    const addTreat = () => {
+      const n = (this.state.newTreat || '').trim();
+      if (!n) return;
+      this.change({ treats: this.state.treats.concat([{ name: n, on: true }]), newTreat: '' });
+    };
+    const doorChoices = [['auto', 'Automatic'], ['open', 'Open now'], ['closed', 'Closed now']];
+    const doorOpts = doorChoices.map((c, i) => {
+      const sel = st.door === c[0];
+      return { label: c[1], checked: sel ? 'true' : 'false', bg: sel ? '#9E4C92' : '#FFFFFF', fg: sel ? '#FFF8EF' : '#26121F',
+        sep: i === 0 ? 'none' : '2.5px solid #26121F', pick: () => this.change({ door: c[0] }) };
+    });
+
+    // regular hours in Toronto time; Fridays break from 2:30 to 4:30
+    const hours = { Tue: [[11, 16]], Wed: [[11, 16]], Thu: [[11, 16]], Fri: [[11, 14.5], [16.5, 19]], Sat: [[11, 16]] };
+    const order = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const names = { Sun: 'Sunday', Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday', Fri: 'Friday', Sat: 'Saturday' };
+    const fmt = (h) => {
+      const hh = Math.floor(h);
+      const mm = Math.round((h - hh) * 60);
+      const h12 = hh > 12 ? hh - 12 : hh;
+      return h12 + (mm ? ':' + (mm < 10 ? '0' + mm : mm) : '') + (hh >= 12 ? ' pm' : ' am');
+    };
+    let day = 'Tue';
+    let hour = 12;
+    let dateLabel = '';
+    try {
+      const now = new Date();
+      const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Toronto', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' }).formatToParts(now);
+      const get = (t) => { const p = parts.find((x) => x.type === t); return p ? p.value : ''; };
+      day = get('weekday') || day;
+      hour = (parseInt(get('hour'), 10) % 24) + (parseInt(get('minute'), 10) || 0) / 60;
+      dateLabel = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Toronto', weekday: 'long', month: 'long', day: 'numeric' }).format(now);
+    } catch (e) {}
+    const today = hours[day] || [];
+    const current = today.find((w) => hour >= w[0] && hour < w[1]);
+    const later = today.find((w) => hour < w[0]);
+    let open = !!current;
+    if (st.door === 'open') open = true;
+    if (st.door === 'closed') open = false;
+    let signNote = '';
+    if (st.door !== 'auto') {
+      signNote = 'until you switch it back';
+    } else if (open) {
+      signNote = 'until ' + fmt(current[1]);
+    } else if (later) {
+      signNote = (later === today[0] ? 'opening' : 'back') + ' today at ' + fmt(later[0]);
+    } else {
+      const idx = order.indexOf(day);
+      for (let i = 1; i <= 7; i++) {
+        const d = order[(idx + i) % 7];
+        if (hours[d]) { signNote = 'back ' + (i === 1 ? 'tomorrow' : names[d]) + ' at ' + fmt(hours[d][0][0]); break; }
+      }
+    }
+    const signWord = open ? 'OPEN' : 'CLOSED';
+    const doorHelp = st.door === 'auto'
+      ? 'Right now the sign on the website says ' + signWord + ' (' + signNote + ').'
+      : 'The sign stays ' + signWord + ' until you set it back to Automatic.';
+
+    const onCounter = st.treats.filter((t) => t.on).map((t) => t.name.toLowerCase());
+    const tillShown = onCounter.length === 0 ? 'nothing today'
+      : (onCounter.length === 1 ? onCounter[0] : onCounter.slice(0, -1).join(', ') + ' & ' + onCounter[onCounter.length - 1]);
+    const greet = hour < 12 ? 'Good morning' : (hour < 17 ? 'Good afternoon' : 'Good evening');
+    const photo = st.photos.day;
+    const price = (st.sammiePrice || '').trim().replace(/^\$/, '');
+
+    return Object.assign({
+      dateLabel: dateLabel,
+      greeting: greet,
+      soup: st.soup, onSoup: field('soup'),
+      soupDesc: st.soupDesc, onSoupDesc: field('soupDesc'),
+      sammie: st.sammie, onSammie: field('sammie'),
+      sammieDesc: st.sammieDesc, onSammieDesc: field('sammieDesc'),
+      sammiePrice: st.sammiePrice, onSammiePrice: field('sammiePrice'),
+      newTreat: st.newTreat, onNewTreat: field('newTreat'), addTreat: addTreat,
+      note: st.note, onNote: field('note'), hasNote: !!st.note.trim(),
+      sw: sw, soupPicks: soupPicks, treats: treats, doorOpts: doorOpts, doorHelp: doorHelp,
+      signWord: signWord, signNote: signNote, signColor: open ? '#3F7A17' : '#C42222',
+      soupShown: st.soup.trim() || '[today’s soup]',
+      soupDeco: st.s.soupSoldOut ? 'line-through' : 'none',
+      soupSoldOut: st.s.soupSoldOut,
+      hasSoupDesc: !!st.soupDesc.trim(),
+      sammieShown: st.sammie.trim() || '[today’s sammie]',
+      sammieDeco: st.s.sammieSoldOut ? 'line-through' : 'none',
+      sammieSoldOut: st.s.sammieSoldOut,
+      hasSammieDesc: !!st.sammieDesc.trim(),
+      priceShown: price ? '$' + price : '[price]',
+      tillShown: tillShown,
+      hasPhoto: !!photo, noPhoto: !photo,
+      photoUrl: photo ? photo.url : '', photoName: photo ? photo.name : '',
+      onPhoto: this.photoPicker('day'),
+      removePhoto: () => this.change({ photos: Object.assign({}, this.state.photos, { day: null }) })
+    }, this.statusVals('Published! Today’s brew is live on the website.', 'Main.dc.html'));
+  }
+}
+</script>
+</body>
+</html>
