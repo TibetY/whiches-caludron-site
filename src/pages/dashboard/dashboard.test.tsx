@@ -218,6 +218,17 @@ describe('Hours & notices', () => {
 });
 
 describe('dashboard shell', () => {
+  it('opens from the link in the website footer', async () => {
+    const user = userEvent.setup();
+    renderApp('/menu');
+    await user.click(screen.getByRole('link', { name: 'For the owners' }));
+    expect(screen.getByLabelText(/Soup name/)).toHaveValue('Potato Parmesan Maple');
+    expect(screen.getAllByRole('link', { name: 'Today’s brew' })[0]).toHaveAttribute(
+      'aria-current',
+      'page',
+    );
+  });
+
   it('starts from the seed and resets demo data', async () => {
     const user = userEvent.setup();
     vi.spyOn(window, 'confirm').mockReturnValue(true);

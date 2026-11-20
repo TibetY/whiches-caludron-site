@@ -1,4 +1,5 @@
 import logo from '@assets/logo-sticker.webp';
+import { Link } from 'react-router-dom';
 import { externalUrl, telHref } from '../../lib/format';
 import { hoursFooterLine } from '../../lib/hours';
 import { usePublished } from '../../store/context';
@@ -31,6 +32,8 @@ export function SiteFooter({ waveFill }: { waveFill: string }) {
           <a href={`mailto:${contact.email}`}>Email us</a>
           <a href={externalUrl(contact.instagram)}>Instagram</a>
           <a href={externalUrl(contact.facebook)}>Facebook</a>
+          {/* Not in the artboards: the owners' way in to the dashboard (no login yet). */}
+          <Link to="/dashboard">For the owners</Link>
         </div>
       </div>
       <p className={styles.bye}>See you at lunch!</p>
