@@ -45,6 +45,12 @@ To see publishing work, open the website in one tab and the dashboard in another
 | `npm run lint`     | ESLint, including `jsx-a11y`            |
 | `npm run format`   | Prettier                                |
 
+### Deploying
+
+The site is set up for Netlify. [`netlify.toml`](netlify.toml) runs `npm run build` with Node 24 and publishes `dist/`. It also sends every address to `index.html`, so `/menu` and the dashboard pages work when opened directly or refreshed. Connect the repo in Netlify and no other settings are needed.
+
+While this is a prototype, `netlify.toml` also asks search engines not to list the site (the `X-Robots-Tag: noindex` header). Remove that block at launch.
+
 ## How it works
 
 - **Store** (`src/store/`): a small React context with `useReducer`. It holds `{ draft, published, publishedAt }` and saves it to `localStorage` under `wc:store:v1`. Other open tabs pick up changes through the `storage` event. **Reset demo data** in the dashboard menu brings back `content/seed.json`.

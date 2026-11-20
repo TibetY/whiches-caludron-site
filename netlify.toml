@@ -1,0 +1,24 @@
+# Netlify settings: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # The version the prototype was built and tested with (package.json needs 22.12 or newer).
+  NODE_VERSION = "24"
+
+# The site is a single-page app: React Router handles /menu, /dashboard and the rest in the
+# browser. Send every address to index.html so opening or refreshing one of those pages works.
+# Real files (the built JS, CSS and images) are still served as they are.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# While this is a prototype (placeholder prices, a dashboard with no login), ask search
+# engines not to list any of it. Remove this block at launch.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
